@@ -1,0 +1,162 @@
+<!--
+Authors: Reha Sreekumar, Srisha Satish Kanna and Ramaguru Radhakrishnan
+Description: Anokha TechFair & Exhibitions 2026 Status Tracker
+Created Date: 17th December 2025
+Updated Date: 17th December 2025
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<style>
+        /* Reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+            background-color: #f7f3e9;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            text-align: center;
+        }
+
+        /* =========================
+           HEADING (Typing Style)
+           ========================= */
+        h1 {
+            font-size: 2.6rem;
+            font-weight: 700;
+            color: #5b4b8a;
+            margin-bottom: 35px;
+            min-height: 3.2rem; /* prevents layout jump */
+        }
+
+        /* =========================
+           TABS
+           ========================= */
+        .tabs {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+
+        .tab-btn {
+            padding: 12px 32px;
+            border-radius: 25px;
+            border: none;
+            background-color: #dcd6f7;
+            color: #333;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .tab-btn:hover {
+            background-color: #b8b0e6;
+        }
+
+        .tab-btn.active {
+            background-color: #5b4b8a;
+            color: #ffffff;
+        }
+
+        /* =========================
+           CONTENT AREA
+           ========================= */
+        iframe {
+            width: 100%;
+            height: 720px;
+            border: none;
+            border-radius: 16px;
+            background-color: #ffffff;
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+        }
+</style>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <header class="header">
+    <div class="logo-container">
+            <img src="images/anokha_2026.png" alt="Anokha Logo" width=320>
+            <img src="images/tf_black.png" alt="TechFair & Exhibitions Logo" width=290>
+            <img src="images/iic_logo.png" alt="IIC Logo" width=300>
+    </div>
+    <h1>Anokha TechFair & Exhibitions 2026 - Status Tracker</h1>
+    </header>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Typing Heading -->
+        <h1 id="typing-text"></h1>
+
+        <!-- Tabs -->
+        <div class="tabs">
+            <button class="tab-btn active" onclick="loadPage('projects.html', this)">
+                Departments
+            </button>
+            <button class="tab-btn" onclick="loadPage('clubs.html', this)">
+                Clubs
+            </button>
+
+        </div>
+
+        <!-- Content -->
+        <iframe id="contentFrame" src="projects.html"></iframe>
+
+    </div>
+  
+    <script>
+        /* Typing Effect (NO blinking cursor) */
+        const text = "Anokha TechFair & Exhibitions 2026 – Status Tracker";
+        let index = 0;
+
+        function typeWriter() {
+            if (index < text.length) {
+                document.getElementById("typing-text").innerHTML += text.charAt(index);
+                index++;
+                setTimeout(typeWriter, 100);
+            }
+        }
+
+        window.onload = typeWriter;
+
+        /* Tab switching */
+        function loadPage(page, button) {
+            document.getElementById("contentFrame").src = page;
+
+            const buttons = document.querySelectorAll(".tab-btn");
+            buttons.forEach(btn => btn.classList.remove("active"));
+
+            button.classList.add("active");
+        }
+    </script>
+</body>
+
+<footer class="footer">
+    © 2024–2026 
+    <strong>Institution’s Innovation Council (IIC)</strong> & 
+    <strong>Anokha TechFair & Exhibitions</strong>. 
+    All Rights Reserved.
+</footer>
+</body>
+
+</html>
