@@ -1,0 +1,326 @@
+
+<!-- Author1: Reha Sreekumar -->
+<!-- Author2: Srisha Satish Kanna -->
+<!-- Date: 17th December 2025-->
+<!-- Tech Fair Status Tracker-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Fair Status Tracker</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+            background-color: #f7f3e9;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #5b4b8a;
+            font-size: 2.8rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #ffffff;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+        }
+
+        thead {
+            background: #e8def8;
+        }
+
+        th {
+            padding: 18px;
+            font-size: 1.1rem;
+            color: #3f2d68;
+            border: 1px solid #ddd2f3;
+            text-align: center;
+        }
+
+        td {
+            padding: 15px;
+            border: 1px solid #eee6d8;
+            text-align: center;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .school-row {
+            background: #efe4d2;
+            font-weight: 700;
+            font-size: 1.15rem;
+            color: #5c4a2e;
+            text-align: center;
+            letter-spacing: 0.4px;
+        }
+
+        .branch {
+            background: #faf6ee;
+            text-align: left;
+            padding-left: 50px;
+            color: #5e5647;
+        }
+
+        .higher {
+            background: #dff4ea;
+            color: #215f46;
+            font-weight: 600;
+        }
+
+        .lower {
+            background: #fde2e2;
+            color: #8a2e2e;
+            font-weight: 700;
+        }
+
+        .neutral {
+            background: #f4f1eb;
+            color: #555;
+        }
+
+        tbody tr:hover {
+            background: #f5f0e6;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <h1>🎓 Tech Fair Status Tracker</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 40%;">Department / Course</th>
+                <th style="width: 30%;">2024</th>
+                <th style="width: 30%;">2026</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <!-- School of AI -->
+            <tr>
+                <td colspan="3" class="school-row">School of AI</td>
+            </tr>
+
+            <tr>
+                <td class="branch">Artificial Intelligence and Data Science</td>
+                <td>-</td>
+                <td class="neutral">-</td>
+            </tr>
+
+            <tr>
+                <td class="branch">Artificial Intelligence and Data Science (Medical Engineering)</td>
+                <td>-</td>
+                <td class="neutral">-</td>
+            </tr>
+
+            <tr>
+                <td class="branch">Artificial Intelligence and Data Science (Quantum Technologies)</td>
+                <td>-</td>
+                <td class="neutral">-</td>
+            </tr>
+
+            <tr>
+                <td class="branch">Autonomous Agents and Robotic Systems</td>
+                <td>-</td>
+                <td class="neutral">-</td>
+            </tr>
+
+            <tr>
+                <td class="branch">Computer Science and Engineering (Artificial Intelligence)</td>
+                <td>-</td>
+                <td class="neutral">-</td>
+            </tr>
+
+            <tr>
+                <td class="branch">Cyber Physical Systems and Security</td>
+                <td>-</td>
+                <td class="neutral">-</td>
+            </tr>
+
+            <!-- School of Agriculture -->
+            <tr>
+                <td colspan="3" class="school-row">School of Agriculture</td>
+            </tr>
+
+            <tr>
+                <td class="branch">B. Sc. Hons (Agriculture)</td>
+                <td>-</td>
+                <td class="neutral">-</td>
+            </tr>
+
+            <!-- School of Architecture -->
+            <tr>
+                <td colspan="3" class="school-row">School of Architecture</td>
+            </tr>
+
+            <tr>
+                <td class="branch">B. Des.</td>
+                <td>-</td>
+                <td class="neutral">-</td>
+            </tr>
+
+            <tr>
+                <td class="branch">B. Arch.</td>
+                <td>-</td>
+                <td class="neutral">-</td>
+            </tr>
+
+            <!-- School of Arts, Humanities and Commerce -->
+            <tr>
+                <td colspan="3" class="school-row">School of Arts, Humanities and Commerce</td>
+            </tr>
+
+            <tr>
+                <td class="branch">B. A. (Hons)</td>
+                <td>-</td>
+                <td class="neutral">-</td>
+            </tr>
+
+            <!-- School of Computing -->
+            <tr>
+                <td colspan="3" class="school-row">School of Computing</td>
+            </tr>
+
+            <tr>
+                <td class="branch">Computer Science and Engineering (CSE)</td>
+                <td>-</td>
+                <td class="neutral">-</td>
+            </tr>
+
+            <!-- School of Engineering -->
+            <tr>
+                <td colspan="3" class="school-row">School of Engineering</td>
+            </tr>
+
+            <tr>
+                <td class="branch">Aerospace Engineering (ARE)</td>
+                <td>-</td>
+                <td class="neutral">-</td>
+            </tr>
+
+            <tr>
+                <td class="branch">Chemical Engineering (ARE)</td>
+                <td>-</td>
+                <td class="neutral">-</td>
+            </tr>
+
+            <tr>
+                <td class="branch">Civil Engineering (ARE)</td>
+                <td>-</td>
+                <td class="neutral">-</td>
+            </tr>
+            
+            <tr>
+                <td class="branch">Electronics and Communications Engineering</td>
+                <td>-</td>
+                <td class="neutral">-</td>
+            </tr>
+
+            <tr>
+                <td class="branch">Computer and Communication Engineering</td>
+                <td>-</td>
+                <td class="neutral">-</td>
+            </tr>
+
+            <tr>
+                <td class="branch">Electrical and Electronics Engineering</td>
+                <td>-</td>
+                <td class="neutral">-</td>
+            </tr>
+
+            <tr>
+                <td class="branch">Electrical and Computer Engineering</td>
+                <td>-</td>
+                <td class="neutral">-</td>
+            </tr>
+
+            <tr>
+                <td class="branch">Mechanical Engineering</td>
+                <td>-</td>
+                <td class="neutral">-</td>
+            </tr>
+
+            <tr>
+                <td class="branch"> Automation and Robotics Engineering</td>
+                <td>-</td>
+                <td class="neutral">-</td>
+            </tr>
+
+            <!-- School of Physical Sci -->
+            <tr>
+                <td colspan="3" class="school-row">School of Physical Sciences</td>
+            </tr>
+
+            <tr>
+                <td class="branch">Integrated Chemistry</td>
+                <td>-</td>
+                <td class="neutral">-</td>
+            </tr>
+
+            <tr>
+                <td class="branch">Food Science and Nutrition</td>
+                <td>-</td>
+                <td class="neutral">-</td>
+            </tr>
+
+            <tr>
+                <td class="branch">Integrated Maths</td>
+                <td>-</td>
+                <td class="neutral">-</td>
+            </tr>
+
+            <tr>
+                <td class="branch">Integrated Physics</td>
+                <td>-</td>
+                <td class="neutral">-</td>
+            </tr>
+             <tr>
+                <td class="branch">Integrated Msc Data Science </td>
+                <td>-</td>
+                <td class="neutral">-</td>
+            </tr>
+
+             <!-- International School of Law -->
+            <tr>
+                <td colspan="3" class="school-row">International School of Law</td>
+            </tr>
+
+            <tr>
+                <td class="branch">B.A., LL.B. (Hons.)</td>
+                <td>-</td>
+                <td class="neutral">-</td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
