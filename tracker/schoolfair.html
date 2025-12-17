@@ -168,6 +168,9 @@ tbody tr:hover {
 
 <body>
 <div class="container">
+        <!-- Typing Heading -->
+        <h1 id="typing-text"></h1>
+
     <div class="table-wrapper">
         <table>
             <thead>
@@ -329,8 +332,27 @@ tbody tr:hover {
     <strong>Anokha TechFair & Exhibitions</strong>. All Rights Reserved.
 </footer>
 
+      <!-- =========================
+         SCRIPT
+         ========================= -->
+    <script>
+        /* Typing Effect */
+        const text = "Anokha SchoolFair – Status Tracker";
+        let index = 0;
+
+        function typeWriter() {
+            if (index < text.length) {
+                document.getElementById("typing-text").innerHTML += text.charAt(index);
+                index++;
+                setTimeout(typeWriter, 100);
+            }
+        }
+
+    </script>
+
 </body>
 </html>
+
 
 
 
