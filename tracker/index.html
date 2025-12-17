@@ -7,8 +7,16 @@ Updated Date: 17th December 2025
 
 <!DOCTYPE html>
 <html lang="en">
-<style>
-        /* Reset */
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anokha TechFair & Exhibitions 2026 – Status Tracker</title>
+
+    <style>
+        /* =========================
+           RESET
+           ========================= */
         * {
             box-sizing: border-box;
             margin: 0;
@@ -27,8 +35,11 @@ Updated Date: 17th December 2025
             text-align: center;
         }
 
-          .logo-container {
-            margin-bottom: 8px;    /* explicitly control space below logos */
+        /* =========================
+           LOGOS
+           ========================= */
+        .logo-container {
+            margin-bottom: 12px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -44,7 +55,7 @@ Updated Date: 17th December 2025
             font-weight: 700;
             color: #5b4b8a;
             margin-bottom: 35px;
-            min-height: 3.2rem; /* prevents layout jump */
+            min-height: 3.2rem;
         }
 
         /* =========================
@@ -79,29 +90,25 @@ Updated Date: 17th December 2025
         }
 
         /* =========================
-           CONTENT AREA
+           IFRAME CONTENT
            ========================= */
-       .iframe-wrapper {
+        .iframe-wrapper {
             width: 100%;
-            max-width: 100%;
         }
-        
+
         .iframe-wrapper iframe {
             width: 100%;
-            height: 1500px;
+            min-height: 70vh;
             border: none;
             border-radius: 16px;
             background-color: #ffffff;
             box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+            transition: height 0.2s ease;
         }
 
-        /* Responsive */
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
-            }
-        }
-
+        /* =========================
+           FOOTER
+           ========================= */
         .footer {
             margin-top: 40px;
             padding: 18px 10px;
@@ -112,21 +119,35 @@ Updated Date: 17th December 2025
             border-radius: 12px;
             box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
         }
-</style>
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <header class="header">
-    <div class="logo-container">
-            <img src="images/anokha_2026.png" alt="Anokha Logo" width=320>
-            <img src="images/tf_black.png" alt="TechFair & Exhibitions Logo" width=290>
-            <img src="images/iic_logo.png" alt="IIC Logo" width=300>
-    </div>
-    </header>
+
+        /* =========================
+           RESPONSIVE
+           ========================= */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .tab-btn {
+                padding: 10px 24px;
+            }
+        }
+    </style>
 </head>
 
 <body>
+
+    <!-- =========================
+         HEADER LOGOS
+         ========================= -->
+    <header>
+        <div class="logo-container">
+            <img src="images/anokha_2026.png" alt="Anokha Logo" width="320" />
+            <img src="images/tf_black.png" alt="TechFair & Exhibitions Logo" width="290" />
+            <img src="images/iic_logo.png" alt="IIC Logo" width="300" />
+        </div>
+    </header>
+
     <div class="container">
 
         <!-- Typing Heading -->
@@ -140,17 +161,30 @@ Updated Date: 17th December 2025
             <button class="tab-btn" onclick="loadPage('clubs.html', this)">
                 Clubs
             </button>
-
         </div>
 
         <!-- Content -->
         <div class="iframe-wrapper">
-                <iframe id="contentFrame" src="techfair.html"></iframe>
+            <iframe id="contentFrame" src="techfair.html"></iframe>
         </div>
+
     </div>
-  
+
+    <!-- =========================
+         FOOTER
+         ========================= -->
+    <footer class="footer">
+        © 2024–2026
+        <strong>Institution’s Innovation Council (IIC)</strong> &
+        <strong>Anokha TechFair & Exhibitions</strong>.
+        All Rights Reserved.
+    </footer>
+
+    <!-- =========================
+         SCRIPT
+         ========================= -->
     <script>
-        /* Typing Effect (NO blinking cursor) */
+        /* Typing Effect */
         const text = "Anokha TechFair & Exhibitions 2026 – Status Tracker";
         let index = 0;
 
@@ -162,19 +196,37 @@ Updated Date: 17th December 2025
             }
         }
 
-        window.onload = typeWriter;
+        /* Auto-resize iframe */
+        function resizeIframe() {
+            const iframe = document.getElementById("contentFrame");
+            try {
+                iframe.style.height =
+                    iframe.contentWindow.document.body.scrollHeight + "px";
+            } catch (e) {
+                iframe.style.height = "1500px"; // fallback
+            }
+        }
 
-        /* Tab switching */
         function loadPage(page, button) {
-            document.getElementById("contentFrame").src = page;
+            const iframe = document.getElementById("contentFrame");
+            iframe.src = page;
 
-            const buttons = document.querySelectorAll(".tab-btn");
-            buttons.forEach(btn => btn.classList.remove("active"));
+            iframe.onload = resizeIframe;
+
+            document
+                .querySelectorAll(".tab-btn")
+                .forEach(btn => btn.classList.remove("active"));
 
             button.classList.add("active");
         }
+
+        window.onload = () => {
+            typeWriter();
+            resizeIframe();
+        };
+
+        window.addEventListener("resize", resizeIframe);
     </script>
-</body>
 
 <footer class="footer">
     © 2024–2026 
