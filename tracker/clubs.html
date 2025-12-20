@@ -2,7 +2,7 @@
 Authors: Reha Sreekumar, Srisha Satish Kanna and Ramaguru Radhakrishnan
 Description: Anokha TechFair & Exhibitions 2026 Status Tracker
 Created Date: 16th December 2025
-Updated Date: 17th December 2025
+Updated Date: 20th December 2025
 Clubs.html (Tab2)
 -->
 
@@ -34,6 +34,47 @@ Clubs.html (Tab2)
             margin: auto;
         }
 
+                /* ================= SEARCH BAR (MATCHES TECHFAIR) ================= */
+        .search-box {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 25px;
+        }
+
+        .search-box input {
+            width: 60%;
+            max-width: 480px;
+            padding: 12px 18px 12px 44px;
+            border-radius: 999px;
+            border: 1px solid #cfc6e6;
+            font-size: 1rem;
+            outline: none;
+            background-color: #ffffff;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: calc(50% - 240px + 16px);
+            top: 50%;
+            transform: translateY(-50%);
+            width: 16px;
+            height: 16px;
+            opacity: 0.6;
+            pointer-events: none;
+        }
+
+        @media (max-width: 768px) {
+            .search-box input {
+                width: 90%;
+            }
+
+            .search-icon {
+                left: calc(5% + 16px);
+            }
+        }
+
         h1 {
             text-align: center;
             margin-bottom: 35px;
@@ -56,7 +97,7 @@ Clubs.html (Tab2)
 
         th {
             padding: 18px;
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             color: #3f2d68;
             border: 1px solid #ddd2f3;
             text-align: center;
@@ -72,10 +113,16 @@ Clubs.html (Tab2)
 
         .club-name {
             text-align: left;
-            padding-left: 40px;
+            padding-left: 30px;
             background: #faf6ee;
             color: #5e5647;
             font-weight: 600;
+        }
+
+        .department {
+            background: #f1efe9;
+            color: #4b4b4b;
+            font-weight: 500;
         }
 
         .neutral {
@@ -107,6 +154,22 @@ Clubs.html (Tab2)
 
 <body>
     <div class="container">
+
+         <!-- SEARCH BAR -->
+    <div class="search-box">
+        <!-- inline SVG-style magnifier -->
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="7"></circle>
+            <line x1="16.65" y1="16.65" x2="21" y2="21"></line>
+        </svg>
+
+        <input
+            type="text"
+            placeholder="Search club or department..."
+            onkeyup="filterTable(this.value)"
+        />
+    </div>
+        
         <table>
             <thead>
                 <tr>
@@ -215,8 +278,22 @@ Clubs.html (Tab2)
             </tbody>
         </table>
     </div>
+    
+    <script>
+    function filterTable(query) {
+        query = query.toLowerCase();
+    											  
+        document.querySelectorAll("#clubsTable tr").forEach(row => {
+            row.style.display = row.innerText.toLowerCase().includes(query)
+                ? ""
+                : "none";
+        });
+    }
+    </script>
+
 </body>
 </html>
+
 
 
 
