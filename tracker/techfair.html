@@ -2,31 +2,22 @@
 Authors: Reha Sreekumar, Srisha Satish Kanna and Ramaguru Radhakrishnan
 Description: Anokha TechFair & Exhibitions 2026 Status Tracker
 Created Date: 16th December 2025
-Updated Date: 19th December 2025
+Updated Date: 20th December 2025
 -->
 
 <!DOCTYPE html>
 <html lang="en">
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
 
-        .logo-container {
-            margin-bottom: 8px;    /* explicitly control space below logos */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 30px;
-            flex-wrap: wrap;
-        }
-        
-        .header {
-            text-align: center;
-            margin-bottom: 10px;
-        }
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anokha TechFair & Exhibitions 2026 – Status Tracker</title>
+
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
 
         body {
             font-family: "Inter", "Segoe UI", system-ui, sans-serif;
@@ -34,16 +25,46 @@ Updated Date: 19th December 2025
             padding: 40px 20px;
         }
 
-        .container {
-            max-width: 1100px;
-            margin: auto;
-        }
+        .container { max-width: 1100px; margin: auto; }
 
         h1 {
             text-align: center;
-            margin: 8px 0 20px 0;  /* reduce vertical spacing */
+            margin-bottom: 20px;
             color: #5b4b8a;
-            font-size: 2.8rem;
+            font-size: 2.6rem;
+        }
+
+        /* SEARCH BAR */
+        .search-box {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .search-wrapper {
+            position: relative;
+            display: inline-block;
+            width: 60%;
+            max-width: 480px;
+        }
+
+        .search-wrapper input {
+            width: 100%;
+            padding: 12px 18px 12px 50px;
+            border-radius: 30px;
+            border: 1px solid #cfc6e6;
+            font-size: 1rem;
+            outline: none;
+            box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            pointer-events: none;
         }
 
         table {
@@ -52,12 +73,10 @@ Updated Date: 19th December 2025
             background: #ffffff;
             border-radius: 16px;
             overflow: hidden;
-            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+            box-shadow: 0 12px 35px rgba(0,0,0,0.12);
         }
 
-        thead {
-            background: #e8def8;
-        }
+        thead { background: #e8def8; }
 
         th {
             padding: 18px;
@@ -68,11 +87,11 @@ Updated Date: 19th December 2025
         }
 
         td {
-            padding: 15px;
+            padding: 14px;
             border: 1px solid #eee6d8;
-            text-align: center;
             font-size: 1rem;
             font-weight: 500;
+            text-align: center;
         }
 
         .school-row {
@@ -80,315 +99,128 @@ Updated Date: 19th December 2025
             font-weight: 700;
             font-size: 1.15rem;
             color: #5c4a2e;
-            text-align: center;
-            letter-spacing: 0.4px;
+        }
+
+        .department {
+            background: #f4efe4;
+            font-weight: 700;
+            color: #6b5b3e;
         }
 
         .branch {
             background: #faf6ee;
-            text-align: left;
-            padding-left: 50px;
             color: #5e5647;
         }
 
-        .higher {
-            background: #dff4ea;
-            color: #215f46;
-            font-weight: 600;
-        }
-
-        .lower {
-            background: #fde2e2;
-            color: #8a2e2e;
-            font-weight: 700;
-        }
-
-        .neutral {
-            background: #f4f1eb;
-            color: #555;
-        }
-
-        tbody tr:hover {
-            background: #f5f0e6;
-        }
+        tbody tr:hover { background: #f5f0e6; }
 
         @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
-            }
-        }
-
-        .footer {
-            margin-top: 40px;
-            padding: 18px 10px;
-            text-align: center;
-            font-size: 0.95rem;
-            color: #5e5647;
-            background: #efe4d2;
-            border-radius: 12px;
-            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+            .search-wrapper { width: 90%; }
         }
     </style>
-<head>
-    <meta charset="UTF-8" />
-    <meta http-Equiv="Cache-Control" Content="no-cache" />
-    <meta http-Equiv="Pragma" Content="no-cache" />
-    <meta http-Equiv="Expires" Content="0" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
 <div class="container">
-    <table>
-        <thead>
-            <tr>
-                <th style="width: 40%;">School / Department / Branch </th>
-                <th style="width: 30%;">2024 (Final)</th>
-                <th style="width: 30%;">2026 (Planned)</th>
-            </tr>
-        </thead>
 
-        <tbody>
-            <!-- School of AI -->
-            <tr>
-                <td class="school-row">School of AI</td>
-                <td class="school-row"> </td>
-                <td class="school-row"> 26 </td>
-            </tr>
-
-            <tr>
-                <td class="branch">Artificial Intelligence and Data Science</td>
-                <td>-</td>
-                <td class="neutral">3</td>
-            </tr>
-
-            <tr>
-                <td class="branch">Artificial Intelligence and Data Science (Medical Engineering)</td>
-                <td>NA</td>
-                <td class="neutral">6</td>
-            </tr>
-
-            <tr>
-                <td class="branch">Artificial Intelligence and Data Science (Quantum Technologies)</td>
-                <td>NA</td>
-                <td class="neutral">0</td>
-            </tr>
-
-            <tr>
-                <td class="branch">Autonomous Agents and Robotic Systems</td>
-                <td>NA</td>
-                <td class="neutral">5</td>
-            </tr>
-
-            <tr>
-                <td class="branch">Computer Science and Engineering (Artificial Intelligence)</td>
-                <td>-</td>
-                <td class="neutral">8</td>
-            </tr>
-
-            <tr>
-                <td class="branch">Artificial Intelligence and Data Science (Cyber Physical Systems and Security)</td>
-                <td>NA</td>
-                <td class="neutral">4</td>
-            </tr>
-
-            <!-- School of Agriculture -->
-            <tr>
-                <td class="school-row">School of Agriculture</td>
-                <td class="school-row"> 0 </td>
-                <td class="school-row"> </td>
-            </tr>
-
-            <tr>
-                <td class="branch">B. Sc. Hons (Agriculture)</td>
-                <td>NA</td>
-                <td class="neutral">-</td>
-            </tr>
-
-            <!-- School of Architecture -->
-            <tr>
-                <td class="school-row">School of Architecture</td>
-                <td class="school-row"> </td>
-                <td class="school-row"> </td>
-            </tr>
-
-            <tr>
-                <td class="branch">B. Des.</td>
-                <td>NA</td>
-                <td class="neutral">-</td>
-            </tr>
-
-            <tr>
-                <td class="branch">B. Arch.</td>
-                <td>NA</td>
-                <td class="neutral">-</td>
-            </tr>
-
-            <!-- School of Arts, Humanities and Commerce -->
-            <tr>
-                <td class="school-row">School of Arts, Humanities and Commerce</td>
-                <td class="school-row"> </td>
-                <td class="school-row"> </td>
-            </tr>
-
-            <tr>
-                <td class="branch">B. A. (Hons)</td>
-                <td>NA</td>
-                <td class="neutral">-</td>
-            </tr>
-
-            <!-- School of Computing -->
-            <tr>
-                <td class="school-row">School of Computing</td>
-                <td class="school-row"> 8 </td>
-                <td class="school-row"> 20 </td>
-            </tr>
-
-            <tr>
-                <td class="branch">Computer Science and Engineering (CSE)</td>
-                <td>8</td>
-                <td class="neutral">20</td>
-            </tr>
-
-            <!-- School of Engineering -->
-            <tr>
-                <td class="school-row">School of Engineering</td>
-                <td class="school-row"> </td>
-                <td class="school-row">35</td>
-            </tr>
-
-            <tr>
-                <td class="branch">Aerospace Engineering (AEE)</td>
-                <td>-</td>
-                <td class="neutral">11</td>
-            </tr>
-
-            <tr>
-                <td class="branch">Chemical Engineering (CHE)</td>
-                <td>-</td>
-                <td class="neutral">6</td>
-            </tr>
-
-            <tr>
-                <td class="branch">Civil Engineering (CIE)</td>
-                <td>-</td>
-                <td class="neutral">2</td>
-            </tr>
-
-            <tr>
-                <td class="branch">Cyber Security (CYS)</td>
-                <td>2</td>
-                <td class="neutral">4</td>
-            </tr>
-            
-            <tr>
-                <td class="branch">Electronics and Communications Engineering (ECE)</td>
-                <td>-</td>
-                <td class="neutral">6</td>
-            </tr>
-
-            <tr>
-                <td class="branch">Computer and Communication Engineering (CCE)</td>
-                <td>-</td>
-                <td class="neutral">1</td>
-            </tr>
-
-            <tr>
-                <td class="branch">Electrical and Electronics Engineering (EEE)</td>
-                <td>-</td>
-                <td class="neutral">1</td>
-            </tr>
-
-            <tr>
-                <td class="branch">Electrical and Computer Engineering (ELC)</td>
-                <td>-</td>
-                <td class="neutral">4</td>
-            </tr>
-
-            <tr>
-                <td class="branch">Mechanical Engineering (MEE)</td>
-                <td>-</td>
-                <td class="neutral">-</td>
-            </tr>
-
-            <tr>
-                <td class="branch">Automation and Robotics Engineering (ARE)</td>
-                <td>-</td>
-                <td class="neutral">-</td>
-            </tr>
-
-            <!-- School of Physical Sci -->
-            <tr>
-                <td class="school-row">School of Physical Sciences</td>
-                <td class="school-row"></td>
-                <td class="school-row"> </td>
-            </tr>
-
-            <tr>
-                <td class="branch">Integrated Chemistry (I5CHE)</td>
-                <td>-</td>
-                <td class="neutral">-</td>
-            </tr>
-
-            <tr>
-                <td class="branch">Food Science and Nutrition (FSN)</td>
-                <td>NA</td>
-                <td class="neutral">-</td>
-            </tr>
-
-            <tr>
-                <td class="branch">Integrated Maths (I5DAS)</td>
-                <td>NA</td>
-                <td class="neutral">-</td>
-            </tr>
-
-            <tr>
-                <td class="branch">Integrated Physics (I5PHY)</td>
-                <td>NA</td>
-                <td class="neutral">-</td>
-            </tr>
-             <tr>
-                <td class="branch">Integrated Msc Data Science</td>
-                <td>-</td>
-                <td class="neutral">-</td>
-            </tr>
-
-             <!-- International School of Law -->
-            <tr>
-                <td class="school-row">International School of Law</td>
-                <td class="school-row"> </td>
-                <td class="school-row"> </td>
-            </tr>
-
-            <tr>
-                <td class="branch">B.A., LL.B. (Hons.)</td>
-                <td>NA</td>
-                <td class="neutral">-</td>
-            </tr>
-
-
-        </tbody>
-    </table>
+<!-- SEARCH BAR -->
+<div class="search-box">
+    <div class="search-wrapper">
+        <img src="search.png" alt="search" class="search-icon">
+        <input
+            type="text"
+            placeholder="Search school, department, course..."
+            onkeyup="filterTable(this.value)"
+        />
+    </div>
 </div>
 
+<table>
+<thead>
+<tr>
+    <th style="width:40%">School / Department / Course</th>
+    <th style="width:30%">2024 (Final)</th>
+    <th style="width:30%">2026 (Planned)</th>
+</tr>
+</thead>
+
+<tbody id="techfairTable">
+
+<tr><td class="school-row">School of Artificial Intelligence</td><td class="school-row"></td><td class="school-row">26</td></tr>
+<tr><td class="branch">Artificial Intelligence and Data Science</td><td>-</td><td>3</td></tr>
+<tr><td class="branch">Artificial Intelligence and Data Science (Autonomous Agents & Robotic Systems)</td><td>NA</td><td>5</td></tr>
+<tr><td class="branch">Artificial Intelligence and Data Science (Medical)</td><td>NA</td><td>6</td></tr>
+<tr><td class="branch">Artificial Intelligence and Data Science (Quantum Technologies)</td><td>NA</td><td>0</td></tr>
+<tr><td class="branch">Artificial Intelligence and Data Science (Cyber-Physical Systems & Security)</td><td>NA</td><td>4</td></tr>
+<tr><td class="branch">Computer Science and Engineering (Artificial Intelligence)</td><td>-</td><td>8</td></tr>
+
+<tr><td class="school-row">School of Agriculture</td><td class="school-row">0</td><td class="school-row"></td></tr>
+<tr><td class="branch">Bachelor of Science (Honours) in Agriculture</td><td>NA</td><td>-</td></tr>
+
+<tr><td class="school-row">School of Architecture</td><td class="school-row"></td><td class="school-row"></td></tr>
+<tr><td class="branch">Bachelor of Design</td><td>NA</td><td>-</td></tr>
+<tr><td class="branch">Bachelor of Architecture</td><td>NA</td><td>-</td></tr>
+
+<tr><td class="school-row">School of Arts, Humanities and Commerce</td><td class="school-row"></td><td class="school-row"></td></tr>
+<tr><td class="branch">Bachelor of Arts (Honours)</td><td>NA</td><td>-</td></tr>
+
+<tr><td class="school-row">School of Computing</td><td class="school-row">8</td><td class="school-row">20</td></tr>
+<tr><td class="branch">Computer Science and Engineering</td><td>8</td><td>20</td></tr>
+
+<tr><td class="school-row">School of Engineering</td><td class="school-row"></td><td class="school-row">35</td></tr>
+
+<tr><td class="department">Department of Aerospace Engineering</td><td>-</td><td>11</td></tr>
+<tr><td class="branch">Bachelor of Technology in Aerospace Engineering</td><td>-</td><td>11</td></tr>
+
+<tr><td class="department">Department of Chemical Engineering and Materials Science</td><td>-</td><td>6</td></tr>
+<tr><td class="branch">Bachelor of Technology in Chemical Engineering</td><td>-</td><td>6</td></tr>
+
+<tr><td class="department">Department of Civil Engineering</td><td>-</td><td>2</td></tr>
+<tr><td class="branch">Bachelor of Technology in Civil Engineering</td><td>-</td><td>2</td></tr>
+
+<tr><td class="department">Department of Electronics and Communication Engineering</td><td>-</td><td>7</td></tr>
+<tr><td class="branch">Electronics and Communication Engineering</td><td>-</td><td>6</td></tr>
+<tr><td class="branch">Computer and Communication Engineering</td><td>-</td><td>1</td></tr>
+
+<tr><td class="department">Department of Electrical and Electronics Engineering</td><td>-</td><td>5</td></tr>
+<tr><td class="branch">Electrical and Electronics Engineering</td><td>-</td><td>1</td></tr>
+<tr><td class="branch">Electrical and Computer Engineering</td><td>-</td><td>4</td></tr>
+
+<tr><td class="department">Department of Mechanical Engineering</td><td>-</td><td>-</td></tr>
+<tr><td class="branch">Automotive and Robotics Engineering</td><td>-</td><td>-</td></tr>
+<tr><td class="branch">Mechanical Engineering</td><td>-</td><td>-</td></tr>
+
+<tr><td class="school-row">School of Physical Sciences</td><td class="school-row"></td><td class="school-row"></td></tr>
+
+<tr><td class="department">Department of Chemistry</td><td>-</td><td>-</td></tr>
+<tr><td class="branch">Integrated Master of Science in Chemistry</td><td>-</td><td>-</td></tr>
+
+<tr><td class="department">Department of Food Science and Nutrition</td><td>NA</td><td>-</td></tr>
+<tr><td class="branch">Food Science and Engineering</td><td>NA</td><td>-</td></tr>
+
+<tr><td class="department">Department of Mathematics</td><td>NA</td><td>-</td></tr>
+<tr><td class="branch">Integrated Master of Science in Mathematics</td><td>NA</td><td>-</td></tr>
+
+<tr><td class="department">Department of Physics</td><td>NA</td><td>-</td></tr>
+<tr><td class="branch">Integrated Master of Science in Physics</td><td>NA</td><td>-</td></tr>
+
+<tr><td class="school-row">International School of Law</td><td class="school-row"></td><td class="school-row"></td></tr>
+<tr><td class="branch">Bachelor of Arts and Bachelor of Laws (Honours)</td><td>NA</td><td>-</td></tr>
+
+</tbody>
+</table>
+</div>
+
+<script>
+function filterTable(query) {
+    query = query.toLowerCase();
+    document.querySelectorAll("#techfairTable tr").forEach(row => {
+        row.style.display = row.innerText.toLowerCase().includes(query)
+            ? ""
+            : "none";
+    });
+}
+</script>
+
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
