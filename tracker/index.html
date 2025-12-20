@@ -4,6 +4,12 @@ Description: Anokha TechFair & Exhibitions 2026 Status Tracker
 Created Date: 17th December 2025
 Updated Date: 20th December 2025
 -->
+<!--
+Authors: Reha Sreekumar, Srisha Satish Kanna and Ramaguru Radhakrishnan
+Description: Anokha TechFair & Exhibitions 2026 Status Tracker
+Created Date: 17th December 2025
+Updated Date: 20th December 2025
+-->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -66,6 +72,7 @@ Updated Date: 20th December 2025
             background-color: #dcd6f7;
             font-weight: 600;
             cursor: pointer;
+            transition: all 0.2s ease;
         }
 
         .tab-btn.active {
@@ -74,16 +81,16 @@ Updated Date: 20th December 2025
         }
 
         /* =========================
-           IFRAME – NO SCROLLBAR
+           IFRAME – AUTO FIT CONTENT
            ========================= */
         iframe {
             width: 100%;
-            height: 70vh;
             border: none;
             border-radius: 16px;
             background-color: #ffffff;
             box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
             overflow: hidden;
+            transition: height 0.3s ease;
         }
 
         .footer {
@@ -121,8 +128,13 @@ Updated Date: 20th December 2025
         </button>
     </div>
 
-    <!-- scrolling="no" is IMPORTANT -->
-    <iframe id="contentFrame" src="techfair.html" scrolling="no"></iframe>
+    <!-- IMPORTANT: no height here -->
+    <iframe
+        id="contentFrame"
+        src="techfair.html"
+        scrolling="no"
+        onload="resizeIframe(this)">
+    </iframe>
 </div>
 
 <footer class="footer">
@@ -143,10 +155,25 @@ Updated Date: 20th December 2025
         }
     }
 
+    function resizeIframe(iframe) {
+        try {
+            iframe.style.height = "0px"; // reset
+            const height = iframe.contentWindow.document.body.scrollHeight;
+            iframe.style.height = height + "px";
+        } catch (err) {
+            console.warn("Iframe resize blocked:", err);
+        }
+    }
+
     function loadPage(page, btn) {
-        document.getElementById("contentFrame").src = page;
-        document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+        const iframe = document.getElementById("contentFrame");
+        iframe.src = page;
+
+        document.querySelectorAll(".tab-btn")
+            .forEach(b => b.classList.remove("active"));
         btn.classList.add("active");
+
+        iframe.onload = () => resizeIframe(iframe);
     }
 
     window.onload = typeWriter;
@@ -154,4 +181,3 @@ Updated Date: 20th December 2025
 
 </body>
 </html>
-
