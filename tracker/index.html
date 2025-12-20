@@ -2,24 +2,21 @@
 Authors: Reha Sreekumar, Srisha Satish Kanna and Ramaguru Radhakrishnan
 Description: Anokha TechFair & Exhibitions 2026 Status Tracker
 Created Date: 17th December 2025
-Updated Date: 17th December 2025
+Updated Date: 20th December 2025
 -->
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
-    <meta http-Equiv="Cache-Control" Content="no-cache" />
-    <meta http-Equiv="Pragma" Content="no-cache" />
-    <meta http-Equiv="Expires" Content="0" />
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Anokha TechFair & Exhibitions 2026 – Status Tracker</title>
 
     <style>
-        /* =========================
-           RESET
-           ========================= */
         * {
             box-sizing: border-box;
             margin: 0;
@@ -38,32 +35,22 @@ Updated Date: 17th December 2025
             text-align: center;
         }
 
-        /* =========================
-           LOGOS
-           ========================= */
         .logo-container {
             margin-bottom: 12px;
             display: flex;
             justify-content: center;
-            align-items: center;
             gap: 30px;
             flex-wrap: wrap;
         }
 
-        /* =========================
-           HEADING (Typing Style)
-           ========================= */
         h1 {
             font-size: 2.6rem;
             font-weight: 700;
             color: #5b4b8a;
-            margin-bottom: 35px;
+            margin-bottom: 30px;
             min-height: 3.2rem;
         }
 
-        /* =========================
-           TABS
-           ========================= */
         .tabs {
             display: flex;
             justify-content: center;
@@ -76,43 +63,25 @@ Updated Date: 17th December 2025
             border-radius: 25px;
             border: none;
             background-color: #dcd6f7;
-            color: #333;
-            font-size: 1rem;
             font-weight: 600;
             cursor: pointer;
-            transition: all 0.3s ease;
-        }
-
-        .tab-btn:hover {
-            background-color: #b8b0e6;
         }
 
         .tab-btn.active {
             background-color: #5b4b8a;
-            color: #ffffff;
+            color: white;
         }
 
-        /* =========================
-           IFRAME CONTENT
-           ========================= */
-        .iframe-wrapper {
-            width: 100%;
-        }
-
-        .iframe-wrapper iframe {
+        iframe {
             width: 100%;
             min-height: 70vh;
             border: none;
             border-radius: 16px;
-            background-color: #ffffff;
-            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
-            transition: height 0.2s ease;
+            background: white;
+            box-shadow: 0 12px 35px rgba(0,0,0,0.12);
         }
 
-        /* =========================
-           FOOTER
-           ========================= */
-        .footer {
+         .footer {
             margin-top: 40px;
             padding: 18px 10px;
             text-align: center;
@@ -122,110 +91,66 @@ Updated Date: 17th December 2025
             border-radius: 12px;
             box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
         }
-
-        /* =========================
-           RESPONSIVE
-           ========================= */
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
-            }
-
-            .tab-btn {
-                padding: 10px 24px;
-            }
+        .search-icon {
+            position: absolute;
+            left: 16px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px;   /* size matching screenshot */
+            height: 20px;
+            pointer-events: none;
         }
     </style>
 </head>
 
 <body>
 
-    <!-- =========================
-         HEADER LOGOS
-         ========================= -->
-    <header>
-        <div class="logo-container">
-            <img src="images/anokha_2026.png" alt="Anokha Logo" width="320" />
-            <img src="images/tf_black.png" alt="TechFair & Exhibitions Logo" width="290" />
-            <img src="images/iic_logo.png" alt="IIC Logo" width="300" />
-        </div>
-    </header>
-    <div class="container">
-        <!-- Typing Heading -->
-        <h1 id="typing-text"></h1>
-
-        <!-- Tabs -->
-        <div class="tabs">
-            <button class="tab-btn active" onclick="loadPage('techfair.html', this)">
-                Departments
-            </button>
-            <button class="tab-btn" onclick="loadPage('clubs.html', this)">
-                Clubs
-            </button>
-        </div>
-
-        <!-- Content -->
-        <div class="iframe-wrapper">
-            <iframe id="contentFrame" src="techfair.html"></iframe>
-        </div>
+<header>
+    <div class="logo-container">
+        <img src="images/anokha_2026.png" width="320" />
+        <img src="images/tf_black.png" width="290" />
+        <img src="images/iic_logo.png" width="300" />
     </div>
-    <!-- =========================
-         FOOTER
-         ========================= -->
-    <footer class="footer">
-        © 2024–2026
-        <strong>Institution’s Innovation Council (IIC)</strong> &
-        <strong>Anokha TechFair & Exhibitions</strong>.
-        All Rights Reserved.
-    </footer>
+</header>
 
-    <!-- =========================
-         SCRIPT
-         ========================= -->
-    <script>
-        /* Typing Effect */
-        const text = "Anokha TechFair 2026 – Status Tracker";
-        let index = 0;
+<div class="container">
+    <h1 id="typing-text"></h1>
 
-        function typeWriter() {
-            if (index < text.length) {
-                document.getElementById("typing-text").innerHTML += text.charAt(index);
-                index++;
-                setTimeout(typeWriter, 100);
-            }
+    <div class="tabs">
+        <button class="tab-btn active" onclick="loadPage('techfair.html', this)">
+            Departments
+        </button>
+        <button class="tab-btn" onclick="loadPage('clubs.html', this)">
+            Clubs
+        </button>
+    </div>
+
+    <iframe id="contentFrame" src="techfair.html"></iframe>
+</div>
+
+<footer class="footer">
+    © 2024–2026 <strong>IIC</strong> & <strong>Anokha TechFair</strong>
+</footer>
+
+<script>
+    const text = "Anokha TechFair 2026 – Status Tracker";
+    let index = 0;
+
+    function typeWriter() {
+        if (index < text.length) {
+            document.getElementById("typing-text").innerHTML += text.charAt(index++);
+            setTimeout(typeWriter, 80);
         }
+    }
 
-        /* Auto-resize iframe */
-        function resizeIframe() {
-            const iframe = document.getElementById("contentFrame");
-            try {
-                iframe.style.height =
-                    iframe.contentWindow.document.body.scrollHeight + "px";
-            } catch (e) {
-                iframe.style.height = "1500px"; // fallback
-            }
-        }
+    function loadPage(page, btn) {
+        document.getElementById("contentFrame").src = page;
+        document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+        btn.classList.add("active");
+    }
 
-        function loadPage(page, button) {
-            const iframe = document.getElementById("contentFrame");
-            iframe.src = page;
+    window.onload = typeWriter;
+</script>
 
-            iframe.onload = resizeIframe;
-
-            document
-                .querySelectorAll(".tab-btn")
-                .forEach(btn => btn.classList.remove("active"));
-
-            button.classList.add("active");
-        }
-
-        window.onload = () => {
-            typeWriter();
-            resizeIframe();
-        };
-
-        window.addEventListener("resize", resizeIframe);
-    </script>
 </body>
-
 </html>
