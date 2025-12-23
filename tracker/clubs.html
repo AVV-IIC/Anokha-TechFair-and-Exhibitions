@@ -106,42 +106,60 @@ Clubs.html (Tab2)
         }
 
         /* ================= MOBILE ================= */
-        @media (max-width: 768px) {
-            table, thead, tbody, th, td, tr {
-                display: block;
-                width: 100%;
-            }
+       /* ================= MOBILE ================= */
+@media (max-width: 768px) {
 
-            thead {
-                display: none;
-            }
+    table, thead, tbody, th, td, tr {
+        display: block;
+        width: 100%;
+    }
 
-            tbody tr {
-                margin-bottom: 16px;
-                border-radius: 14px;
-                background: #fff;
-                box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-            }
+    thead {
+        display: none;
+    }
 
-            td {
-                border: none;
-                text-align: right;
-                padding: 14px 16px;
-                position: relative;
-            }
+    tbody tr {
+        margin-bottom: 18px;
+        border-radius: 14px;
+        background: #ffffff;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+        overflow: hidden;
+    }
 
-            td::before {
-                content: attr(data-label);
-                position: absolute;
-                left: 16px;
-                font-weight: 600;
-                color: #6b5c8a;
-            }
+    td {
+        border: none;
+        text-align: left;
+        padding: 12px 16px 14px;
+        font-size: 0.95rem;
+    }
 
-            .club-name {
-                padding-left: 16px;
-            }
-        }
+    /* Label ABOVE value (no overlap) */
+    td::before {
+        content: attr(data-label);
+        display: block;
+        font-size: 0.78rem;
+        font-weight: 600;
+        color: #7a6aa6;
+        margin-bottom: 4px;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+    }
+
+    .club-name {
+        font-size: 1rem;
+        font-weight: 600;
+        background: #faf6ee;
+        border-bottom: 1px solid #eee6d8;
+    }
+
+    .department {
+        background: #f1efe9;
+    }
+
+    .neutral {
+        background: #f4f1eb;
+    }
+}
     </style>
 </head>
 
@@ -304,3 +322,4 @@ function filterTable(query) {
 
 </body>
 </html>
+
