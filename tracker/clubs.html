@@ -27,7 +27,7 @@ Clubs.html (Tab2)
         body {
             font-family: "Inter", "Segoe UI", system-ui, sans-serif;
             background-color: #f7f3e9;
-            padding: 40px 20px;
+            padding: 30px 16px;
         }
 
         .container {
@@ -35,7 +35,7 @@ Clubs.html (Tab2)
             margin: auto;
         }
 
-        /* ================= SEARCH BAR ================= */
+        /* ================= SEARCH ================= */
         .search-box {
             position: relative;
             display: flex;
@@ -44,42 +44,33 @@ Clubs.html (Tab2)
         }
 
         .search-box input {
-            width: 60%;
+            width: 100%;
             max-width: 480px;
-            padding: 12px 18px 12px 44px;
+            padding: 14px 18px 14px 44px;
             border-radius: 999px;
             border: 1px solid #cfc6e6;
             font-size: 1rem;
-            outline: none;
-            background-color: #ffffff;
+            background: #fff;
             box-shadow: 0 4px 14px rgba(0,0,0,0.08);
         }
 
         .search-icon {
             position: absolute;
-            left: calc(50% - 240px + 16px);
+            left: 22px;
             top: 50%;
             transform: translateY(-50%);
             width: 16px;
-            height: 16px;
             opacity: 0.6;
-            pointer-events: none;
         }
 
-        h1 {
-            text-align: center;
-            margin-bottom: 35px;
-            color: #5b4b8a;
-            font-size: 2.6rem;
-        }
-
+        /* ================= TABLE ================= */
         table {
             width: 100%;
             border-collapse: collapse;
-            background: #ffffff;
+            background: #fff;
             border-radius: 16px;
             overflow: hidden;
-            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+            box-shadow: 0 12px 35px rgba(0,0,0,0.12);
         }
 
         thead {
@@ -87,26 +78,22 @@ Clubs.html (Tab2)
         }
 
         th {
-            padding: 18px;
-            font-size: 1.05rem;
-            color: #3f2d68;
+            padding: 16px;
             border: 1px solid #ddd2f3;
-            text-align: center;
+            color: #3f2d68;
         }
 
         td {
-            padding: 15px;
+            padding: 14px;
             border: 1px solid #eee6d8;
             text-align: center;
-            font-size: 1rem;
             font-weight: 500;
         }
 
         .club-name {
             text-align: left;
-            padding-left: 30px;
+            padding-left: 26px;
             background: #faf6ee;
-            color: #5e5647;
             font-weight: 600;
         }
 
@@ -118,68 +105,41 @@ Clubs.html (Tab2)
             background: #f4f1eb;
         }
 
-        tbody tr:hover {
-            background: #f5f0e6;
-        }
-
-        /* ================= MOBILE RESPONSIVE ================= */
+        /* ================= MOBILE ================= */
         @media (max-width: 768px) {
-
-            body {
-                padding: 20px 10px;
-            }
-
-            .search-box input {
-                width: 90%;
-            }
-
-            .search-icon {
-                left: calc(5% + 16px);
+            table, thead, tbody, th, td, tr {
+                display: block;
+                width: 100%;
             }
 
             thead {
                 display: none;
             }
 
-            table, tbody, tr, td {
-                display: block;
-                width: 100%;
-            }
-
             tbody tr {
                 margin-bottom: 16px;
-                background: #ffffff;
                 border-radius: 14px;
+                background: #fff;
                 box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-                overflow: hidden;
             }
 
             td {
-                text-align: left;
-                padding: 12px 16px;
                 border: none;
-                border-bottom: 1px solid #eee;
-            }
-
-            td:last-child {
-                border-bottom: none;
+                text-align: right;
+                padding: 14px 16px;
+                position: relative;
             }
 
             td::before {
                 content: attr(data-label);
-                display: block;
-                font-size: 0.75rem;
+                position: absolute;
+                left: 16px;
                 font-weight: 600;
-                color: #7b6d5d;
-                margin-bottom: 4px;
-                text-transform: uppercase;
+                color: #6b5c8a;
             }
 
             .club-name {
-                background: #f7f3e9;
-                font-size: 1.05rem;
-                font-weight: 700;
-                color: #5b4b8a;
+                padding-left: 16px;
             }
         }
     </style>
@@ -188,58 +148,149 @@ Clubs.html (Tab2)
 <body>
 <div class="container">
 
+    <!-- SEARCH -->
     <div class="search-box">
         <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <circle cx="11" cy="11" r="7"></circle>
             <line x1="16.65" y1="16.65" x2="21" y2="21"></line>
         </svg>
-        <input type="text" placeholder="Search club or department..." onkeyup="filterTable(this.value)" />
+        <input type="text" placeholder="Search club or department..." onkeyup="filterTable(this.value)">
     </div>
 
     <table>
         <thead>
-        <tr>
-            <th>Club</th>
-            <th>Department</th>
-            <th>2024</th>
-            <th>2026</th>
-        </tr>
+            <tr>
+                <th>Club</th>
+                <th>Department</th>
+                <th>2024</th>
+                <th>2026</th>
+            </tr>
         </thead>
 
         <tbody id="clubsTable">
+
+            <!-- ALL CLUBS INCLUDED -->
             <tr>
                 <td class="club-name" data-label="Club">ACM Student Chapter</td>
                 <td class="department" data-label="Department">School of Computing</td>
                 <td class="neutral" data-label="2024">NA</td>
                 <td class="neutral" data-label="2026">0</td>
             </tr>
+
+            <tr>
+                <td class="club-name" data-label="Club">AIBA</td>
+                <td class="department" data-label="Department"></td>
+                <td class="neutral">NA</td>
+                <td class="neutral">0</td>
+            </tr>
+
+            <tr>
+                <td class="club-name" data-label="Club">Anantham</td>
+                <td class="department">Mathematics</td>
+                <td class="neutral">NA</td>
+                <td class="neutral">0</td>
+            </tr>
+
+            <tr>
+                <td class="club-name" data-label="Club">Astha</td>
+                <td class="department"></td>
+                <td class="neutral">NA</td>
+                <td class="neutral">0</td>
+            </tr>
+
             <tr>
                 <td class="club-name" data-label="Club">Blockchain – Research Interest Group</td>
-                <td class="department" data-label="Department">TIFAC-CORE in Cyber Security</td>
-                <td class="neutral" data-label="2024">NA</td>
-                <td class="neutral" data-label="2026">0</td>
+                <td class="department">TIFAC-CORE in Cyber Security</td>
+                <td class="neutral">NA</td>
+                <td class="neutral">0</td>
             </tr>
+
+            <tr>
+                <td class="club-name" data-label="Club">CybeReach</td>
+                <td class="department">TIFAC-CORE in Cyber Security</td>
+                <td class="neutral">NA</td>
+                <td class="neutral">0</td>
+            </tr>
+
+            <tr>
+                <td class="club-name" data-label="Club">ELITE</td>
+                <td class="department"></td>
+                <td class="neutral">NA</td>
+                <td class="neutral">0</td>
+            </tr>
+
+            <tr>
+                <td class="club-name" data-label="Club">IDEA</td>
+                <td class="department"></td>
+                <td class="neutral">NA</td>
+                <td class="neutral">0</td>
+            </tr>
+
+            <tr>
+                <td class="club-name" data-label="Club">IEEE Student Chapter</td>
+                <td class="department">Electrical and Electronics Engineering</td>
+                <td class="neutral">NA</td>
+                <td class="neutral">0</td>
+            </tr>
+
+            <tr>
+                <td class="club-name" data-label="Club">IETE Student Chapter</td>
+                <td class="department"></td>
+                <td class="neutral">NA</td>
+                <td class="neutral">0</td>
+            </tr>
+
+            <tr>
+                <td class="club-name" data-label="Club">Init</td>
+                <td class="department">Artificial Intelligence</td>
+                <td class="neutral">NA</td>
+                <td class="neutral">0</td>
+            </tr>
+
+            <tr>
+                <td class="club-name" data-label="Club">Innovac</td>
+                <td class="department"></td>
+                <td class="neutral">NA</td>
+                <td class="neutral">0</td>
+            </tr>
+
             <tr>
                 <td class="club-name" data-label="Club">Intel IoT</td>
-                <td class="department" data-label="Department">Computer Science Engineering</td>
-                <td class="neutral" data-label="2024">NA</td>
-                <td class="neutral" data-label="2026">3</td>
+                <td class="department">Computer Science Engineering</td>
+                <td class="neutral">NA</td>
+                <td class="neutral">3</td>
             </tr>
+
             <tr>
                 <td class="club-name" data-label="Club">Robotics</td>
-                <td class="department" data-label="Department">Mechanical Engineering</td>
-                <td class="neutral" data-label="2024">NA</td>
-                <td class="neutral" data-label="2026">5</td>
+                <td class="department">Mechanical Engineering</td>
+                <td class="neutral">NA</td>
+                <td class="neutral">5</td>
             </tr>
+
+            <tr>
+                <td class="club-name" data-label="Club">SAE</td>
+                <td class="department">Mechanical Engineering</td>
+                <td class="neutral">NA</td>
+                <td class="neutral">-</td>
+            </tr>
+
+            <tr>
+                <td class="club-name" data-label="Club">Tensor</td>
+                <td class="department">School of AI</td>
+                <td class="neutral">NA</td>
+                <td class="neutral">5</td>
+            </tr>
+
             <tr>
                 <td class="club-name" data-label="Club">WiCyS Amrita Student Chapter</td>
-                <td class="department" data-label="Department">TIFAC-CORE in Cyber Security</td>
-                <td class="neutral" data-label="2024">NA</td>
-                <td class="neutral" data-label="2026">0</td>
+                <td class="department">TIFAC-CORE in Cyber Security</td>
+                <td class="neutral">NA</td>
+                <td class="neutral">0</td>
             </tr>
+
         </tbody>
     </table>
-
 </div>
 
 <script>
