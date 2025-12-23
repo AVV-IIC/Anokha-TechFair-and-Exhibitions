@@ -1,362 +1,251 @@
 <!--
 Author(s): Reha Sreekumar, Srisha Satish Kanna, and Ramaguru Radhakrishnan
-Created: 17 Decemeber 2025
-Last Updated: 17 December 2025
+Created: 17 December 2025
+Last Updated: 23 December 2025
 -->
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Anokha TechFair & Exhibitions 2026 - Status Tracker</title>
-
-<style>
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: "Inter", "Segoe UI", system-ui, sans-serif;
-    background-color: #f7f3e9;
-    padding: 32px 16px;
-}
-
-.container {
-    max-width: 1100px;
-    margin: auto;
-}
-
-.header {
-    text-align: center;
-    margin-bottom: 12px;
-}
-
-.logo-container {
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
-    flex-wrap: wrap;
-}
-
-.logo-container img {
-    max-width: 100%;
-    height: auto;
-}
-
-h1 {
-    text-align: center;
-    margin: 8px 0 20px 0;
-    color: #5b4b8a;
-    font-size: 2.4rem;
-}
-
-/* -------- TABLE STYLES -------- */
-
-.table-wrapper {
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-}
-
-table {
-    width: 100%;
-    min-width: 650px;
-    border-collapse: collapse;
-    background: #ffffff;
-    border-radius: 14px;
-    overflow: hidden;
-    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
-}
-
-thead {
-    background: #e8def8;
-}
-
-th {
-    padding: 16px 12px;
-    font-size: 1.05rem;
-    color: #3f2d68;
-    border: 1px solid #ddd2f3;
-    text-align: center;
-    white-space: nowrap;
-}
-
-td {
-    padding: 14px 12px;
-    border: 1px solid #eee6d8;
-    text-align: center;
-    font-size: 0.98rem;
-    font-weight: 500;
-}
-
-td:nth-child(2) {
-    text-align: left;
-    word-break: break-word;
-}
-
-tbody tr:hover {
-    background: #f5f0e6;
-}
-
-.school-row {
-    background: #efe4d2;
-    font-weight: 700;
-    font-size: 1.15rem;
-    color: #5c4a2e;
-    text-align: center;
-    letter-spacing: 0.4px;
-}
-
-/* -------- FOOTER -------- */
-
-.footer {
-    margin-top: 36px;
-    padding: 16px 10px;
-    text-align: center;
-    font-size: 0.9rem;
-    color: #5e5647;
-    background: #efe4d2;
-    border-radius: 12px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-}
-
-/* -------- RESPONSIVE -------- */
-
-@media (max-width: 768px) {
-    h1 {
-        font-size: 1.8rem;
-    }
-
-    th {
-        font-size: 0.9rem;
-        padding: 10px;
-    }
-
-    td {
-        font-size: 0.85rem;
-        padding: 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    body {
-        padding: 20px 10px;
-    }
-
-    h1 {
-        font-size: 1.5rem;
-    }
-
-    .logo-container {
-        gap: 14px;
-    }
-}
-</style>
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <header class="header">
-    <div class="logo-container">
-            <img src="images/anokha_2026.png" alt="Anokha Logo" width=220>
-            <img src="images/tf_black.png" alt="TechFair & Exhibitions Logo" width=190>
-            <img src="images/iic_logo.png" alt="IIC Logo" width=200>
-            <img src="images/atlsarthi.png" alt="ATL Sarthi Logo" width=250>
-    </div>
-    </header>
+
+    <title>Anokha TechFair & Exhibitions 2026 - Status Tracker</title>
+
+    <style>
+        /* =========================
+           GLOBAL RESET
+        ========================= */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+            background-color: #f7f3e9;
+            padding: 32px 16px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        /* =========================
+           HEADER & LOGOS
+        ========================= */
+        .header {
+            text-align: center;
+            margin-bottom: 12px;
+        }
+
+        .logo-container {
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        .logo-container img {
+            height: auto;
+            max-width: 100%;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 8px 0 20px;
+            color: #5b4b8a;
+            font-size: 2.4rem;
+            min-height: 3rem;
+        }
+
+        /* =========================
+           TABLE STYLES
+        ========================= */
+        .table-wrapper {
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        table {
+            width: 100%;
+            min-width: 650px;
+            border-collapse: collapse;
+            background: #ffffff;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+        }
+
+        thead {
+            background: #e8def8;
+        }
+
+        th {
+            padding: 16px 12px;
+            font-size: 1.05rem;
+            color: #3f2d68;
+            border: 1px solid #ddd2f3;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+        td {
+            padding: 14px 12px;
+            border: 1px solid #eee6d8;
+            text-align: center;
+            font-size: 0.98rem;
+            font-weight: 500;
+        }
+
+        td:nth-child(2) {
+            text-align: left;
+            word-break: break-word;
+        }
+
+        tbody tr:hover {
+            background: #f5f0e6;
+        }
+
+        .school-row {
+            background: #efe4d2;
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #5c4a2e;
+            text-align: center;
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+        .footer {
+            margin-top: 36px;
+            padding: 16px 10px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #5e5647;
+            background: #efe4d2;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+        }
+
+        /* =========================
+           RESPONSIVE
+        ========================= */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            th {
+                font-size: 0.9rem;
+                padding: 10px;
+            }
+
+            td {
+                font-size: 0.85rem;
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 20px 10px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .logo-container {
+                gap: 14px;
+            }
+        }
+    </style>
 </head>
 
 <body>
-<div class="container">
-        <!-- Typing Heading -->
+
+    <!-- =========================
+         HEADER
+    ========================= -->
+    <header class="header">
+        <div class="logo-container">
+            <img src="images/anokha_2026.png" alt="Anokha Logo" width="220">
+            <img src="images/tf_black.png" alt="TechFair & Exhibitions Logo" width="190">
+            <img src="images/iic_logo.png" alt="IIC Logo" width="200">
+            <img src="images/atlsarthi.png" alt="ATL Sarthi Logo" width="250">
+        </div>
+    </header>
+
+    <div class="container">
         <h1 id="typing-text"></h1>
 
-    <div class="table-wrapper">
-        <table>
-            <thead>
-                <tr>
-                    <th>ATL / Non-ATL</th>
-                    <th>School Name</th>
-                    <th>2025 (Final)</th>
-                    <th>2026 (Planned)</th>
-                </tr>
-            </thead>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ATL / Non-ATL</th>
+                        <th>School Name</th>
+                        <th>2025 (Final)</th>
+                        <th>2026 (Planned)</th>
+                    </tr>
+                </thead>
 
-            <tbody>
+                <tbody>
+                    <tr>
+                        <td colspan="2" class="school-row">ATL</td>
+                        <td class="school-row">20</td>
+                        <td class="school-row">TBD</td>
+                    </tr>
 
-                <tr>
-                    <td colspan=2 class="school-row">ATL</td>
-                    <td class="school-row">20</td>
-                    <td class="school-row">TBD</td>
-                </tr>
-            
-                <tr>
-                    <td>ATL</td>
-                    <td>Dr P G V  Matriculation Higher Secondary School</td>
-                    <td>5</td>
-                    <td>-</td>
-                </tr>
+                    <tr><td>ATL</td><td>Dr P G V Matriculation Higher Secondary School</td><td>5</td><td>-</td></tr>
+                    <tr><td>ATL</td><td>Evangeline Matriculation Higher Secondary School</td><td>6</td><td>-</td></tr>
+                    <tr><td>ATL</td><td>Government Girls Hr Sec School, Thondamuthur</td><td>-</td><td>-</td></tr>
+                    <tr><td>ATL</td><td>Government High School, Marappalam</td><td>-</td><td>-</td></tr>
+                    <tr><td>ATL</td><td>Government HSS, Podipalayam, Zamin Uthukuli</td><td>-</td><td>-</td></tr>
+                    <tr><td>ATL</td><td>Government HSS, Sethumadai</td><td>-</td><td>-</td></tr>
+                    <tr><td>ATL</td><td>Govt Hr Sec School, Kuniamuthur</td><td>-</td><td>-</td></tr>
+                    <tr><td>ATL</td><td>Isha Vidhya MHSS, Coimbatore</td><td>-</td><td>-</td></tr>
+                    <tr><td>ATL</td><td>KPM School & Rathinam International Public School</td><td>-</td><td>-</td></tr>
+                    <tr><td>ATL</td><td>Mariammal Girls HSS, Pollachi</td><td>-</td><td>-</td></tr>
+                    <tr><td>ATL</td><td>Sri Lathangi Vidhya Mandir MHSS</td><td>-</td><td>-</td></tr>
+                    <tr><td>ATL</td><td>Municipal Girls HSS, Pollachi</td><td>-</td><td>-</td></tr>
+                    <tr><td>ATL</td><td>Palanigounder Higher Secondary School</td><td>-</td><td>-</td></tr>
+                    <tr><td>ATL</td><td>Vidya Nethrra MHSS, Gomangalam</td><td>-</td><td>-</td></tr>
+                    <tr><td>ATL</td><td>Vighneswar Vidhya Mandhir MHSS</td><td>-</td><td>-</td></tr>
+                    <tr><td>ATL</td><td>Yuvabharathi Public School</td><td>9</td><td>-</td></tr>
 
-                <tr>
-                    <td>ATL</td>
-                    <td>Evangeline Matriculation Higher Secondary School</td>
-                    <td>6</td>
-                    <td>-</td>
-                </tr>
+                    <tr>
+                        <td colspan="2" class="school-row">Non-ATL</td>
+                        <td class="school-row">9</td>
+                        <td class="school-row">TBD</td>
+                    </tr>
 
-                <tr>
-                    <td>ATL</td>
-                    <td>Government Girls Hr Sec School, Thondamuthur</td>
-                    <td>-</td>
-                    <td>-</td>
-                </tr>
-
-                <tr>
-                    <td>ATL</td>
-                    <td>Government High School, Marappalam</td>
-                    <td>-</td>
-                    <td>-</td>
-                </tr>
-
-                <tr>
-                    <td>ATL</td>
-                    <td>Government Higher Secondary School Coimbatore, Podipalayam, Zamin Uthukuli</td>
-                    <td>-</td>
-                    <td>-</td>
-                </tr>
-
-                <tr>
-                    <td>ATL</td>
-                    <td>Government Higher Secondary School Coimbatore, Sethumadai</td>
-                    <td>-</td>
-                    <td>-</td>
-                </tr>
-                
-                <tr>
-                    <td>ATL</td>
-                    <td>Govt Hr Sec School, Kuniamuthur</td>
-                    <td>-</td>
-                    <td>-</td>
-                </tr>
-
-                <tr>
-                    <td>ATL</td>
-                    <td>Isha Vidhya Matriculation Higher Secondary School, Coimbatore</td>
-                    <td>-</td>
-                    <td>-</td>
-                </tr>
-
-                <tr>
-                    <td>ATL</td>
-                    <td>KPM School and Rathinam International Public School</td>
-                    <td>-</td>
-                    <td>-</td>
-                </tr>
-
-                <tr>
-                    <td>ATL</td>
-                    <td>Mariammal Girls Higher Secondary School, Pollachi</td>
-                    <td>-</td>
-                    <td>-</td>
-                </tr>
-
-                <tr>
-                    <td>ATL</td>
-                    <td>Sri Lathangi Vidhya Mandir Matriculation Higher Secondary School, Coimbatore</td>
-                    <td>-</td>
-                    <td>-</td>
-                </tr>
-
-                <tr>
-                    <td>ATL</td>
-                    <td>Municipal Girls Higher Secondary School, Pollachi</td>
-                    <td>-</td>
-                    <td>-</td>
-                </tr>
-
-                <tr>
-                    <td>ATL</td>
-                    <td>Palanigounder Higher Secondary School</td>
-                    <td>-</td>
-                    <td>-</td>
-                </tr>
-
-                <tr>
-                    <td>ATL</td>
-                    <td>Vidya Nethrra Matriculation Higher Secondary School, Gomangalam Pudhur</td>
-                    <td>-</td>
-                    <td>-</td>
-                </tr>
-
-                <tr>
-                    <td>ATL</td>
-                    <td>Vighneswar Vidhya Mandhir Matriculation Higher Secondary School</td>
-                    <td>-</td>
-                    <td>-</td>
-                </tr>
-
-                <tr>
-                    <td>ATL</td>
-                    <td>Yuvabharathi Public School</td>
-                    <td>9</td>
-                    <td>-</td>
-                </tr>
-
-                <tr>
-                    <td colspan=2 class="school-row">Non-ATL</td>
-                    <td class="school-row">9</td>
-                    <td class="school-row">TBD</td>
-                </tr>
-
-                 <tr>
-                    <td>Non-ATL</td>
-                    <td>Amrita Vidyalayam Senior Secondary, Ettimadai</td>
-                    <td>2</td>
-                    <td>-</td>
-                </tr>
-
-                <tr>
-                    <td>Non-ATL</td>
-                    <td>Amrita Vidyalayam Senior Secondary, Tiruppur</td>
-                    <td>4</td>
-                    <td>-</td>
-                </tr>
-
-                <tr>
-                    <td>Non-ATL</td>
-                    <td>Amrita Vidyalayam Senior Secondary, Kallapatti</td>
-                    <td>2</td>
-                    <td>-</td>
-                </tr>
-
-                <tr>
-                    <td>Non-ATL</td>
-                    <td>Gurukulam Public School, Kerala</td>
-                    <td>1</td>
-                    <td>-</td>
-                </tr>
-
-            </tbody>
-        </table>
+                    <tr><td>Non-ATL</td><td>Amrita Vidyalayam, Ettimadai</td><td>2</td><td>-</td></tr>
+                    <tr><td>Non-ATL</td><td>Amrita Vidyalayam, Tiruppur</td><td>4</td><td>-</td></tr>
+                    <tr><td>Non-ATL</td><td>Amrita Vidyalayam, Kallapatti</td><td>2</td><td>-</td></tr>
+                    <tr><td>Non-ATL</td><td>Gurukulam Public School, Kerala</td><td>1</td><td>-</td></tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-</div>
 
-<footer class="footer">
-    © 2024–2026 <strong>Institution’s Innovation Council (IIC)</strong> &
-    <strong>Anokha TechFair & Exhibitions</strong>. All Rights Reserved.
-</footer>
+    <footer class="footer">
+        © 2024–2026 <strong>Institution’s Innovation Council (IIC)</strong> &
+        <strong>Anokha TechFair & Exhibitions</strong>. All Rights Reserved.
+    </footer>
 
-      <!-- =========================
+    <!-- =========================
          SCRIPT
-         ========================= -->
+    ========================= -->
     <script>
-        /* Typing Effect */
         const text = "Anokha SchoolFair – Status Tracker";
         let index = 0;
 
@@ -364,27 +253,12 @@ tbody tr:hover {
             if (index < text.length) {
                 document.getElementById("typing-text").innerHTML += text.charAt(index);
                 index++;
-                setTimeout(typeWriter, 100);
+                setTimeout(typeWriter, 80);
             }
         }
 
-         window.onload = () => {
-            typeWriter();
-        };
-
+        window.onload = typeWriter;
     </script>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
