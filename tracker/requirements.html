@@ -10,146 +10,44 @@ Updated Date: 27th December 2025
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Anokha TechFair & Exhibitions 2026 - Status Tracker</title>
+<title>Anokha TechFair & Exhibitions 2026 - Requirements Tracker</title>
 
 <style>
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+    font-family:"Inter","Segoe UI",system-ui,sans-serif;
+    background:#f7f3e9;
+    padding:32px 16px;
 }
-
-body {
-    font-family: "Inter", "Segoe UI", system-ui, sans-serif;
-    background-color: #f7f3e9;
-    padding: 32px 16px;
+.container{max-width:1100px;margin:auto}
+.header{text-align:center;margin-bottom:12px}
+.logo-container{
+    display:flex;justify-content:center;align-items:center;
+    gap:24px;flex-wrap:wrap;margin-bottom:10px;
 }
-
-.container {
-    max-width: 1100px;
-    margin: auto;
+h1{text-align:center;margin:8px 0 20px;color:#5b4b8a;font-size:2.4rem}
+.table-wrapper{overflow-x:auto}
+table{
+    width:100%;min-width:650px;border-collapse:collapse;
+    background:#fff;border-radius:14px;overflow:hidden;
+    box-shadow:0 10px 28px rgba(0,0,0,.12)
 }
-
-.header {
-    text-align: center;
-    margin-bottom: 12px;
+thead{background:#e8def8}
+th,td{
+    padding:14px 12px;border:1px solid #eee6d8;
+    font-size:.95rem;text-align:left
 }
-
-.logo-container {
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 24px;
-    flex-wrap: wrap;
+th:nth-child(1),td:nth-child(1),
+th:nth-child(2),td:nth-child(2),
+th:nth-child(5),td:nth-child(5),
+th:nth-child(6),td:nth-child(6){text-align:center}
+.section-row td{
+    background:#efe4d2;font-weight:600;text-align:center
 }
-
-.logo-container img {
-    max-width: 100%;
-    height: auto;
-}
-
-h1 {
-    text-align: center;
-    margin: 8px 0 20px 0;
-    color: #5b4b8a;
-    font-size: 2.4rem;
-}
-    
-
-/* -------- TABLE STYLES -------- */
-
-.table-wrapper {
-    width: 100%;
-    overflow-x: auto;
-}
-
-table {
-    width: 100%;
-    min-width: 650px;
-    border-collapse: collapse;
-    background: #ffffff;
-    border-radius: 14px;
-    overflow: hidden;
-    box-shadow: 0 10px 28px rgba(0,0,0,0.12);
-}
-
-thead {
-    background: #e8def8;
-}
-
-/* Default LEFT alignment */
-th, td {
-    padding: 14px 12px;
-    border: 1px solid #eee6d8;
-    font-size: 0.95rem;
-    font-weight: 500;
-    text-align: left;
-}
-
-/* Center required columns */
-th:nth-child(1), td:nth-child(1),
-th:nth-child(2), td:nth-child(2),
-th:nth-child(5), td:nth-child(5),
-th:nth-child(6), td:nth-child(6) {
-    text-align: center;
-}
-
-/* Section rows */
-.section-row td {
-    text-align: center !important;
-    font-weight: 600;
-    background: #efe4d2;
-}
-
-tbody tr:hover {
-    background: #f5f0e6;
-}
-    
-/* -------- FOOTER -------- */
-
-.footer {
-    margin-top: 36px;
-    padding: 16px 10px;
-    text-align: center;
-    font-size: 0.9rem;
-    color: #5e5647;
-    background: #efe4d2;
-    border-radius: 12px;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-}
-
-/* -------- RESPONSIVE -------- */
-
-@media (max-width: 768px) {
-    h1 {
-        font-size: 1.8rem;
-    }
-
-    th {
-        font-size: 0.9rem;
-        padding: 10px;
-    }
-
-    td {
-        font-size: 0.85rem;
-        padding: 10px;
-    }
-}
-
-@media (max-width: 480px) {
-    body {
-        padding: 20px 10px;
-    }
-
-    h1 {
-        font-size: 1.5rem;
-    }
-
-    .logo-container {
-        gap: 14px;
-    }
+tbody tr:hover{background:#f5f0e6}
+.footer{
+    margin-top:36px;padding:16px;text-align:center;
+    background:#efe4d2;border-radius:12px;font-size:.9rem
 }
 </style>
 </head>
@@ -157,169 +55,156 @@ tbody tr:hover {
 <body>
 
 <header class="header">
-    <div class="logo-container">
-        <img src="images/anokha_2026.png" alt="Anokha Logo" width="300">
-        <img src="images/tf_black.png" alt="TechFair & Exhibitions Logo" width="260">
-    </div>
+<div class="logo-container">
+<img src="images/anokha_2026.png" width="300">
+<img src="images/tf_black.png" width="260">
+</div>
 </header>
 
-<h1>Anokha TechFair & Exhibitions 2026 - Requirements Tracker</h1>
+<h1>Anokha TechFair & Exhibitions 2026 – Requirements Tracker</h1>
 
 <div class="container">
-    <div class="table-wrapper">
-        <table>
+<div class="table-wrapper">
 
-            <thead>
-                <!-- Search bar inside table header -->
-                <tr>
-                    <th colspan="6">
-                        <div style="display:flex; justify-content:center; align-items:center; gap:10px; padding:6px 0;">
-                            <img src="images/search.png" alt="Search" width="18" height="18">
-                            <input type="text" id="searchBar" placeholder="Search..." onkeyup="searchTable()" 
-                            style="padding:8px 12px; width:240px; border:1px solid #d8c3a5; border-radius:8px;">
-                        </div>
-                    </th>
-                </tr>
-
-                <tr>
-                    <th>S.No.</th>
-                    <th>Item Description</th>
-                    <th>Quantity</th>
-                    <th>Comments/Notes</th>
-                    <th>Status</th>
-                    <th>Reference Image</th>
-                </tr>
-            </thead>
-
-            <script>
-            function searchTable() {
-                const input = document.getElementById("searchBar").value.toLowerCase();
-                const rows = document.querySelectorAll("table tbody tr");
-
-                let currentSection = null;
-                let sectionMatched = false;
-
-                rows.forEach(row => {
-                    const rowText = row.innerText.toLowerCase();
-                    const cells = row.getElementsByTagName("td");
-                    const isSectionRow = cells.length === 1 && cells[0].hasAttribute("colspan");
-
-                    if (isSectionRow) {
-                        currentSection = rowText.trim();
-                        sectionMatched = currentSection.includes(input);
-                        row.style.display = sectionMatched ? "" : "none";
-                    } else {
-                        row.style.display = sectionMatched || rowText.includes(input) ? "" : "none";
-                    }
-                });
-            }
-            </script>
-
-            <tbody>
-
-            <!-- ===== 1. Branding & Signage ===== -->
-            <tr><td colspan="6" style="text-align:center; font-weight:600; background:#efe4d2;">Branding & Signage</td></tr>
-            <tr><td>1</td><td>Welcome Arch</td><td>1 Nos</td><td>17.5 ft Length</td><td>Events - Informed to CD's Office</td><td></td></tr>
-            <tr><td>2</td><td>Velcro Ribbon</td><td>1 Nos</td><td>To Open Anokha 2026</td><td></td><td></td></tr>
-            <tr><td>3</td><td>Welcome Banner for TechFair & Exhibitions</td><td>2 Nos</td><td>Pandal and Entrance</td><td>Designed by WMD (Requested)</td><td></td></tr>
-            <tr><td>4</td><td>Banners for IIC Mentor-Mentee Innovation Hub and TechClub's Corner</td><td>1 Each Nos</td><td>Designed by WMD</td><td></td><td></td></tr>
-            <tr><td>5</td><td>Stall Name Boards</td><td>20 Nos</td><td>Dept & Clubs</td><td></td><td></td></tr>
-            <tr><td>6</td><td>TechFair T-Shirt</td><td>TBD</td><td>Designed by WMD</td><td></td><td></td></tr>
-            <tr><td>7</td><td>TechFair IDs & Lanyards</td><td>250 Exhibitors <br/> 15 Judges<br/>50 Volunteers</td><td>P&R Provided</td><td></td><td></td></tr>
-            <tr><td>8</td><td>Reusable EON Wood Carving</td><td>2 Nos</td><td>Front of Pandal</td><td>Use Existing Boards</td><td></td></tr>
-            <tr><td>9</td><td>TechFair Backdrop for Red Carpet</td><td>1 Nos</td><td>WMD Design</td><td></td><td></td></tr>
-            <tr><td>10</td><td>Laptop Sticker of EON</td><td>200 Nos</td><td>For School Children</td><td>Use Existing Boards</td><td></td></tr>
-
-            <!-- ===== 2. Stall Infrastructure & Display ===== -->
-            <tr><td colspan="6" style="text-align:center; font-weight:600; background:#efe4d2;">Stall Infrastructure & Display</td></tr>
-            <tr><td>1</td><td>Customised Stalls for TechFair</td><td>73 Nos</td><td style="text-align:left;">58 Nos - 3 m * 3 m <br/> 15 Nos - 3 m * 6 m </td><td>Managed by Delite</td><td></td></tr>
-            <tr><td>2</td><td>Customised Stalls for Exhibitions</td><td>TBD</td><td style="text-align:left;"></td><td>Managed by Events</td><td></td></tr>                
-            <tr><td>3</td><td>Tables</td><td>400 Nos</td><td style="text-align:left;">120 Nos for TechFair <br/> 25 Nos for Mentor-Mentee <br/> 10 Nos for TechClubs Corner <br/> 6 Nos for Registration Desk <br/> 150 Nos for Exhibitions <br/> 50 Nos for Sponsorhip </td><td></td><td></td></tr>
-            <tr><td>4</td><td>Chairs</td><td>500 Nos</td><td style="text-align:left;">146 Nos for TechFair <br/> 40 Nos for Mentor-Mentee <br/> 25 Nos for TechClubs Corner <br/> 10 Nos for Registration Desk <br/> 50 Nos for Exhibitions <br/> 30 Nos for Sponsorship</td><td></td><td></td></tr>
-            <tr><td>5</td><td>Table Cloth</td><td style="text-align:left;">12 Nos*</td><td style="text-align:left;">Registration Desk</td><td></td><td></td></tr>   
-            <tr><td>6</td><td>Fans</td><td style="text-align:left;">70-80 Nos*</td><td style="text-align:left;">*Discussion Required</td><td></td><td></td></tr>
-            <tr><td>7</td><td>Extension Cords</td><td>180 Nos</td><td style="text-align:left;">2 Sockets * 3 Pins</td><td></td><td></td></tr>
-            <tr><td>8</td><td>Stanchions & Ropes</td><td>TBD</td><td style="text-align:left;">For Exhibitions</td><td></td><td><a href="#"></tr>
-
-            <!-- ===== 3. Tech Monitoring & Attendance ===== -->
-            <tr><td colspan="6" style="text-align:center; font-weight:600; background:#efe4d2;">Tech Monitoring & Attendance</td></tr>
-            <tr><td>1</td><td>Wired Web Cameras</td><td>6 Nos</td><td>Attendance</td><td></td><td></td></tr>
-            <tr><td>2</td><td>Wireless Web Cameras</td><td>10 Nos</td><td>Crowd</td><td></td><td></td></tr>
-            <tr><td>3</td><td>TV with Stands</td><td>5 Nos</td><td>65" or 75"</td><td></td><td></td></tr>   
-            <tr><td>4</td><td>Barcode Reader</td><td>5 Nos</td><td>For Visitor Tracking</td><td></td><td></td></tr> 
-
-            <!-- ===== 4. Stage & Engagement Setup ===== -->
-            <tr><td colspan="6" style="text-align:center; font-weight:600; background:#efe4d2;">Stage & Engagement Setup</td></tr>
-            <tr><td>1</td><td>Audio Setup</td><td>Full Set</td><td>Engagement</td><td></td><td> </td></tr>
-            <tr><td>2</td><td>Cord Mics</td><td>2 Nos</td><td>Announcements</td><td></td><td></td></tr>
-            <tr><td>3</td><td>Cordless Mic</td><td>1 Nos</td><td>Stage</td><td></td><td></td></tr>
-            <tr><td>4</td><td>Speakers + Amp</td><td>2 Speakers + 1 Amp</td><td>Stage Audio</td><td></td><td></td></tr>
-
-            <!-- ===== 5. Ambience & Decor ===== -->
-            <tr><td colspan="6" style="text-align:center; font-weight:600; background:#efe4d2;">Ambience & Decor</td></tr>
-            <tr><td>1</td><td>Balloons</td><td>100 Nos</td><td>Entrance Decor</td><td></td><td></td></tr>
-            <tr><td>2</td><td>Fairy Lights</td><td>NA</td><td>Pathway Lighting</td><td></td><td></td></tr>
-            <tr><td>3</td><td>Potted Plants</td><td>60 Nos</td><td>Entrance & Interior</td><td></td><td></td></tr>
-            <tr><td>4</td><td>Red Carpet</td><td>600 ft</td><td>TechFair Path</td><td></td><td></td></tr>
-
-            <!-- ===== 6. Ceremonial Essentials ===== -->
-            <tr><td colspan="6" style="text-align:center; font-weight:600; background:#efe4d2;">Ceremonial Essentials</td></tr>
-            <tr><td>1</td><td>Amma Shrine</td><td>1 Nos</td><td></td><td></td><td></td></tr>
-            <tr><td>2</td><td>Kuthuvilaku</td><td>1 Nos</td><td>Ritual</td><td></td><td></td></tr>
-            <tr><td>3</td><td>Thiri (Wicks)</td><td>2 Packets</td><td>Ritual</td><td></td><td></td></tr>
-            <tr><td>4</td><td>Oil Packets</td><td>1 Packet</td><td>Ritual</td><td></td><td></td></tr>
-            <tr><td>5</td><td>Matchbox & Candle</td><td>1 Each</td><td>Ritual</td><td></td><td></td></tr>
-            <tr><td>6</td><td>Pookolam</td><td>2 Nos</td><td>Front of Amma's Shrine and at Pandal Entrance</td><td></td><td></td></tr>
-
-            <!-- ===== 7. Awards & Distribution ===== -->
-            <tr><td colspan="6" style="text-align:center; font-weight:600; background:#efe4d2;">Awards & Distribution</td></tr>
-            <tr><td>1</td><td>Mementos</td><td>10 Nos</td><td>Judges</td><td></td><td></td></tr>
-            <tr><td>2</td><td>Large Prize Checks</td><td>9 Nos</td><td>Winners Felicitation</td><td></td><td></td></tr>
-
-            <!-- ===== 8. General Supplies ===== -->
-            <tr><td colspan="6" style="text-align:center; font-weight:600; background:#efe4d2;">General Supplies</td></tr>
-            <tr><td>1</td><td>Pads</td><td>10 Nos</td><td>For Judges</td><td></td><td><a href="#">View Image</a> <!-- Add image later --></td></tr>
-            <tr><td>2</td><td>Highlighters</td><td>6 Nos</td><td>Judges</td><td></td><td><a href="#">View Image</a> <!-- Add image later --></td></tr>
-            <tr><td>3</td><td>A4 Sheets</td><td>1 Bundle</td><td>Stalls</td><td></td><td><a href="#">View Image</a> <!-- Add image later --></td></tr>
-            <tr><td>4</td><td>Binder Clips</td><td>10 Boxes</td><td>5 Medium and 5 Large</td><td></td><td</td></tr>
-            <tr><td>5</td><td>Bell Pins</td><td>3 Boxes</td><td></td><td></td><td</td></tr>
-            <tr><td>6</td><td>Transparent Cellophane Tape</td><td>2 Rolls</td><td></td><td></td><td</td></tr>
-            <tr><td>7</td><td>Scrissors</td><td>2 Nos</td><td></td><td></td><td</td></tr>
-            <tr><td>8</td><td>Staplers with Pins</td><td>2 Nos</td><td>1 Large <br/> 1 Small</td><td></td><td</td></tr>
-            <tr><td>9</td><td>Notepads</td><td>150 Nos</td><td>Exhibitors</td><td></td><td><a href="#">View Image</a> <!-- Add image later --></td></tr>
-            <tr><td>10</td><td>Pens</td><td>150 Nos</td><td>Exhibitors</td><td></td><td><a href="#">View Image</a> <!-- Add image later --></td></tr>
-            <tr><td>11</td><td>Sticky Notes</td><td>10 Packets (Different Colors)</td><td>For Visitors to Share their Thoughts</td><td></td><td><a href="#">View Image</a> <!-- Add image later --></td></tr>
-            <tr><td>12</td><td>Water Bottles 200ml</td><td>30 Nos</td><td>For Judges</td><td></td><td><a href="#">View Image</a> <!-- Add image later --></td></tr>
-            <tr><td>13</td><td>Water - Bubble Top with Plastic/Steel Tumbler</td><td>10 Nos</td><td>For Volunteers Participants & Visitors</td><td></td><td></td></tr>
-            <tr><td>14</td><td>Water Cans </td><td>45 Nos</td><td>For Volunteers, Participants & Visitors (3 Days)</td><td></td><td></td></tr>
-            <tr><td>15</td><td>White Boards</td><td>2 Nos</td><td>For Visitors to Share their Thoughts</td><td></td><td></td></tr>
-            <tr><td>16</td><td>Chisel Marker</td><td>3 Nos (Different Colors)</td><td>For Visitors to Share their Thoughts</td><td></td><td></td></tr>
-            <tr><td>17</td><td>White Boards - Chisel Marker</td><td>3 Nos (Different Colors)</td><td>For Visitors to Share their Thoughts</td><td></td><td></td></tr>
-            <tr><td>18</td><td>Dustbins (Large) </td><td>2 Nos</td><td>Outside the Pandal</td><td></td><td></td></tr>
-            <tr><td>19</td><td>Cardboard File</td><td>2 Nos</td><td>Documentation of TechFair & Exhibitions</td><td></td><td></td></tr>
-
-            <!-- ===== 9. Logistics Backup ===== -->
-            <tr><td colspan="6" style="text-align:center; font-weight:600; background:#efe4d2;">Logistics Backup</td></tr>
-            <tr><td>1</td><td>Spare Ropes & Cords</td><td>NA</td><td>Contingency</td><td></td><td><a href="#">View Image</a> <!-- Add image later --></td></tr>
-            <tr><td>2</td><td>Spare Tapes & Pins</td><td>NA</td><td>Backup</td><td></td><td><a href="#">View Image</a> <!-- Add image later --></td></tr>
-            <tr><td>3</td><td>Replacement Signage</td><td>NA</td><td>Emergency</td><td></td><td><a href="#">View Image</a> <!-- Add image later --></td></tr>
-
-            </tbody>
-        </table>
-    </div>
+<table>
+<thead>
+<tr>
+<th colspan="6">
+<div style="display:flex;justify-content:center;gap:10px">
+<input id="searchBar" placeholder="Search..."
+style="padding:8px 12px;width:240px;border-radius:8px;border:1px solid #d8c3a5">
 </div>
+</th>
+</tr>
+<tr>
+<th>S.No.</th>
+<th>Item Description</th>
+<th>Quantity</th>
+<th>Comments / Notes</th>
+<th>Status</th>
+<th>Reference Image</th>
+</tr>
+</thead>
+
+<tbody>
+
+<!-- ===== 1. Branding & Signage ===== -->
+<tr class="section-row"><td colspan="6">Branding & Signage</td></tr>
+<tr><td>1</td><td>Welcome Arch</td><td>1 Nos</td><td>17.5 ft Length</td><td>Events – CD Office</td><td></td></tr>
+<tr><td>2</td><td>Velcro Ribbon</td><td>1 Nos</td><td>Opening Ceremony</td><td></td><td></td></tr>
+<tr><td>3</td><td>Welcome Banner for TechFair & Exhibitions</td><td>2 Nos</td><td>Pandal & Entrance</td><td>WMD</td><td></td></tr>
+<tr><td>4</td><td>Banners for IIC Mentor-Mentee Hub & TechClubs</td><td>1 Each</td><td>Designed by WMD</td><td></td><td></td></tr>
+<tr><td>5</td><td>Stall Name Boards</td><td>20 Nos</td><td>Dept & Clubs</td><td></td><td></td></tr>
+<tr><td>6</td><td>TechFair T-Shirt</td><td>TBD</td><td>Designed by WMD</td><td></td><td></td></tr>
+<tr><td>7</td><td>TechFair IDs & Lanyards</td><td>315 Nos</td><td>P&R Provided</td><td></td><td></td></tr>
+<tr><td>8</td><td>Reusable EON Wood Carving</td><td>2 Nos</td><td>Front of Pandal</td><td>Existing</td><td></td></tr>
+<tr><td>9</td><td>TechFair Backdrop</td><td>1 Nos</td><td>Red Carpet</td><td></td><td></td></tr>
+<tr><td>10</td><td>EON Laptop Stickers</td><td>200 Nos</td><td>School Students</td><td>Existing</td><td></td></tr>
+
+<!-- ===== 2. Stall Infrastructure & Display ===== -->
+<tr class="section-row"><td colspan="6">Stall Infrastructure & Display</td></tr>
+<tr><td>1</td><td>Customised Stalls – TechFair</td><td>73 Nos</td><td>58 (3×3), 15 (3×6)</td><td>Delite</td><td></td></tr>
+<tr><td>2</td><td>Customised Stalls – Exhibitions</td><td>TBD</td><td></td><td>Events</td><td></td></tr>
+<tr><td>3</td><td>Tables</td><td>400 Nos</td><td>Multiple Areas</td><td></td><td></td></tr>
+<tr><td>4</td><td>Chairs</td><td>500 Nos</td><td>Multiple Areas</td><td></td><td></td></tr>
+<tr><td>5</td><td>Table Cloth</td><td>12 Nos</td><td>Registration Desk</td><td></td><td></td></tr>
+<tr><td>6</td><td>Fans</td><td>70–80 Nos</td><td>Discussion Required</td><td></td><td></td></tr>
+<tr><td>7</td><td>Extension Cords</td><td>180 Nos</td><td>2 Sockets × 3 Pin</td><td></td><td></td></tr>
+<tr><td>8</td><td>Stanchions & Ropes</td><td>TBD</td><td>Exhibitions</td><td></td><td></td></tr>
+
+<!-- ===== 3. Tech Monitoring & Attendance ===== -->
+<tr class="section-row"><td colspan="6">Tech Monitoring & Attendance</td></tr>
+<tr><td>1</td><td>Wired Web Cameras</td><td>6 Nos</td><td>Attendance</td><td></td><td></td></tr>
+<tr><td>2</td><td>Wireless Web Cameras</td><td>10 Nos</td><td>Crowd</td><td></td><td></td></tr>
+<tr><td>3</td><td>TV with Stands</td><td>5 Nos</td><td>65” / 75”</td><td></td><td></td></tr>
+<tr><td>4</td><td>Barcode Readers</td><td>5 Nos</td><td>Visitor Tracking</td><td></td><td></td></tr>
+
+<!-- ===== 4. Stage & Engagement Setup ===== -->
+<tr class="section-row"><td colspan="6">Stage & Engagement Setup</td></tr>
+<tr><td>1</td><td>Audio Setup</td><td>Full Set</td><td>Engagement</td><td></td><td></td></tr>
+<tr><td>2</td><td>Cord Mics</td><td>2 Nos</td><td>Announcements</td><td></td><td></td></tr>
+<tr><td>3</td><td>Cordless Mic</td><td>1 Nos</td><td>Stage</td><td></td><td></td></tr>
+<tr><td>4</td><td>Speakers + Amp</td><td>2 + 1</td><td>Stage Audio</td><td></td><td></td></tr>
+
+<!-- ===== 5. Ambience & Decor ===== -->
+<tr class="section-row"><td colspan="6">Ambience & Decor</td></tr>
+<tr><td>1</td><td>Balloons</td><td>100 Nos</td><td>Entrance</td><td></td><td></td></tr>
+<tr><td>2</td><td>Fairy Lights</td><td>NA</td><td>Pathway</td><td></td><td></td></tr>
+<tr><td>3</td><td>Potted Plants</td><td>60 Nos</td><td>Entrance & Interior</td><td></td><td></td></tr>
+<tr><td>4</td><td>Red Carpet</td><td>600 ft</td><td>TechFair Path</td><td></td><td></td></tr>
+
+<!-- ===== 6. Ceremonial Essentials ===== -->
+<tr class="section-row"><td colspan="6">Ceremonial Essentials</td></tr>
+<tr><td>1</td><td>Amma Shrine</td><td>1 Nos</td><td></td><td></td><td></td></tr>
+<tr><td>2</td><td>Kuthuvilaku</td><td>1 Nos</td><td>Ritual</td><td></td><td></td></tr>
+<tr><td>3</td><td>Thiri (Wicks)</td><td>2 Packets</td><td>Ritual</td><td></td><td></td></tr>
+<tr><td>4</td><td>Oil Packets</td><td>1 Packet</td><td>Ritual</td><td></td><td></td></tr>
+<tr><td>5</td><td>Matchbox & Candle</td><td>1 Each</td><td>Ritual</td><td></td><td></td></tr>
+<tr><td>6</td><td>Pookolam</td><td>2 Nos</td><td>Amma Shrine & Entrance</td><td></td><td></td></tr>
+
+<!-- ===== 7. Awards & Distribution ===== -->
+<tr class="section-row"><td colspan="6">Awards & Distribution</td></tr>
+<tr><td>1</td><td>Mementos</td><td>10 Nos</td><td>Judges</td><td></td><td></td></tr>
+<tr><td>2</td><td>Large Prize Checks</td><td>9 Nos</td><td>Winners</td><td></td><td></td></tr>
+
+<!-- ===== 8. General Supplies ===== -->
+<tr class="section-row"><td colspan="6">General Supplies</td></tr>
+<tr><td>1</td><td>Pads</td><td>10 Nos</td><td>Judges</td><td></td><td></td></tr>
+<tr><td>2</td><td>Highlighters</td><td>6 Nos</td><td>Judges</td><td></td><td></td></tr>
+<tr><td>3</td><td>A4 Sheets</td><td>1 Bundle</td><td>Stalls</td><td></td><td></td></tr>
+<tr><td>4</td><td>Binder Clips</td><td>10 Boxes</td><td>5 Medium, 5 Large</td><td></td><td></td></tr>
+<tr><td>5</td><td>Bell Pins</td><td>3 Boxes</td><td></td><td></td><td></td></tr>
+<tr><td>6</td><td>Transparent Tape</td><td>2 Rolls</td><td></td><td></td><td></td></tr>
+<tr><td>7</td><td>Scissors</td><td>2 Nos</td><td></td><td></td><td></td></tr>
+<tr><td>8</td><td>Staplers with Pins</td><td>2 Nos</td><td>1 Large, 1 Small</td><td></td><td></td></tr>
+<tr><td>9</td><td>Notepads</td><td>150 Nos</td><td>Exhibitors</td><td></td><td></td></tr>
+<tr><td>10</td><td>Pens</td><td>150 Nos</td><td>Exhibitors</td><td></td><td></td></tr>
+<tr><td>11</td><td>Sticky Notes</td><td>10 Packets</td><td>Visitor Feedback</td><td></td><td></td></tr>
+<tr><td>12</td><td>Water Bottles (200ml)</td><td>30 Nos</td><td>Judges</td><td></td><td></td></tr>
+<tr><td>13</td><td>Water Bubble Top</td><td>10 Nos</td><td>General Use</td><td></td><td></td></tr>
+<tr><td>14</td><td>Water Cans</td><td>45 Nos</td><td>3 Days</td><td></td><td></td></tr>
+<tr><td>15</td><td>White Boards</td><td>2 Nos</td><td>Visitor Thoughts</td><td></td><td></td></tr>
+<tr><td>16</td><td>Chisel Markers</td><td>3 Nos</td><td>Different Colors</td><td></td><td></td></tr>
+<tr><td>17</td><td>White Board Markers</td><td>3 Nos</td><td>Different Colors</td><td></td><td></td></tr>
+<tr><td>18</td><td>Dustbins (Large)</td><td>2 Nos</td><td>Outside Pandal</td><td></td><td></td></tr>
+<tr><td>19</td><td>Cardboard Files</td><td>2 Nos</td><td>Documentation</td><td></td><td></td></tr>
+
+<!-- ===== 9. Logistics Backup ===== -->
+<tr class="section-row"><td colspan="6">Logistics Backup</td></tr>
+<tr><td>1</td><td>Spare Ropes & Cords</td><td>NA</td><td>Contingency</td><td></td><td></td></tr>
+<tr><td>2</td><td>Spare Tapes & Pins</td><td>NA</td><td>Backup</td><td></td><td></td></tr>
+<tr><td>3</td><td>Replacement Signage</td><td>NA</td><td>Emergency</td><td></td><td></td></tr>
+
+</tbody>
+</table>
+
+</div>
+</div>
+
 <footer class="footer">
-    © 2025–2026 <strong>Anokha TechFair & Exhibitions</strong>. All Rights Reserved.
+© 2025–2026 <strong>Anokha TechFair & Exhibitions</strong>. All Rights Reserved.
 </footer>
 
-</body>
-</html>
+<script>
+document.getElementById("searchBar").addEventListener("keyup",function(){
+    const q=this.value.toLowerCase();
+    const rows=document.querySelectorAll("tbody tr");
+    let show=false;
+    rows.forEach(r=>{
+        if(r.classList.contains("section-row")){
+            show=false;
+            r.style.display="none";
+        }else{
+            const m=r.innerText.toLowerCase().includes(q);
+            r.style.display=m?"":"none";
+            if(m) show=true;
+        }
+        if(show && r.previousElementSibling?.classList.contains("section-row")){
+            r.previousElementSibling.style.display="";
+        }
+    });
+});
+</script>
 
 </body>
 </html>
-
-
-
-
-
-
