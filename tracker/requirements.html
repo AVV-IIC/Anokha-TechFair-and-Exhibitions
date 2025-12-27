@@ -56,13 +56,13 @@ h1 {
     color: #5b4b8a;
     font-size: 2.4rem;
 }
+    
 
 /* -------- TABLE STYLES -------- */
 
 .table-wrapper {
     width: 100%;
     overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
 }
 
 table {
@@ -72,39 +72,41 @@ table {
     background: #ffffff;
     border-radius: 14px;
     overflow: hidden;
-    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 10px 28px rgba(0,0,0,0.12);
 }
 
 thead {
     background: #e8def8;
 }
 
-th {
-    padding: 16px 12px;
-    font-size: 1.05rem;
-    color: #3f2d68;
-    border: 1px solid #ddd2f3;
-    text-align: center;
-    white-space: nowrap;
-}
-
-td {
+/* Default LEFT alignment */
+th, td {
     padding: 14px 12px;
     border: 1px solid #eee6d8;
-    text-align: center;
-    font-size: 0.98rem;
+    font-size: 0.95rem;
     font-weight: 500;
+    text-align: left;
 }
 
-td:nth-child(2) {
-    text-align: left;
-    word-break: break-word;
+/* Center required columns */
+th:nth-child(1), td:nth-child(1),
+th:nth-child(2), td:nth-child(2),
+th:nth-child(5), td:nth-child(5),
+th:nth-child(6), td:nth-child(6) {
+    text-align: center;
+}
+
+/* Section rows */
+.section-row td {
+    text-align: center !important;
+    font-weight: 600;
+    background: #efe4d2;
 }
 
 tbody tr:hover {
     background: #f5f0e6;
 }
-
+    
 /* -------- FOOTER -------- */
 
 .footer {
@@ -230,11 +232,14 @@ tbody tr:hover {
 
             <!-- ===== 2. Stall Infrastructure & Display ===== -->
             <tr><td colspan="6" style="text-align:center; font-weight:600; background:#efe4d2;">Stall Infrastructure & Display</td></tr>
-            <tr><td>1</td><td>Tables</td><td>400 Nos</td><td style="text-align:left;">120 Nos for TechFair <br/> 25 Nos for Mentor-Mentee <br/> 10 Nos for TechClubs Corner <br/> 6 Nos for Registration Desk <br/> 150 Nos for Exhibitions <br/> 50 Nos for Sponsorhip </td><td></td><td></td></tr>
-            <tr><td>2</td><td>Chairs</td><td>500 Nos</td><td style="text-align:left;">146 Nos for TechFair <br/> 40 Nos for Mentor-Mentee <br/> 25 Nos for TechClubs Corner <br/> 10 Nos for Registration Desk <br/> 50 Nos for Exhibitions <br/> 30 Nos for Sponsorship</td><td></td><td></td></tr>
-            <tr><td>3</td><td>Fans</td><td style="text-align:left;">70-80 Nos*</td><td>*Discussion Required</td><td></td><td></td></tr>
-            <tr><td>4</td><td>Extension Cords</td><td>180 Nos</td><td style="text-align:left;">2 Sockets * 3 Pins</td><td></td><td></td></tr>
-            <tr><td>7</td><td>Stanchions & Ropes</td><td>TBD</td><td>For Exhibitions</td><td></td><td><a href="#"></tr>
+            <tr><td>1</td><td>Customised Stalls for TechFair</td><td>73 Nos</td><td style="text-align:left;">58 Nos - 3 m * 3 m <br/> 15 Nos - 3 m * 6 m </td><td>Managed by Delite</td><td></td></tr>
+            <tr><td>2</td><td>Customised Stalls for Exhibitions</td><td>TBD</td><td style="text-align:left;"></td><td>Managed by Events</td><td></td></tr>                
+            <tr><td>3</td><td>Tables</td><td>400 Nos</td><td style="text-align:left;">120 Nos for TechFair <br/> 25 Nos for Mentor-Mentee <br/> 10 Nos for TechClubs Corner <br/> 6 Nos for Registration Desk <br/> 150 Nos for Exhibitions <br/> 50 Nos for Sponsorhip </td><td></td><td></td></tr>
+            <tr><td>4</td><td>Chairs</td><td>500 Nos</td><td style="text-align:left;">146 Nos for TechFair <br/> 40 Nos for Mentor-Mentee <br/> 25 Nos for TechClubs Corner <br/> 10 Nos for Registration Desk <br/> 50 Nos for Exhibitions <br/> 30 Nos for Sponsorship</td><td></td><td></td></tr>
+            <tr><td>5</td><td>Table Cloth</td><td style="text-align:left;">12 Nos*</td><td style="text-align:left;">Registration Desk</td><td></td><td></td></tr>   
+            <tr><td>6</td><td>Fans</td><td style="text-align:left;">70-80 Nos*</td><td style="text-align:left;">*Discussion Required</td><td></td><td></td></tr>
+            <tr><td>7</td><td>Extension Cords</td><td>180 Nos</td><td style="text-align:left;">2 Sockets * 3 Pins</td><td></td><td></td></tr>
+            <tr><td>8</td><td>Stanchions & Ropes</td><td>TBD</td><td style="text-align:left;">For Exhibitions</td><td></td><td><a href="#"></tr>
 
             <!-- ===== 3. Tech Monitoring & Attendance ===== -->
             <tr><td colspan="6" style="text-align:center; font-weight:600; background:#efe4d2;">Tech Monitoring & Attendance</td></tr>
@@ -245,10 +250,10 @@ tbody tr:hover {
 
             <!-- ===== 4. Stage & Engagement Setup ===== -->
             <tr><td colspan="6" style="text-align:center; font-weight:600; background:#efe4d2;">Stage & Engagement Setup</td></tr>
-            <tr><td>1</td><td>Audio Setup</td><td>Full Set</td><td>Engagement</td><td></td><td><a href="#">View Image</a> <!-- Add stage audio image later --></td></tr>
-            <tr><td>2</td><td>Cord Mics</td><td>2 Nos</td><td>Announcements</td><td></td><td><a href="#">View Image</a> <!-- Add mic image later --></td></tr>
-            <tr><td>3</td><td>Cordless Mic</td><td>1 Nos</td><td>Stage</td><td></td><td><a href="#">View Image</a> <!-- Add mic image later --></td></tr>
-            <tr><td>4</td><td>Speakers + Amp</td><td>2 Speakers + 1 Amp</td><td>Stage Audio</td><td></td><td><a href="#">View Image</a> <!-- Add speaker image later --></td></tr>
+            <tr><td>1</td><td>Audio Setup</td><td>Full Set</td><td>Engagement</td><td></td><td> </td></tr>
+            <tr><td>2</td><td>Cord Mics</td><td>2 Nos</td><td>Announcements</td><td></td><td></td></tr>
+            <tr><td>3</td><td>Cordless Mic</td><td>1 Nos</td><td>Stage</td><td></td><td></td></tr>
+            <tr><td>4</td><td>Speakers + Amp</td><td>2 Speakers + 1 Amp</td><td>Stage Audio</td><td></td><td></td></tr>
 
             <!-- ===== 5. Ambience & Decor ===== -->
             <tr><td colspan="6" style="text-align:center; font-weight:600; background:#efe4d2;">Ambience & Decor</td></tr>
@@ -260,10 +265,10 @@ tbody tr:hover {
             <!-- ===== 6. Ceremonial Essentials ===== -->
             <tr><td colspan="6" style="text-align:center; font-weight:600; background:#efe4d2;">Ceremonial Essentials</td></tr>
             <tr><td>1</td><td>Amma Shrine</td><td>1 Nos</td><td></td><td></td><td></td></tr>
-            <tr><td>2</td><td>Kuthuvilaku</td><td>1 Nos</td><td>Ritual</td><td></td><td><a href="#">View Image</a> <!-- Add image later --></td></tr>
-            <tr><td>3</td><td>Thiri (Wicks)</td><td>2 Packets</td><td>Ritual</td><td></td><td><a href="#">View Image</a> <!-- Add image later --></td></tr>
-            <tr><td>4</td><td>Oil Packets</td><td>1 Packet</td><td>Ritual</td><td></td><td><a href="#">View Image</a> <!-- Add image later --></td></tr>
-            <tr><td>5</td><td>Matchbox & Candle</td><td>1 Each</td><td>Ritual</td><td></td><td><a href="#">View Image</a> <!-- Add image later --></td></tr>
+            <tr><td>2</td><td>Kuthuvilaku</td><td>1 Nos</td><td>Ritual</td><td></td><td></td></tr>
+            <tr><td>3</td><td>Thiri (Wicks)</td><td>2 Packets</td><td>Ritual</td><td></td><td></td></tr>
+            <tr><td>4</td><td>Oil Packets</td><td>1 Packet</td><td>Ritual</td><td></td><td></td></tr>
+            <tr><td>5</td><td>Matchbox & Candle</td><td>1 Each</td><td>Ritual</td><td></td><td></td></tr>
             <tr><td>6</td><td>Pookolam</td><td>2 Nos</td><td>Front of Amma's Shrine and at Pandal Entrance</td><td></td><td></td></tr>
 
             <!-- ===== 7. Awards & Distribution ===== -->
@@ -281,17 +286,17 @@ tbody tr:hover {
             <tr><td>6</td><td>Transparent Cellophane Tape</td><td>2 Rolls</td><td></td><td></td><td</td></tr>
             <tr><td>7</td><td>Scrissors</td><td>2 Nos</td><td></td><td></td><td</td></tr>
             <tr><td>8</td><td>Staplers with Pins</td><td>2 Nos</td><td>1 Large <br/> 1 Small</td><td></td><td</td></tr>
-            <tr><td>8</td><td>Notepads</td><td>150 Nos</td><td>Exhibitors</td><td></td><td><a href="#">View Image</a> <!-- Add image later --></td></tr>
-            <tr><td>9</td><td>Pens</td><td>150 Nos</td><td>Exhibitors</td><td></td><td><a href="#">View Image</a> <!-- Add image later --></td></tr>
-            <tr><td>10</td><td>Sticky Notes</td><td>10 Packets (Different Colors)</td><td>For Visitors to Share their Thoughts</td><td></td><td><a href="#">View Image</a> <!-- Add image later --></td></tr>
-            <tr><td>11</td><td>Water Bottles 200ml</td><td>30 Nos</td><td>For Judges</td><td></td><td><a href="#">View Image</a> <!-- Add image later --></td></tr>
-            <tr><td>8</td><td>Water - Bubble Top with Plastic/Steel Tumbler</td><td>10 Nos</td><td>For Volunteers Participants & Visitors</td><td></td><td></td></tr>
-            <tr><td>9</td><td>Water Cans </td><td>45 Nos</td><td>For Volunteers, Participants & Visitors (3 Days)</td><td></td><td></td></tr>
-            <tr><td>10</td><td>White Boards</td><td>2 Nos</td><td>For Visitors to Share their Thoughts</td><td></td><td></td></tr>
-            <tr><td>11</td><td>White Boards - Chisel Marker</td><td>3 Nos (Different Colors)</td><td>For Visitors to Share their Thoughts</td><td></td><td></td></tr>
-            <tr><td>12</td><td>White Boards - Chisel Marker</td><td>3 Nos (Different Colors)</td><td>For Visitors to Share their Thoughts</td><td></td><td></td></tr>
-            <tr><td>13</td><td>Dustbins (Large) </td><td>2 Nos</td><td>Outside the Pandal</td><td></td><td></td></tr>
-            <tr><td>14</td><td>Cardboard File</td><td>2 Nos</td><td>Documentation of TechFair & Exhibitions</td><td></td><td></td></tr>
+            <tr><td>9</td><td>Notepads</td><td>150 Nos</td><td>Exhibitors</td><td></td><td><a href="#">View Image</a> <!-- Add image later --></td></tr>
+            <tr><td>10</td><td>Pens</td><td>150 Nos</td><td>Exhibitors</td><td></td><td><a href="#">View Image</a> <!-- Add image later --></td></tr>
+            <tr><td>11</td><td>Sticky Notes</td><td>10 Packets (Different Colors)</td><td>For Visitors to Share their Thoughts</td><td></td><td><a href="#">View Image</a> <!-- Add image later --></td></tr>
+            <tr><td>12</td><td>Water Bottles 200ml</td><td>30 Nos</td><td>For Judges</td><td></td><td><a href="#">View Image</a> <!-- Add image later --></td></tr>
+            <tr><td>13</td><td>Water - Bubble Top with Plastic/Steel Tumbler</td><td>10 Nos</td><td>For Volunteers Participants & Visitors</td><td></td><td></td></tr>
+            <tr><td>14</td><td>Water Cans </td><td>45 Nos</td><td>For Volunteers, Participants & Visitors (3 Days)</td><td></td><td></td></tr>
+            <tr><td>15</td><td>White Boards</td><td>2 Nos</td><td>For Visitors to Share their Thoughts</td><td></td><td></td></tr>
+            <tr><td>16</td><td>Chisel Marker</td><td>3 Nos (Different Colors)</td><td>For Visitors to Share their Thoughts</td><td></td><td></td></tr>
+            <tr><td>17</td><td>White Boards - Chisel Marker</td><td>3 Nos (Different Colors)</td><td>For Visitors to Share their Thoughts</td><td></td><td></td></tr>
+            <tr><td>18</td><td>Dustbins (Large) </td><td>2 Nos</td><td>Outside the Pandal</td><td></td><td></td></tr>
+            <tr><td>19</td><td>Cardboard File</td><td>2 Nos</td><td>Documentation of TechFair & Exhibitions</td><td></td><td></td></tr>
 
             <!-- ===== 9. Logistics Backup ===== -->
             <tr><td colspan="6" style="text-align:center; font-weight:600; background:#efe4d2;">Logistics Backup</td></tr>
@@ -312,6 +317,7 @@ tbody tr:hover {
 
 </body>
 </html>
+
 
 
 
