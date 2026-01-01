@@ -1,0 +1,230 @@
+<!--
+Authors: Reha Sreekumar, Srisha Satish Kanna and Ramaguru Radhakrishnan
+Description: Anokha TechFair & Exhibitions 2026 – Projects Page
+Created Date: 01st January 2026
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Anokha TechFair & Exhibitions 2026 | Projects</title>
+
+<style>
+:root {
+  --accent1: #6b8cff;
+  --accent2: #8b5cf6;
+  --text-dark: #27374d;
+  --text-main: #1f2937;
+  --border: #e5e7eb;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  margin: 0;
+  color: var(--text-main);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ---------- HEADER ---------- */
+.site-header {
+  text-align: center;
+  padding: 40px 20px;
+  background: white;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  margin-bottom: 35px;
+}
+
+.site-header h1 {
+  font-size: 2.6rem;
+  font-weight: 800;
+  margin: 0;
+  background: linear-gradient(to right, var(--text-dark), var(--accent2));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.tagline {
+  margin-top: 8px;
+  font-size: 1rem;
+  opacity: 0.6;
+  font-weight: 500;
+}
+
+/* ---------- MAIN ---------- */
+.dash-container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding-bottom: 60px;
+}
+
+.table-section {
+  background: white;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.06);
+}
+
+.table-section h2 {
+  text-align: center;
+  margin: 0 0 22px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.main-table {
+  width: 100%;
+  max-width: 950px;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.08);
+}
+
+.main-table thead {
+  background: linear-gradient(90deg, var(--accent1), var(--accent2));
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.main-table th,
+.main-table td {
+  padding: 14px 18px;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.main-table tbody tr {
+  border-bottom: 1px solid var(--border);
+  transition: 0.2s ease;
+}
+
+.main-table tbody tr:hover {
+  background: #f5f7ff;
+  transform: scale(1.01);
+}
+
+.view-btn {
+  text-decoration: none;
+  padding: 6px 14px;
+  background: var(--accent2);
+  color: white;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  transition: 0.3s ease;
+}
+
+.view-btn:hover {
+  filter: brightness(1.15);
+  transform: translateY(-2px);
+}
+
+/* ---------- FOOTER ---------- */
+footer.footer {
+  text-align: center;
+  padding: 20px;
+  background: white;
+  border-top: 2px solid rgba(0,0,0,0.05);
+  font-size: 0.85rem;
+  font-weight: 500;
+  opacity: 0.8;
+  margin-top: auto;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 600px) {
+  .site-header h1 { font-size: 2rem; }
+  .table-section h2 { font-size: 1.3rem; }
+}
+</style>
+</head>
+
+<body>
+
+<header class="site-header">
+  <h1>Anokha TechFair & Exhibitions 2026</h1>
+  <p class="tagline">Projects Overview Dashboard</p>
+</header>
+
+<main class="dash-container">
+
+  <section class="table-section">
+    <h2>Projects & Stall Allocation</h2>
+
+    <div class="table-wrapper">
+      <table class="main-table">
+        <thead>
+          <tr>
+            <th>Team #ID</th>
+            <th>Stall No.</th>
+            <th>Project Title</th>
+            <th>Department</th>
+            <th>View More</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <!-- 30 Projects -->
+          <tr><td>TF-01</td><td>S01</td><td>Smart Traffic Control System</td><td>CSE</td><td><a href="#" class="view-btn">View</a></td></tr>
+          <tr><td>TF-02</td><td>S02</td><td>AI-Based Crop Disease Detection</td><td>AIE</td><td><a href="#" class="view-btn">View</a></td></tr>
+          <tr><td>TF-03</td><td>S03</td><td>Blockchain-Secured E-Voting</td><td>CSE</td><td><a href="#" class="view-btn">View</a></td></tr>
+          <tr><td>TF-04</td><td>S04</td><td>Smart Energy Meter</td><td>EEE</td><td><a href="#" class="view-btn">View</a></td></tr>
+          <tr><td>TF-05</td><td>S05</td><td>Autonomous Delivery Robot</td><td>MEE</td><td><a href="#" class="view-btn">View</a></td></tr>
+
+          <tr><td>TF-06</td><td>S06</td><td>IoT-Based Air Quality Monitor</td><td>ECE</td><td><a href="#" class="view-btn">View</a></td></tr>
+          <tr><td>TF-07</td><td>S07</td><td>Face Recognition Attendance</td><td>CSE</td><td><a href="#" class="view-btn">View</a></td></tr>
+          <tr><td>TF-08</td><td>S08</td><td>Smart Waste Segregation</td><td>CIVIL</td><td><a href="#" class="view-btn">View</a></td></tr>
+          <tr><td>TF-09</td><td>S09</td><td>Cyber Threat Detection System</td><td>CYS</td><td><a href="#" class="view-btn">View</a></td></tr>
+          <tr><td>TF-10</td><td>S10</td><td>AI Chatbot for Campus Services</td><td>AIE</td><td><a href="#" class="view-btn">View</a></td></tr>
+
+          <tr><td>TF-11</td><td>S11</td><td>Solar-Powered Irrigation</td><td>EEE</td><td><a href="#" class="view-btn">View</a></td></tr>
+          <tr><td>TF-12</td><td>S12</td><td>Smart Helmet for Miners</td><td>MEE</td><td><a href="#" class="view-btn">View</a></td></tr>
+          <tr><td>TF-13</td><td>S13</td><td>Blockchain Supply Chain</td><td>CSE</td><td><a href="#" class="view-btn">View</a></td></tr>
+          <tr><td>TF-14</td><td>S14</td><td>Voice-Controlled Home Automation</td><td>ECE</td><td><a href="#" class="view-btn">View</a></td></tr>
+          <tr><td>TF-15</td><td>S15</td><td>Flood Prediction Using ML</td><td>AIE</td><td><a href="#" class="view-btn">View</a></td></tr>
+
+          <tr><td>TF-16</td><td>S16</td><td>Digital Health Monitoring</td><td>BME</td><td><a href="#" class="view-btn">View</a></td></tr>
+          <tr><td>TF-17</td><td>S17</td><td>Smart Parking System</td><td>CSE</td><td><a href="#" class="view-btn">View</a></td></tr>
+          <tr><td>TF-18</td><td>S18</td><td>Drone-Based Surveillance</td><td>AERO</td><td><a href="#" class="view-btn">View</a></td></tr>
+          <tr><td>TF-19</td><td>S19</td><td>AI-Powered Resume Analyzer</td><td>AIE</td><td><a href="#" class="view-btn">View</a></td></tr>
+          <tr><td>TF-20</td><td>S20</td><td>Green Building Monitoring</td><td>CIVIL</td><td><a href="#" class="view-btn">View</a></td></tr>
+
+          <tr><td>TF-21</td><td>S21</td><td>Secure File Sharing Platform</td><td>CYS</td><td><a href="#" class="view-btn">View</a></td></tr>
+          <tr><td>TF-22</td><td>S22</td><td>AR-Based Learning App</td><td>CSE</td><td><a href="#" class="view-btn">View</a></td></tr>
+          <tr><td>TF-23</td><td>S23</td><td>Electric Vehicle Battery Monitor</td><td>EEE</td><td><a href="#" class="view-btn">View</a></td></tr>
+          <tr><td>TF-24</td><td>S24</td><td>Smart Water Management</td><td>CIVIL</td><td><a href="#" class="view-btn">View</a></td></tr>
+          <tr><td>TF-25</td><td>S25</td><td>AI-Based Exam Proctoring</td><td>AIE</td><td><a href="#" class="view-btn">View</a></td></tr>
+
+          <tr><td>TF-26</td><td>S26</td><td>Automated Fire Detection</td><td>ECE</td><td><a href="#" class="view-btn">View</a></td></tr>
+          <tr><td>TF-27</td><td>S27</td><td>Smart Retail Analytics</td><td>CSE</td><td><a href="#" class="view-btn">View</a></td></tr>
+          <tr><td>TF-28</td><td>S28</td><td>Assistive Tech for Elderly</td><td>BME</td><td><a href="#" class="view-btn">View</a></td></tr>
+          <tr><td>TF-29</td><td>S29</td><td>Cyber Forensics Toolkit</td><td>CYS</td><td><a href="#" class="view-btn">View</a></td></tr>
+          <tr><td>TF-30</td><td>S30</td><td>Smart Campus Navigation</td><td>CSE</td><td><a href="#" class="view-btn">View</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  © 2026 Institution's Innovation Council (IIC) & Anokha TechFair & Exhibitions. All Rights Reserved.
+</footer>
+
+</body>
+</html>
