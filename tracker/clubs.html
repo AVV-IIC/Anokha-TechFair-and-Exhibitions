@@ -2,7 +2,7 @@
 Authors: Reha Sreekumar, Srisha Satish Kanna and Ramaguru Radhakrishnan
 Description: Anokha TechFair & Exhibitions 2026 Status Tracker
 Created Date: 16th December 2025
-Updated Date: 23rd December 2025
+Updated Date: 20th December 2025
 Clubs.html (Tab2)
 -->
 
@@ -14,7 +14,6 @@ Clubs.html (Tab2)
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Clubs Status Tracker</title>
 
     <style>
@@ -27,50 +26,59 @@ Clubs.html (Tab2)
         body {
             font-family: "Inter", "Segoe UI", system-ui, sans-serif;
             background-color: #f7f3e9;
-            padding: 30px 16px;
+            padding: 40px 20px 0 20px;
+            min-height: 100vh;
         }
 
         .container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: auto;
-        }
-
-        /* ================= SEARCH ================= */
-        .search-box {
-            position: relative;
+            min-height: 100vh;
             display: flex;
-            justify-content: center;
-            margin-bottom: 25px;
+            flex-direction: column;
         }
 
-        .search-box input {
-            width: 100%;
+        /* SEARCH BAR */
+        .search-box {
+            text-align: center;
+            margin-bottom: 18px;
+        }
+
+        .search-wrapper {
+            position: relative;
+            display: inline-block;
+            width: 60%;
             max-width: 480px;
-            padding: 14px 18px 14px 44px;
-            border-radius: 999px;
+        }
+
+        .search-wrapper input {
+            width: 100%;
+            padding: 10px 16px 10px 44px; /* slightly smaller */
+            border-radius: 30px;
             border: 1px solid #cfc6e6;
-            font-size: 1rem;
-            background: #fff;
+            font-size: 0.95rem;
+            outline: none;
             box-shadow: 0 4px 14px rgba(0,0,0,0.08);
         }
 
         .search-icon {
             position: absolute;
-            left: 22px;
+            left: 16px;
             top: 50%;
             transform: translateY(-50%);
-            width: 16px;
-            opacity: 0.6;
+            width: 18px;   /* slightly smaller */
+            height: 18px;
+            pointer-events: none;
         }
 
-        /* ================= TABLE ================= */
         table {
+            flex-grow: 1; /* fills remaining page height */
             width: 100%;
             border-collapse: collapse;
-            background: #fff;
+            background: #ffffff;
             border-radius: 16px;
             overflow: hidden;
-            box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
         }
 
         thead {
@@ -78,248 +86,124 @@ Clubs.html (Tab2)
         }
 
         th {
-            padding: 16px;
-            border: 1px solid #ddd2f3;
+            padding: 12px;              /* reduced */
+            font-size: 0.95rem;         /* reduced */
             color: #3f2d68;
+            border: 1px solid #ddd2f3;
+            text-align: center;
         }
 
         td {
-            padding: 14px;
+            padding: 10px;              /* reduced */
             border: 1px solid #eee6d8;
             text-align: center;
+            font-size: 0.9rem;          /* reduced */
             font-weight: 500;
         }
 
         .club-name {
             text-align: left;
-            padding-left: 26px;
+            padding-left: 22px;         /* reduced */
             background: #faf6ee;
+            color: #5e5647;
             font-weight: 600;
         }
 
         .department {
             background: #f1efe9;
+            color: #4b4b4b;
+            font-weight: 500;
         }
 
         .neutral {
             background: #f4f1eb;
+            color: #555;
         }
 
-        /* ================= MOBILE ================= */
-       /* ================= MOBILE ================= */
-@media (max-width: 768px) {
+        tbody tr:hover {
+            background: #f5f0e6;
+        }
 
-    table, thead, tbody, th, td, tr {
-        display: block;
-        width: 100%;
-    }
-
-    thead {
-        display: none;
-    }
-
-    tbody tr {
-        margin-bottom: 18px;
-        border-radius: 14px;
-        background: #ffffff;
-        box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-        overflow: hidden;
-    }
-
-    td {
-        border: none;
-        text-align: left;
-        padding: 12px 16px 14px;
-        font-size: 0.95rem;
-    }
-
-    /* Label ABOVE value (no overlap) */
-    td::before {
-        content: attr(data-label);
-        display: block;
-        font-size: 0.78rem;
-        font-weight: 600;
-        color: #7a6aa6;
-        margin-bottom: 4px;
-        text-transform: uppercase;
-        letter-spacing: 0.04em;
-    }
-
-    .club-name {
-        font-size: 1rem;
-        font-weight: 600;
-        background: #faf6ee;
-        border-bottom: 1px solid #eee6d8;
-    }
-
-    .department {
-        background: #f1efe9;
-    }
-
-    .neutral {
-        background: #f4f1eb;
-    }
+        @media (max-width: 768px) {
+            .search-wrapper {
+                width: 90%;
+            }
+        }
+        .logo-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-bottom:20px;
 }
+
     </style>
 </head>
 
 <body>
+    <div class="logo-container">
+            <img src="images/anokha_2026.png" alt="Anokha Logo" width="220">
+            <img src="images/tf_black.png" alt="TechFair & Exhibitions Logo" width="190">
+            <img src="images/iic_logo.png" alt="IIC Logo" width="200">
+            <img src="images/atlsarthi.png" alt="ATL Sarthi Logo" width="250">
+        </div>
 <div class="container">
 
-    <!-- SEARCH -->
+    <!-- SEARCH BAR -->
     <div class="search-box">
-        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="11" cy="11" r="7"></circle>
-            <line x1="16.65" y1="16.65" x2="21" y2="21"></line>
-        </svg>
-        <input type="text" placeholder="Search club or department..." onkeyup="filterTable(this.value)">
+        <div class="search-wrapper">
+             <img src="images/search.png" class="search-icon" alt="search">
+            <input
+                type="text"
+                placeholder="Search club or department..."
+                onkeyup="filterTable(this.value)"
+            />
+        </div>
     </div>
 
     <table>
         <thead>
             <tr>
-                <th>Club</th>
-                <th>Department</th>
-                <th>2024</th>
-                <th>2026</th>
+                <th style="width: 30%;">Club</th>
+                <th style="width: 30%;">Department</th>
+                <th style="width: 20%;">2024</th>
+                <th style="width: 20%;">2026</th>
             </tr>
         </thead>
 
         <tbody id="clubsTable">
-
-            <!-- ALL CLUBS INCLUDED -->
-            <tr>
-                <td class="club-name" data-label="Club">ACM Student Chapter</td>
-                <td class="department" data-label="Department">School of Computing</td>
-                <td class="neutral" data-label="2024">NA</td>
-                <td class="neutral" data-label="2026">0</td>
-            </tr>
-
-            <tr>
-                <td class="club-name" data-label="Club">AIBA</td>
-                <td class="department" data-label="Department"></td>
-                <td class="neutral">NA</td>
-                <td class="neutral">0</td>
-            </tr>
-
-            <tr>
-                <td class="club-name" data-label="Club">Anantham</td>
-                <td class="department">Mathematics</td>
-                <td class="neutral">NA</td>
-                <td class="neutral">0</td>
-            </tr>
-
-            <tr>
-                <td class="club-name" data-label="Club">Astha</td>
-                <td class="department"></td>
-                <td class="neutral">NA</td>
-                <td class="neutral">0</td>
-            </tr>
-
-            <tr>
-                <td class="club-name" data-label="Club">Blockchain – Research Interest Group</td>
-                <td class="department">TIFAC-CORE in Cyber Security</td>
-                <td class="neutral">NA</td>
-                <td class="neutral">0</td>
-            </tr>
-
-            <tr>
-                <td class="club-name" data-label="Club">CybeReach</td>
-                <td class="department">TIFAC-CORE in Cyber Security</td>
-                <td class="neutral">NA</td>
-                <td class="neutral">0</td>
-            </tr>
-
-            <tr>
-                <td class="club-name" data-label="Club">ELITE</td>
-                <td class="department"></td>
-                <td class="neutral">NA</td>
-                <td class="neutral">0</td>
-            </tr>
-
-            <tr>
-                <td class="club-name" data-label="Club">IDEA</td>
-                <td class="department"></td>
-                <td class="neutral">NA</td>
-                <td class="neutral">0</td>
-            </tr>
-
-            <tr>
-                <td class="club-name" data-label="Club">IEEE Student Chapter</td>
-                <td class="department">Electrical and Electronics Engineering</td>
-                <td class="neutral">NA</td>
-                <td class="neutral">0</td>
-            </tr>
-
-            <tr>
-                <td class="club-name" data-label="Club">IETE Student Chapter</td>
-                <td class="department"></td>
-                <td class="neutral">NA</td>
-                <td class="neutral">0</td>
-            </tr>
-
-            <tr>
-                <td class="club-name" data-label="Club">Init</td>
-                <td class="department">Artificial Intelligence</td>
-                <td class="neutral">NA</td>
-                <td class="neutral">0</td>
-            </tr>
-
-            <tr>
-                <td class="club-name" data-label="Club">Innovac</td>
-                <td class="department"></td>
-                <td class="neutral">NA</td>
-                <td class="neutral">0</td>
-            </tr>
-
-            <tr>
-                <td class="club-name" data-label="Club">Intel IoT</td>
-                <td class="department">Computer Science Engineering</td>
-                <td class="neutral">NA</td>
-                <td class="neutral">3</td>
-            </tr>
-
-            <tr>
-                <td class="club-name" data-label="Club">Robotics</td>
-                <td class="department">Mechanical Engineering</td>
-                <td class="neutral">NA</td>
-                <td class="neutral">5</td>
-            </tr>
-
-            <tr>
-                <td class="club-name" data-label="Club">SAE</td>
-                <td class="department">Mechanical Engineering</td>
-                <td class="neutral">NA</td>
-                <td class="neutral">-</td>
-            </tr>
-
-            <tr>
-                <td class="club-name" data-label="Club">Tensor</td>
-                <td class="department">School of AI</td>
-                <td class="neutral">NA</td>
-                <td class="neutral">5</td>
-            </tr>
-
-            <tr>
-                <td class="club-name" data-label="Club">WiCyS Amrita Student Chapter</td>
-                <td class="department">TIFAC-CORE in Cyber Security</td>
-                <td class="neutral">NA</td>
-                <td class="neutral">0</td>
-            </tr>
-
+            <tr><td class="club-name">ACM Student Chapter</td><td class="department">School of Computing</td><td class="neutral">-</td><td class="neutral">-</td></tr>
+            <tr><td class="club-name">AIBA</td><td class="department"></td><td class="neutral">-</td><td class="neutral">-</td></tr>
+            <tr><td class="club-name">Anantham</td><td class="department">Mathematics</td><td class="neutral">-</td><td class="neutral">-</td></tr>
+            <tr><td class="club-name">Astha</td><td class="department"></td><td class="neutral">-</td><td class="neutral">-</td></tr>
+            <tr><td class="club-name">Blockchain – Research Interest Group</td><td class="department">TIFAC-CORE in Cyber Security</td><td class="neutral">-</td><td class="neutral">-</td></tr>
+            <tr><td class="club-name">CybeReach</td><td class="department">TIFAC-CORE in Cyber Security</td><td class="neutral">-</td><td class="neutral">-</td></tr>
+            <tr><td class="club-name">ELITE</td><td class="department"></td><td class="neutral">-</td><td class="neutral">-</td></tr>
+            <tr><td class="club-name">IDEA</td><td class="department"></td><td class="neutral">-</td><td class="neutral">-</td></tr>
+            <tr><td class="club-name">IEEE Student Chapter</td><td class="department">Electrical and Electronics Engineering</td><td class="neutral">-</td><td class="neutral">-</td></tr>
+            <tr><td class="club-name">IETE Student Chapter</td><td class="department"></td><td class="neutral">-</td><td class="neutral">-</td></tr>
+            <tr><td class="club-name">Init</td><td class="department">Artificial Intelligence</td><td class="neutral">-</td><td class="neutral">-</td></tr>
+            <tr><td class="club-name">Innovac</td><td class="department"></td><td class="neutral">-</td><td class="neutral">-</td></tr>
+            <tr><td class="club-name">Intel IoT</td><td class="department">Computer Science Engineering</td><td class="neutral">-</td><td class="neutral">-</td></tr>
+            <tr><td class="club-name">Robotics</td><td class="department">Mechanical Engineering</td><td class="neutral">-</td><td class="neutral">-</td></tr>
+            <tr><td class="club-name">SAE</td><td class="department">Mechanical Engineering</td><td class="neutral">-</td><td class="neutral">-</td></tr>
+            <tr><td class="club-name">WiCyS Amrita Student Chapter</td><td class="department">TIFAC-CORE in Cyber Security</td><td class="neutral">-</td><td class="neutral">-</td></tr>
         </tbody>
     </table>
+
 </div>
 
 <script>
 function filterTable(query) {
     query = query.toLowerCase();
     document.querySelectorAll("#clubsTable tr").forEach(row => {
-        row.style.display = row.innerText.toLowerCase().includes(query) ? "" : "none";
+        row.style.display = row.innerText.toLowerCase().includes(query)
+            ? ""
+            : "none";
     });
 }
 </script>
 
 </body>
 </html>
-
