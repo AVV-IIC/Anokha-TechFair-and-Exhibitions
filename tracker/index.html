@@ -202,12 +202,148 @@ footer.footer {
   .table-section h2 { font-size: 1.3rem; }
   .tab { font-size: 0.8rem; padding: 8px 14px; }
 }
+/* ---------- MOBILE OPTIMIZATION ---------- */
+@media (max-width: 768px) {
+
+  body {
+    background: #f8fafc;
+  }
+
+  .dash-container {
+    width: 95%;
+    padding-bottom: 30px;
+  }
+
+  .site-header {
+    padding: 24px 10px;
+  }
+
+  .site-header h1 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+
+  .tagline {
+    font-size: 0.85rem;
+  }
+
+  .nav-section {
+    padding: 18px 12px;
+  }
+
+  .nav-section h2 {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+  }
+
+  .tab-group {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .tab {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.85rem;
+  }
+
+  .table-section {
+    padding: 18px 10px;
+  }
+
+  .table-section h2 {
+    font-size: 1.2rem;
+  }
+
+  .main-table {
+    font-size: 0.75rem;
+  }
+
+  .main-table th, 
+  .main-table td {
+    padding: 10px 8px;
+  }
+
+  .status {
+    font-size: 0.7rem;
+    padding: 4px 8px;
+  }
+
+  .view-btn {
+    font-size: 0.7rem;
+    padding: 4px 10px;
+  }
+
+  footer.footer {
+    font-size: 0.75rem;
+    padding: 14px 10px;
+  }
+}
+
+/* Transform tables into readable cards on small devices */
+@media (max-width: 600px) {
+
+  .table-wrapper { padding: 0; }
+
+  .main-table {
+    display: block;
+    width: 100%;
+    max-width: none;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  .main-table thead { display: none; }
+
+  .main-table tbody tr {
+    display: block;
+    margin: 10px 0;
+    padding: 12px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+    transform: none;
+    border-bottom: none;
+  }
+
+  .main-table tbody td {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 10px;
+    font-size: 0.95rem;
+    border: none;
+  }
+
+  .main-table tbody td:first-child { font-weight: 700; color: var(--text-dark); }
+
+  .main-table tbody td:last-child { text-align: right; }
+
+  .view-btn { padding: 8px 12px; }
+
+}
+/* Remove excess bottom gap above footer */
+main.dash-container {
+  padding-bottom: 20px !important;
+}
+
+footer.footer {
+  margin-top: 12px !important;
+}
+
+
 </style>
+
 </head>
 
 <body>
 
 <header class="site-header">
+  <div class="logo-container">
+            <img src="images/anokha_2026.png" alt="Anokha Logo" width="220">
+            <img src="images/tf_black.png" alt="TechFair & Exhibitions Logo" width="190">
+            
+        </div>
   <h1>Anokha TechFair & Exhibitions 2026</h1>
   <p class="tagline">Institution's Innovation Council (IIC) Dashboard</p>
 </header>
@@ -222,19 +358,19 @@ footer.footer {
           <tr>
             <th>Event</th>
             <th>Projects</th>
-            <th>Timeline</th>
+            
             <th>Status</th>
             <th>Details</th>
           </tr>
         </thead>
 
         <tbody>
-          <tr><td>TechFair</td><td>18</td><td>Jan – Mar 2025</td><td><span class="status progress">In Progress</span></td><td><a href="#" class="view-btn">View</a></td></tr>
-          <tr><td>SchoolFair</td><td>9</td><td>Apr – Jun 2026</td><td><span class="status pending">Pending</span></td><td><a href="#" class="view-btn">View</a></td></tr>
-          <tr><td>Exhibitions</td><td>10</td><td>Feb – May 2026</td><td><span class="status pending">Pending</span></td><td><a href="#" class="view-btn">View</a></td></tr>
-          <tr><td>Amrita's Tech Club Corner</td><td>8</td><td>Mar 2026</td><td><span class="status completed">Completed</span></td><td><a href="#" class="view-btn">View</a></td></tr>
-          <tr><td>IIC's Hall of Fame</td><td>-</td><td>Ongoing</td><td><span class="status completed">Completed</span></td><td><a href="#" class="view-btn">View</a></td></tr>
-          <tr><td>IIC's Mentor-Mentee Innovation Hub</td><td>-</td><td>Ongoing</td><td><span class="status completed">Completed</span></td><td><a href="#" class="view-btn">View</a></td></tr>
+          <tr><td>TechFair</td><td>18</td><td><span class="status progress">In Progress</span></td><td><a href="techfair.html" class="view-btn">View</a></td></tr>
+          <tr><td>SchoolFair</td><td>9</td><td><span class="status pending">Pending</span></td><td><a href="schoolfair.html" class="view-btn">View</a></td></tr>
+          <tr><td>Exhibitions</td><td>10</td><td><span class="status pending">Pending</span></td><td><a href="exhibitions.html" class="view-btn">View</a></td></tr>
+          <tr><td>Amrita's Tech Club Corner</td><td>8</td><td><span class="status completed">Completed</span></td><td><a href="clubs.html" class="view-btn">View</a></td></tr>
+          <tr><td>IIC's Hall of Fame</td><td>-</td><td><span class="status completed">Completed</span></td><td><a href="hall_of_fame.html" class="view-btn">View</a></td></tr>
+          <tr><td>IIC's Mentor-Mentee Innovation Hub</td><td>-</td><td><span class="status completed">Completed</span></td><td><a href="mentormentee.html" class="view-btn">View</a></td></tr>
         </tbody>
 
       </table>
@@ -256,9 +392,9 @@ footer.footer {
         </thead>
 
         <tbody>
-          <tr><td>Evaluation</td><td>Assessment</td><td>May 2026</td><td><span class="status progress">In Progress</span></td><td><a href="#" class="view-btn">View</a></td></tr>
-          <tr><td>Requirements</td><td>Documentation</td><td>Ongoing</td><td><span class="status progress">In Progress</span></td><td><a href="#" class="view-btn">View</a></td></tr>
-          <tr><td>Judges Coordination</td><td>Management</td><td>Feb – May 2026</td><td><span class="status pending">Pending</span></td><td><a href="#" class="view-btn">View</a></td></tr>
+          <tr><td>Evaluation</td><td>Assessment</td><td>May 2026</td><td><span class="status progress">In Progress</span></td><td><a href="evaluation.html" class="view-btn">View</a></td></tr>
+          <tr><td>Requirements</td><td>Documentation</td><td>Ongoing</td><td><span class="status progress">In Progress</span></td><td><a href="requirements.html" class="view-btn">View</a></td></tr>
+          <tr><td>Judges Coordination</td><td>Management</td><td>Feb – May 2026</td><td><span class="status pending">Pending</span></td><td><a href="judges.html" class="view-btn">View</a></td></tr>
         </tbody>
 
       </table>
@@ -280,13 +416,11 @@ footer.footer {
       <a href="clubs.html" class="tab">Amrita's Tech Club Corner</a>
       <a href="mentormentee.html" class="tab">IIC's Mentor-Mentee Innovation Hub</a>
       <a href="hall_of_fame.html" class="tab">IIC's Hall of Fame</a>
-      <a href="requirements.html" class="tab">Requirements</a>
+      
       
     </div>
   </section>
-
 </main>
-
 <footer class="footer">
   © 2026 Institution's Innovation Council (IIC) & Anokha TechFair & Exhibitions. All Rights Reserved.
 </footer>
