@@ -147,6 +147,48 @@ footer.footer {
   opacity: 0.8;
   margin-top: auto;
 }
+.subheading {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: var(--accent2);
+}
+.category-row td{
+  background:#f0f4ff;
+  color:#27374d;
+  font-weight:800;
+  letter-spacing:2px;
+  text-align:center;
+  text-transform:uppercase;
+  font-size:0.9rem;
+}
+.search-box { text-align: center; margin-bottom: 25px; }
+.search-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 60%;
+    max-width: 480px;
+}
+.search-wrapper input {
+    width: 100%;
+    padding: 12px 18px 12px 50px;
+    border-radius: 30px;
+    border: 1px solid #cfc6e6;
+    font-size: 1rem;
+    outline: none;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+.search-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+}
+
+
 
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 600px) {
@@ -157,14 +199,21 @@ footer.footer {
 </head>
 
 <body>
-
+   
 <header class="site-header">
   <h1>Anokha TechFair & Exhibitions 2026</h1>
   <p class="tagline">Projects Overview Dashboard</p>
 </header>
 
 <main class="dash-container">
+<div class="container">
 
+<div class="search-box">
+    <div class="search-wrapper">
+        <img src="images/search.png" class="search-icon" alt="search">
+        <input type="text" placeholder="Search ID, Project title, department..." onkeyup="filterTable(this.value)">
+    </div>
+</div>
   <section class="table-section">
     <h2>Projects & Stall Allocation</h2>
 
@@ -179,6 +228,10 @@ footer.footer {
             <th>View More</th>
           </tr>
         </thead>
+        <tr class="category-row">
+  <td colspan="6">Software Track</td>
+</tr>
+
 
         <tbody>
           <tr><td>ATFE26-ST01</td><td>S01</td><td>Smart Traffic Control System</td><td>CSE</td><td><a href="teams/ATFE26-ST01.html" class="view-btn">View</a></td></tr>
@@ -252,11 +305,13 @@ footer.footer {
           <tr><td>ATFE26-ST58</td><td>S28</td><td>Assistive Tech for Elderly</td><td>BME</td><td><a href="teams/ATFE26-ST58.html" class="view-btn">View</a></td></tr>
           <tr><td>ATFE26-ST59</td><td>S29</td><td>Cyber Forensics Toolkit</td><td>CYS</td><td><a href="teams/ATFE26-ST59.html" class="view-btn">View</a></td></tr>
           <tr><td>ATFE26-ST60</td><td>S30</td><td>Smart Campus Navigation</td><td>CSE</td><td><a href="teams/ATFE26-ST60.html" class="view-btn">View</a></td></tr>
-
+            <tr class="category-row">
+  <td colspan="6">Hardware Track</td>
+</tr>
           <tr><td>ATFE26-HT01</td><td>S26</td><td>Automated Fire Detection</td><td>ECE</td><td><a href="teams/ATFE26-HT01.html" class="view-btn">View</a></td></tr>
           <tr><td>ATFE26-HT02</td><td>S27</td><td>Smart Retail Analytics</td><td>CSE</td><td><a href="teams/ATFE26-HT02.html" class="view-btn">View</a></td></tr>
           <tr><td>ATFE26-HT03</td><td>S28</td><td>Assistive Tech for Elderly</td><td>BME</td><td><a href="teams/ATFE26-HT03.html" class="view-btn">View</a></td></tr>
-          <tr><td>ATFE26-HT04</td><td>S29</td><td>Cyber Forensics Toolkit</td><td>CYS</td><td><a href="teams/ATFE26-HT04.html" class="view-btn">View</a></td></tr>
+          <tr><td>ATFE26-HT04</td><td>S29</td><td>Cyber Forensics Toolkit</td><td>CYS</ td>
           <tr><td>ATFE26-HT05</td><td>S30</td><td>Smart Campus Navigation</td><td>CSE</td><td><a href="teams/ATFE26-HT05.html" class="view-btn">View</a></td></tr>
 
           <tr><td>ATFE26-HT06</td><td>S26</td><td>Automated Fire Detection</td><td>ECE</td><td><a href="teams/ATFE26-HT06.html" class="view-btn">View</a></td></tr>
@@ -300,6 +355,29 @@ footer.footer {
           <tr><td>ATFE26-HT38</td><td>S28</td><td>Assistive Tech for Elderly</td><td>BME</td><td><a href="teams/ATFE26-HT38.html" class="view-btn">View</a></td></tr>
           <tr><td>ATFE26-HT39</td><td>S29</td><td>Cyber Forensics Toolkit</td><td>CYS</td><td><a href="teams/ATFE26-HT39.html" class="view-btn">View</a></td></tr>
           <tr><td>ATFE26-HT40</td><td>S30</td><td>Smart Campus Navigation</td><td>CSE</td><td><a href="teams/ATFE26-HT40.html" class="view-btn">View</a></td></tr>
+            <tr class="category-row">
+  <td colspan="6">Non-Software Track</td>
+</tr>
+          <tr><td>ATFE26-NST01</td><td>S26</td><td>Automated Fire Detection</td><td>ECE</td><td><a href="teams/ATFE26-NST01.html" class="view-btn">View</a></td></tr>
+<tr><td>ATFE26-NST02</td><td>S26</td><td>Automated Fire Detection</td><td>ECE</td><td><a href="teams/ATFE26-NST02.html" class="view-btn">View</a></td></tr>
+<tr><td>ATFE26-NST03</td><td>S26</td><td>Automated Fire Detection</td><td>ECE</td><td><a href="teams/ATFE26-NST03.html" class="view-btn">View</a></td></tr>
+<tr><td>ATFE26-NST04</td><td>S26</td><td>Automated Fire Detection</td><td>ECE</td><td><a href="teams/ATFE26-NST04.html" class="view-btn">View</a></td></tr>
+<tr><td>ATFE26-NST05</td><td>S26</td><td>Automated Fire Detection</td><td>ECE</td><td><a href="teams/ATFE26-NST05.html" class="view-btn">View</a></td></tr>
+<tr><td>ATFE26-NST06</td><td>S26</td><td>Automated Fire Detection</td><td>ECE</td><td><a href="teams/ATFE26-NST06.html" class="view-btn">View</a></td></tr>
+<tr><td>ATFE26-NST07</td><td>S26</td><td>Automated Fire Detection</td><td>ECE</td><td><a href="teams/ATFE26-NST07.html" class="view-btn">View</a></td></tr>
+<tr><td>ATFE26-NST08</td><td>S26</td><td>Automated Fire Detection</td><td>ECE</td><td><a href="teams/ATFE26-NST08.html" class="view-btn">View</a></td></tr>
+<tr><td>ATFE26-NST09</td><td>S26</td><td>Automated Fire Detection</td><td>ECE</td><td><a href="teams/ATFE26-NST09.html" class="view-btn">View</a></td></tr>
+<tr><td>ATFE26-NST10</td><td>S26</td><td>Automated Fire Detection</td><td>ECE</td><td><a href="teams/ATFE26-NST10.html" class="view-btn">View</a></td></tr>
+<tr><td>ATFE26-NST11</td><td>S26</td><td>Automated Fire Detection</td><td>ECE</td><td><a href="teams/ATFE26-NST11.html" class="view-btn">View</a></td></tr>
+<tr><td>ATFE26-NST12</td><td>S26</td><td>Automated Fire Detection</td><td>ECE</td><td><a href="teams/ATFE26-NST12.html" class="view-btn">View</a></td></tr>
+<tr><td>ATFE26-NST13</td><td>S26</td><td>Automated Fire Detection</td><td>ECE</td><td><a href="teams/ATFE26-NST13.html" class="view-btn">View</a></td></tr>
+<tr><td>ATFE26-NST14</td><td>S26</td><td>Automated Fire Detection</td><td>ECE</td><td><a href="teams/ATFE26-NST14.html" class="view-btn">View</a></td></tr>
+<tr><td>ATFE26-NST15</td><td>S26</td><td>Automated Fire Detection</td><td>ECE</td><td><a href="teams/ATFE26-NST15.html" class="view-btn">View</a></td></tr>
+<tr><td>ATFE26-NST16</td><td>S26</td><td>Automated Fire Detection</td><td>ECE</td><td><a href="teams/ATFE26-NST16.html" class="view-btn">View</a></td></tr>
+<tr><td>ATFE26-NST17</td><td>S26</td><td>Automated Fire Detection</td><td>ECE</td><td><a href="teams/ATFE26-NST17.html" class="view-btn">View</a></td></tr>
+<tr><td>ATFE26-NST18</td><td>S26</td><td>Automated Fire Detection</td><td>ECE</td><td><a href="teams/ATFE26-NST18.html" class="view-btn">View</a></td></tr>
+<tr><td>ATFE26-NST19</td><td>S26</td><td>Automated Fire Detection</td><td>ECE</td><td><a href="teams/ATFE26-NST19.html" class="view-btn">View</a></td></tr>
+<tr><td>ATFE26-NST20</td><td>S26</td><td>Automated Fire Detection</td><td>ECE</td><td><a href="teams/ATFE26-NST20.html" class="view-btn">View</a></td></tr>
         </tbody>
       </table>
     </div>
@@ -307,9 +385,64 @@ footer.footer {
 
 </main>
 
+
+
 <footer class="footer">
   © 2026 Institution's Innovation Council (IIC) & Anokha TechFair & Exhibitions. All Rights Reserved.
 </footer>
 
+<script>
+// Filters the projects table by ID, title or department
+function filterTable(query) {
+  const q = String(query || '').trim().toLowerCase();
+  const table = document.querySelector('.main-table');
+  if (!table) return;
+
+  const rows = Array.from(table.querySelectorAll('tr')).filter(r => !r.closest('thead'));
+
+  // If query empty, show all rows and hide any no-results row
+  if (!q) {
+    rows.forEach(r => r.style.display = '');
+    const no = table.querySelector('.no-results'); if (no) no.style.display = 'none';
+    return;
+  }
+
+  // Hide/show data rows based on match
+  rows.forEach(r => {
+    if (r.classList.contains('category-row')) { r.style.display = 'none'; return; }
+    const cells = Array.from(r.querySelectorAll('td')).slice(0, 4);
+    const text = cells.map(td => td.textContent.toLowerCase()).join(' ');
+    r.style.display = text.includes(q) ? '' : 'none';
+  });
+
+  // Show category rows only when they have visible children
+  for (let i = 0; i < rows.length; i++) {
+    const r = rows[i];
+    if (!r.classList.contains('category-row')) continue;
+    let hasVisible = false;
+    for (let j = i + 1; j < rows.length && !rows[j].classList.contains('category-row'); j++) {
+      if (rows[j].style.display !== 'none') { hasVisible = true; break; }
+    }
+    r.style.display = hasVisible ? '' : 'none';
+  }
+
+  // Show a friendly "no results" row when nothing matches
+  const anyVisible = rows.some(r => !r.classList.contains('category-row') && r.style.display !== 'none');
+  let no = table.querySelector('.no-results');
+  if (!anyVisible) {
+    if (!no) {
+      no = document.createElement('tr');
+      no.className = 'no-results';
+      no.innerHTML = '<td colspan="5" style="text-align:center;padding:18px;color:#666">No matching projects found.</td>';
+      const tbody = table.querySelector('tbody') || table;
+      tbody.appendChild(no);
+    } else {
+      no.style.display = '';
+    }
+  } else if (no) {
+    no.style.display = 'none';
+  }
+}
+</script>
 </body>
 </html>
