@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Anokha Mentor–Mentee Activity Tracker</title>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+  font-family:"Inter","Segoe UI",system-ui,sans-serif;
+  background:#f7f3e9;
+  padding:40px 20px;
+}
+
+.logo-container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  gap:20px;
+  flex-wrap:wrap;
+  margin-bottom:10px;
+}
+
+h1{
+  text-align:center;
+  margin:6px 0 28px;
+  color:#5b4b8a;
+  font-size:2.4rem;
+  min-height:3rem;
+}
+
+.container{max-width:1100px;margin:auto}
+
+/* TABLE */
+table{
+  width:100%;
+  border-collapse:collapse;
+  background:#fff;
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:0 12px 35px rgba(0,0,0,0.12);
+}
+
+thead{background:#e8def8}
+
+th{
+  padding:16px;
+  font-size:1.05rem;
+  color:#3f2d68;
+  border:1px solid #ddd2f3;
+  text-align:center;
+}
+
+td{
+  padding:12px;
+  border:1px solid #eee6d8;
+  font-size:0.95rem;
+}
+
+/* STATUS BADGES */
+.badge{
+  display:inline-block;
+  padding:4px 12px;
+  border-radius:999px;
+  font-size:0.8rem;
+  font-weight:600;
+}
+
+.badge-completed{background:#e6f4ea;color:#137333;}
+.badge-progress{background:#fff4e5;color:#b45309;}
+.badge-pending{background:#fde2e2;color:#b91c1c;}
+.badge-discuss{background:#e5e7eb;color:#374151;}
+
+.footer{
+  margin-top:36px;
+  padding:16px;
+  text-align:center;
+  background:#efe4d2;
+  color:#5e5647;
+  border-radius:12px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="logo-container">
+  <img src="images/anokha_2026.png" width="200">
+  <img src="images/tf_black.png" width="170">
+  <img src="images/iic_logo.png" width="180">
+  
+</div>
+
+<h1 id="typing-text"></h1>
+
+<div class="container">
+
+<table>
+<thead>
+<tr>
+  <th>S.No</th>
+  <th>Work Type</th>
+  <th>Task / Topic</th>
+  <th>Status</th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr><td>1</td><td>Email Communication</td><td>ex</td><td><span class="badge badge-completed">Completed</span></td></tr>
+<tr><td>2</td><td>Email Communication</td><td>Faculty follow-up mail to mentors who filled willingness form (Shortlisting process)</td><td><span class="badge badge-completed">Completed</span></td></tr>
+<tr><td>3</td><td>Data Structuring</td><td>Defined student information fields for mentor review</td><td><span class="badge badge-completed">Completed</span></td></tr>
+<tr><td>4</td><td>Data Structuring</td><td>Defined faculty project information format for student circulation</td><td><span class="badge badge-completed">Completed</span></td></tr>
+<tr><td>5</td><td>Process Planning</td><td>Finalized mentor–mentee interaction flow during Anokha 2026</td><td><span class="badge badge-completed">Completed</span></td></tr>
+
+<tr><td>6</td><td>Data Compilation</td><td>Compile faculty project themes into final list</td><td><span class="badge badge-progress">In Progress</span></td></tr>
+<tr><td>7</td><td>Data Processing</td><td>Consolidate student preference form responses</td><td><span class="badge badge-progress">In Progress</span></td></tr>
+<tr><td>8</td><td>Allocation</td><td>Share student profiles with faculty mentors</td><td><span class="badge badge-progress">In Progress</span></td></tr>
+<tr><td>9</td><td>Allocation</td><td>Collect mentor shortlisting responses</td><td><span class="badge badge-progress">In Progress</span></td></tr>
+<tr><td>10</td><td>Scheduling</td><td>Prepare mentor–mentee interaction schedule</td><td><span class="badge badge-progress">In Progress</span></td></tr>
+
+<tr><td>11</td><td>Communication</td><td>Inform students of allotted interaction slots</td><td><span class="badge badge-pending">Pending</span></td></tr>
+<tr><td>12</td><td>Communication</td><td>Inform faculty of interaction schedule</td><td><span class="badge badge-pending">Pending</span></td></tr>
+<tr><td>13</td><td>Execution</td><td>Conduct mentor–mentee interaction sessions (Anokha 2026)</td><td><span class="badge badge-pending">Pending</span></td></tr>
+<tr><td>14</td><td>Follow-up</td><td>Post-interaction confirmation of continued mentoring</td><td><span class="badge badge-pending">Pending</span></td></tr>
+<tr><td>15</td><td>Documentation</td><td>Prepare final IIC R&D Cell activity report</td><td><span class="badge badge-pending">Pending</span></td></tr>
+
+<tr><td>16</td><td>Extension of Deadline</td><td>Confirm if deadline for mentor-mentee form can be extended</td><td><span class="badge badge-discuss">Yet to be discussed</span></td></tr>
+
+</tbody>
+</table>
+
+</div>
+
+<footer class="footer">
+© 2026 Institution’s Innovation Council (IIC) & Anokha TechFair & Exhibitions. All Rights Reserved.
+</footer>
+
+<script>
+const text = "Anokha Mentor–Mentee Activity Tracker";
+let index = 0;
+
+function typeWriter() {
+  if (index < text.length) {
+    document.getElementById("typing-text").innerHTML += text.charAt(index);
+    index++;
+    setTimeout(typeWriter, 80);
+  }
+}
+
+window.onload = typeWriter;
+</script>
+
+</body>
+</html>
