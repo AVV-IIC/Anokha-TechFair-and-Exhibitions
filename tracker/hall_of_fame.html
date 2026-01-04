@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hall of Fame – Tech Legends</title>
+
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+  background-color: #f7f3e9;
+  padding: 40px 20px;
+}
+
+.container { max-width: 1100px; margin: auto; }
+
+h1 {
+  text-align: center;
+  color: #5b4b8a;
+  font-size: 2.6rem;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+
+.section-title {
+  background: #efe4d2;
+  font-weight: 800;
+  font-size: 1.4rem;
+  color: #5c4a2e;
+  text-align: center;
+  padding: 14px;
+  margin: 40px 0 18px 0;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.hof-wall {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 22px;
+  padding: 20px 10px;
+}
+
+.photo-card {
+  width: 160px;
+  background: #fff;
+  padding: 10px 10px 30px 10px;
+  border-radius: 6px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  transform: rotate(calc(-4deg + 8deg * var(--tilt)));
+  transition: 0.3s;
+  position: relative;
+}
+
+.photo-card:hover { transform: rotate(0deg) scale(1.14); }
+
+.photo-card::before {
+  content: "📌";
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+}
+
+.photo-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+  border: 3px solid #e8def8;
+}
+
+.photo-card .name {
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: #3f2d68;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.photo-card .comp {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #5e5647;
+  margin-top: 4px;
+  text-align: center;
+}
+
+.photo-card .bio {
+  font-size: 0.75rem;
+  background: #faf6ee;
+  padding: 6px;
+  border-radius: 6px;
+  margin-top: 6px;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.photo-card .achievement {
+  font-size: 0.72rem;
+  background: #f4f1eb;
+  padding: 6px;
+  border-radius: 5px;
+  margin-top: 6px;
+  text-align: center;
+  font-weight: 800;
+  color: #5b4b8a;
+  line-height: 1.3;
+}
+
+@media (max-width: 480px) {
+  .photo-card { width: 135px; }
+  .photo-card img { height: 130px; }
+  h1 { font-size: 1.6rem; }
+  .section-title { font-size: 1.1rem; }
+}
+.hero-panel h1 {
+  font-size: 2.4rem;
+  font-weight: 900;
+  margin-bottom: 10px;
+  color: white;
+}
+.hero-panel {
+  background: #5b4b8a;
+  color: white;
+  padding: 35px 20px;
+  border-radius: 18px;
+  margin-bottom: 50px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+.footer {
+            margin-top: 36px;
+            padding: 16px 10px;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #5e5647;
+            background: #efe4d2;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+        }
+</style>
+</head>
+
+<body>
+
+<div class="hero-panel">
+  <h1>🌟 IIC's Hall of Fame – Award Ceremony 🌟</h1>
+
+</div>
+
+  <div class="section-title">💻 Coding Competition Champions</div>
+  <div class="hof-wall">
+    <div class="photo-card" style="--tilt:0.3">
+      <img src="student1.jpg">
+      <div class="name">Srisha S. Kanna</div>
+      <div class="comp">CodeFest 2025 | 12th Grade</div>
+      <div class="bio">Built an AI-powered puzzle solver to crack logic-based competitive programming problems.</div>
+      <div class="achievement">🥇 1st Place (Regional) <br> 🧠 AI Puzzle Solver <br> Tech: Python, TF, Heuristics</div>
+    </div>
+
+    <div class="photo-card" style="--tilt:0.7">
+      <img src="student2.jpg">
+      <div class="name">Arjun R. Menon</div>
+      <div class="comp">Google Kick Start 2025 | BTech AI</div>
+      <div class="bio">Top competitive programmer focusing on algorithmic reasoning + Gen-AI-assisted coding.</div>
+      <div class="achievement">🏅 Global Rank: Top 2% <br> 🧩 Best Logic Optimizer <br> Tech: C++, Gemini, Search Trees</div>
+    </div>
+
+    <div class="photo-card" style="--tilt:0.5">
+      <img src="student3.jpg">
+      <div class="name">Meera K. Iyer</div>
+      <div class="comp">TCS CodeVita 2024 | CSE</div>
+      <div class="bio">Developed scalable contest solutions and transformer-assisted debugging tools.</div>
+      <div class="achievement">🥈 2nd Place (National) <br> 🐞 Code Debugger <br> Tech: Python, LLM Review</div>
+    </div>
+
+    <div class="photo-card" style="--tilt:0.8">
+      <img src="student4.jpg">
+      <div class="name">Zayn R.</div>
+      <div class="comp">ICPC Prep League 2025 | AI Dept</div>
+      <div class="bio">Specialized in DP, graph problems, and LLM strategy prompting.</div>
+      <div class="achievement">🥉 3rd Place (Inter-College) <br> Tech: Java, DP, Graphs</div>
+    </div>
+  </div>
+
+  <div class="section-title">🚀 Hackathon Heroes</div>
+  <div class="hof-wall">
+    <div class="photo-card" style="--tilt:0.2">
+      <img src="student5.jpg">
+      <div class="name">Riya Nair</div>
+      <div class="comp">Smart India Hackathon 2025 | DS</div>
+      <div class="bio">Deployed a real-time triage AI assistant for rural healthcare innovation.</div>
+      <div class="achievement">🥇 Winner (HealthTech Track) <br> ⚕️ AI Triage <br> Tech: CNN + Edge Deploy</div>
+    </div>
+
+    <div class="photo-card" style="--tilt:0.6">
+      <img src="student6.jpg">
+      <div class="name">Kabir Khan</div>
+      <div class="comp">MLH Global Hack 2025 | AI</div>
+      <div class="bio">Built an LLM deployment system with 95% inference uptime.</div>
+      <div class="achievement">🌍 Best DL Deployment <br> Tech: VAE, FastAPI, Cache Opt</div>
+    </div>
+
+    <div class="photo-card" style="--tilt:0.4">
+      <img src="team1.jpg">
+      <div class="name">Team NeuralNova</div>
+      <div class="comp">GenAI Innovation Hack 2025</div>
+      <div class="bio">Built a Gen-AI competitive programming mentor that gives hints, plans, and optimized solutions.</div>
+      <div class="achievement">⭐ Asia Finalist <br> Project: CP Mentor <br> Tech: RAG + LLM</div>
+    </div>
+  </div>
+
+  <div class="section-title">💡 Innovation Legends</div>
+  <div class="hof-wall">
+    <div class="photo-card" style="--tilt:0.9">
+      <img src="student7.jpg">
+      <div class="name">Vikram S.</div>
+      <div class="comp">IIC Innovation Challenge 2024 | ECE</div>
+      <div class="bio">Designed IoT diagnostics system with anomaly-detection AI embedded.</div>
+      <div class="achievement">🏆 Best Prototype <br> 🩺 IoT Diagnostics <br> Tech: IoT + ML</div>
+    </div>
+
+    <div class="photo-card" style="--tilt:0.1">
+      <img src="team2.jpg">
+      <div class="name">Aanya & Team TechVeda</div>
+      <div class="comp">Shark Tank Style Pitch 2025 | CSE</div>
+      <div class="bio">Presented investment-ready Gen-AI learning prototype.</div>
+      <div class="achievement">💰 ₹10,000 Winner <br> 📊 Best Pitch Deck</div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+        © 2024–2026 <strong>Institution’s Innovation Council (IIC)</strong>. All Rights Reserved.
+    </footer>
+</body>
+</html>
