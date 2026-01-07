@@ -155,44 +155,36 @@
     "githubLink": ""
   },
   "ATFE26-HT06": {
-    "id": "ATFE26-HT06",
-    "title": "Smart Traffic Control System",
-    "department": "Department of Computer Science & Engineering",
-    "teamName": "IntelliFlow",
-    "stallNumber": "",
-    "facultyMentor": "Dr. ABC XYZ",
-    "description": "This project proposes an AI-driven smart traffic control system that dynamically adjusts traffic signals based on real-time congestion data using computer vision and IoT sensors to reduce waiting time and emissions.",
-    "trl": "5",
-    "mrl": "3",
-    "irl": "4",
-    "sdgs": [
-      "9",
-      "11"
-    ],
-    "teamMembers": [
-      {
-        "name": "Student 1",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 2",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 3",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 4",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      }
-    ],
-    "githubLink": ""
-  },
+  "id": "ATFE26-HT06",
+  "title": "Gesture Controlled Drone",
+  "department": "Department of Engineering",
+  "teamName": "-",
+  "stallNumber": "HT06",
+  "facultyMentor": "",
+  "description": "This project presents a gyro-based gesture controlled drone system. The drone is controlled by interpreting wrist motion using gyroscope sensor data, where angular values are converted into corresponding flight control commands. The system enables intuitive human–machine interaction and serves as an effective learning platform for embedded systems, control theory, and UAV operation.",
+  "trl": "4",
+  "mrl": "4",
+  "irl": "5",
+  "sdgs": [
+    "4",
+    "9",
+    "11"
+  ],
+  "teamMembers": [
+    {
+      "name": "Sanjay Soundararajan",
+      "rollNumber": "",
+      "linkedin": "https://www.linkedin.com/in/sanjay-soundararajan"
+    },
+    {
+      "name": "Shrivarsshini Kadirvel",
+      "rollNumber": "",
+      "linkedin": "https://www.linkedin.com/in/shrivarsshini-kadirvel-558190275"
+    }
+  ],
+  "githubLink": ""
+}
+,
   "ATFE26-HT07": {
   "id": "ATFE26-HT07",
   "title": "ULTRA - Ultra Lightweight Training And Research Aircraft",
@@ -463,7 +455,7 @@
   "department": "Department of Computer Science & Engineering",
   "teamName": "Buckle Up",
   "stallNumber": "S36",
-  "facultyMentor": "Dr. ABC XYZ",
+  "facultyMentor": "nan",
   "description": "The project develops a smart wearable posture monitoring system using dual IMU sensors and an ESP32 to continuously track upper-body posture. A machine learning model (Feedforward Neural Network) classifies correct and incorrect postures in real time on the device. Feedback is provided only when poor posture is sustained, ensuring non-intrusive correction. The system promotes preventive musculoskeletal health through continuous posture awareness.",
   "trl": "5",
   "mrl": "3",
@@ -850,44 +842,36 @@
     "githubLink": ""
   },
   "ATFE26-HT25": {
-    "id": "ATFE26-HT25",
-    "title": "Steward Platform",
-    "department": "Department of Mechanical Engineering",
-    "teamName": "IntelliFlow",
-    "stallNumber": "LS09",
-    "facultyMentor": "NAN",
-    "description": "This project presents the design and implementation of a dual-mode control system for a 6-Degree-of-Freedom Stewart Platform. The platform can be controlled using vision-based hand gestures or IMU-based orientation input, selectable based on user preference. In vision mode, a camera captures hand gestures, which are processed using computer vision to generate platform motion commands. In IMU mode, orientation data (roll and pitch) from an inertial sensor directly controls platform tilt and movement.",
-    "trl": "4",
-    "mrl": "3",
-    "irl": "4",
-    "sdgs": [
-      "6",
-      "7"
-    ],
-    "teamMembers": [
-      {
-        "name": "Student 1",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 2",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 3",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 4",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      }
-    ],
-    "githubLink": ""
-  },
+  "id": "ATFE26-HT25",
+  "title": "Design and Development of Stewart Platform",
+  "department": "Department of Aerospace Engineering",
+  "teamName": "STEWART PLATFORM",
+  "stallNumber": "LS09",
+  "facultyMentor": "Dr. Rammohan S",
+  "description": "This project focuses on the design and development of a Stewart Platform, a parallel manipulator widely used in flight simulators, robotics, and precision motion control applications. The system enables six degrees of freedom motion using multiple linear actuators arranged in a parallel configuration. The platform demonstrates applications in motion simulation, stabilization, and advanced control system research.",
+  "trl": "4",
+  "mrl": "3",
+  "irl": "4",
+  "sdgs": [
+    "4",
+    "8",
+    "9"
+  ],
+  "teamMembers": [
+    {
+      "name": "Girisankar M Nair",
+      "rollNumber": "CB.EN.U4ARE23013",
+      "linkedin": "https://www.linkedin.com/in/girisankar-m-nair-2bb876398?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+    },
+    {
+      "name": "Mukesh Dhevan B",
+      "rollNumber": "CB.EN.UARE23027",
+      "linkedin": "https://www.linkedin.com/in/mukesh-dhevan-b-58321b31b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    }
+  ],
+  "githubLink": ""
+}
+,
   "ATFE26-HT26": {
     "id": "ATFE26-HT26",
     "title": "Omni-directional Multi-Morphing Robot",
@@ -1618,6 +1602,11 @@
         "name": "K Niranjana",
         "rollNumber": "",
         "linkedin": ""
+      },
+      {
+        "name": "Sudharsana Ram",
+        "rollNumber": "CB.EN.U4CHE23053",
+        "linkedin": ""
       }
     ],
     "githubLink": ""
@@ -1662,6 +1651,21 @@
       {
         "name": "Haritha G K",
         "rollNumber": "CB.EN.U4CHE24019",
+        "linkedin": ""
+      },
+      {
+        "name": "Nishiga",
+        "rollNumber": "CB.EN.U4CHE23027",
+        "linkedin": ""
+      },
+      {
+        "name": "Mahima",
+        "rollNumber": "CB.EN.U4CHE23028",
+        "linkedin": ""
+      },
+      {
+        "name": "Srinivas",
+        "rollNumber": "CB.EN.U4CHE23049",
         "linkedin": ""
       }
     ],
@@ -1963,36 +1967,37 @@
     ],
     "githubLink": ""
   },
-  "ATFE26-ST02": {
-    "id": "ATFE26-ST02",
-    "title": "Bioinspired Multi-morphing Omnidirectional Robot",
-    "department": "Department of Mechanical Engineering (Automation and Robotic Engineering)",
-    "teamName": "Multi-morphing Omnidirectional Robot",
-    "stallNumber": "S19",
-    "facultyMentor": "Dr. Rammohan S",
-    "description": "This project presents the design and analysis of a bioinspired multi-morphing omnidirectional mobile robot capable of seamless motion in multiple directions. A simplified kinematic model is developed, and optimal parameters such as wheel radius, wheel offset, and steering angle are identified using Jacobian condition number analysis. The robot enables smooth omnidirectional motion with minimal control complexity, allowing intuitive operation through a high-level API. The proposed system improves maneuverability, adaptability, and usability for service and research applications.",
-    "trl": "9",
-    "mrl": "4",
-    "irl": "3",
-    "sdgs": [
-      "9",
-      "11",
-      "12"
-    ],
-    "teamMembers": [
-      {
-        "name": "Rithikswaran R",
-        "rollNumber": "CB.EN.U4ARE23040",
-        "linkedin": "https://www.linkedin.com/in/rithik-radhakrishnan-7159b5329/"
-      },
-      {
-        "name": "Sai Sunandha JK",
-        "rollNumber": "CB.EN.U4ARE23043",
-        "linkedin": ""
-      }
-    ],
-    "githubLink": ""
-  },
+"ATFE26-ST02": {
+  "id": "ATFE26-ST02",
+  "title": "Morphing of Fixed Wing UAV into Land War Machine",
+  "department": "Department of Aerospace Engineering",
+  "teamName": "-",
+  "stallNumber": "ST02",
+  "facultyMentor": "Dr. Rajesh Senthil Kumar",
+  "description": "This project focuses on the conceptual design and analysis of a fixed-wing UAV capable of morphing into a land-based combat vehicle. The system is intended for rapid deployment in defence and tactical operations, where both aerial mobility and ground functionality are required. Aerodynamic sizing was carried out using constraint analysis, followed by stability and control verification through XFLR5. Mechanical morphing mechanisms such as folding wings, deployable legs, and a sliding centre-of-gravity shift system were designed based on torque and load calculations. The integrated design demonstrates the feasibility of a single platform performing both flight and ground-based missions efficiently.",
+  "trl": "4",
+  "mrl": "4",
+  "irl": "4",
+  "sdgs": [
+    "9",
+    "16"
+  ],
+  "teamMembers": [
+    {
+      "name": "Subashini",
+      "rollNumber": "CB.EN.U4AEE23045",
+      "linkedin": "https://www.linkedin.com/in/subashini-satyanarayanan-8a3444219?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
+    {
+      "name": "Nikhil",
+      "rollNumber": "CB.EN.U4AEE24039",
+      "linkedin": ""
+    }
+  ],
+  "githubLink": ""
+}
+
+,
   "ATFE26-ST03": {
     "id": "ATFE26-ST03",
     "title": "Stabilization of Rotor-Tilt Free Tricopter",
@@ -2267,11 +2272,11 @@
   },
   "ATFE26-ST11": {
     "id": "ATFE26-ST11",
-    "title": "Smart Traffic Control System",
-    "department": "Department of Computer Science & Engineering",
-    "teamName": "IntelliFlow",
+    "title": "fINARY AI - SMART FINANCE TRACKER",
+    "department": "Department of AI",
+    "teamName": "fINARY AI - SMART FINANCE TRACKER",
     "stallNumber": "S11",
-    "facultyMentor": "Dr. ABC XYZ",
+    "facultyMentor": "",
     "description": "This project proposes an AI-driven smart traffic control system that dynamically adjusts traffic signals based on real-time congestion data using computer vision and IoT sensors to reduce waiting time and emissions.",
     "trl": "5",
     "mrl": "3",
@@ -2305,44 +2310,40 @@
     "githubLink": ""
   },
   "ATFE26-ST12": {
-    "id": "ATFE26-ST12",
-    "title": "Smart Traffic Control System",
-    "department": "Department of Computer Science & Engineering",
-    "teamName": "IntelliFlow",
-    "stallNumber": "S42",
-    "facultyMentor": "Dr. ABC XYZ",
-    "description": "This project proposes an AI-driven smart traffic control system that dynamically adjusts traffic signals based on real-time congestion data using computer vision and IoT sensors to reduce waiting time and emissions.",
-    "trl": "5",
-    "mrl": "3",
-    "irl": "4",
-    "sdgs": [
-      "9",
-      "11"
-    ],
-    "teamMembers": [
-      {
-        "name": "Student 1",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 2",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 3",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 4",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      }
-    ],
-    "githubLink": ""
-  },
+  "id": "ATFE26-ST12",
+  "title": "Lost and Found",
+  "department": "Department of Artificial Intelligence Engineering",
+  "teamName": "Sub Zero",
+  "stallNumber": "ST12",
+  "facultyMentor": "NIL",
+  "description": "Lost & Found is a decentralized mobile platform built using Flutter and Supabase, designed to modernize campus asset recovery. It replaces inefficient legacy systems with a secure peer-to-peer network featuring precise geospatial tagging for accurate location tracking. The application ensures user safety through a privacy-first verification system and incentivizes participation using a gamified reputation model, creating a responsive, trusted, and community-driven solution.",
+  "trl": "7",
+  "mrl": "5",
+  "irl": "6",
+  "sdgs": [
+    "9",
+    "11"
+  ],
+  "teamMembers": [
+    {
+      "name": "Yashwanth B",
+      "rollNumber": "CB.SC.U4AIE24360",
+      "linkedin": "https://www.linkedin.com/in/yashwanth-balamurugan-a1979b348/"
+    },
+    {
+      "name": "Hemanth S N",
+      "rollNumber": "CB.SC.U4AIE24321",
+      "linkedin": "https://www.linkedin.com/in/hemanth-natarajan/"
+    },
+    {
+      "name": "Mahakisore M",
+      "rollNumber": "CB.SC.U4AIE24333",
+      "linkedin": "https://www.linkedin.com/in/mahakisore-m-830863280/"
+    }
+  ],
+  "githubLink": ""
+}
+,
   "ATFE26-ST13": {
     "id": "ATFE26-ST13",
     "title": "Gurusetu",
@@ -2791,7 +2792,7 @@
     "department": "Department of Computer Science & Engineering",
     "teamName": "Amrita Retriever",
     "stallNumber": "S41",
-    "facultyMentor": "None",
+    "facultyMentor": "-",
     "description": "Amrita Retriever is a real-time, privacy-first Lost & Found application designed for campus environments. Built using Flutter, Supabase, and a Next.js admin dashboard, the platform allows users to post lost and found items, announce rewards, interact via live comments, and receive GPS-based proximity alerts. To prevent false claims and misuse, contact details are revealed only after answering a security question. The system enables efficient recovery through real-time notifications, location intelligence, and controlled communication, creating a trusted digital ecosystem for lost item recovery.",
     "trl": "7",
     "mrl": "6",
@@ -3387,84 +3388,79 @@
     ],
     "githubLink": ""
   },
-  "ATFE26-ST44": {
-    "id": "ATFE26-ST44",
-    "title": "Smart Traffic Control System",
-    "department": "Department of Computer Science & Engineering",
-    "teamName": "IntelliFlow",
-    "stallNumber": "S58",
-    "facultyMentor": "Dr. ABC XYZ",
-    "description": "This project proposes an AI-driven smart traffic control system that dynamically adjusts traffic signals based on real-time congestion data using computer vision and IoT sensors to reduce waiting time and emissions.",
-    "trl": "5",
-    "mrl": "3",
-    "irl": "4",
-    "sdgs": [
-      "9",
-      "11"
-    ],
-    "teamMembers": [
-      {
-        "name": "Student 1",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 2",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 3",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 4",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      }
-    ],
-    "githubLink": ""
-  },
+ "ATFE26-ST44": {
+  "id": "ATFE26-ST44",
+  "title": "Realtime defence system using neutral network",
+  "department": "Department of Chemical Engineering",
+  "teamName": "-",
+  "stallNumber": "S58",
+  "facultyMentor": "",
+  "description": "This project focuses on the production of green hydrogen through water electrolysis. The process uses electrical energy to split water into hydrogen and oxygen without emitting carbon dioxide, making it a clean and sustainable energy solution. Green hydrogen produced through this method has significant potential for applications in renewable energy storage, transportation, and industrial processes, contributing to decarbonization and energy transition.",
+  "trl": "9",
+  "mrl": "3",
+  "irl": "4",
+  "sdgs": [
+    "7",
+    "9",
+    "13"
+  ],
+  "teamMembers": [
+    {
+      "name": "Shreevarsinii B",
+      "rollNumber": "",
+      "linkedin": "https://www.linkedin.com/in/shreevarsinii-balasekar-6320a3328?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    }
+  ],
+  "githubLink": "https://github.com/balashreevarsinii-cmd/Iron-Shield-Real-Time-Defence-System "
+}
+,
   "ATFE26-ST45": {
-    "id": "ATFE26-ST45",
-    "title": "Smart Traffic Control System",
-    "department": "Department of Computer Science & Engineering",
-    "teamName": "IntelliFlow",
-    "stallNumber": "",
-    "facultyMentor": "Dr. ABC XYZ",
-    "description": "This project proposes an AI-driven smart traffic control system that dynamically adjusts traffic signals based on real-time congestion data using computer vision and IoT sensors to reduce waiting time and emissions.",
-    "trl": "5",
-    "mrl": "3",
-    "irl": "4",
-    "sdgs": [
-      "9",
-      "11"
-    ],
-    "teamMembers": [
-      {
-        "name": "Student 1",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 2",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 3",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 4",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      }
-    ],
-    "githubLink": ""
-  },
+  "id": "ATFE26-ST52",
+  "title": "ORION - Offline Retrieval and Intelligence Network",
+  "department": "Department of Artificial Intelligence Engineering",
+  "teamName": "VanGuards",
+  "stallNumber": "ST52",
+  "facultyMentor": "",
+  "description": "ORION is a multimodal Retrieval-Augmented Generation (RAG) system designed for secure, offline intelligence extraction from heterogeneous data sources including documents, images, and audio. The system ingests and indexes data into a unified semantic space using OCR, speech-to-text, vector embeddings, and local large language models. Users can query diverse data using natural language and receive accurate, citation-backed responses. By operating entirely offline, ORION ensures zero data leakage and strong privacy guarantees for sensitive government and enterprise environments. Experimental results demonstrate 94% Recall@3 using dense and hybrid retrieval, perfect ranking performance with MRR of 1.0, NDCG greater than 0.93, and an average response time of 1.5 seconds.",
+  "trl": "6",
+  "mrl": "4",
+  "irl": "4",
+  "sdgs": ["4", "9" , "16"],
+  "teamMembers": [
+    {
+      "name": "Raghav N",
+      "rollNumber": "CB.SC.U4AIE23059",
+      "linkedin": "https://www.linkedin.com/in/raghav--n"
+    },
+    {
+      "name": "Roshan T",
+      "rollNumber": "CB.SC.U4AIE23058",
+      "linkedin": "https://www.linkedin.com/in/roshant-ai"
+    },
+    {
+      "name": "Hari Heman V K",
+      "rollNumber": "CB.SC.U4AIE23029",
+      "linkedin": "https://www.linkedin.com/in/hari-heman"
+    },
+    {
+      "name": "Mathivanan S",
+      "rollNumber": "CB.SC.U4AIE23042",
+      "linkedin": "https://www.linkedin.com/in/smadhi1234"
+    },
+    {
+      "name": "Patel Srikari Shasi",
+      "rollNumber": "CB.SC.U4AIE23053",
+      "linkedin": "https://www.linkedin.com/in/srikari-shasi-patel-b945002ab"
+    },
+    {
+      "name": "Kuricheti Prerana",
+      "rollNumber": "CB.SC.U4AIE23038",
+      "linkedin": "https://www.linkedin.com/in/prerana-kuricheti-8021672b0-st45"
+    }
+  ],
+  "githubLink": ""
+}
+,
   "ATFE26-ST46": {
     "id": "ATFE26-ST46",
     "title": "Credora",
