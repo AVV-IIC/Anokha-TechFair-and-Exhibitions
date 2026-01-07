@@ -7,9 +7,9 @@
     "stallNumber": "",
     "facultyMentor": "Dr. Jinraj V pushpangathan (Aerospace)",
     "description": "This project features a smart autonomous rover designed for reliable navigation in complex environments. By utilizing a LiDAR-based VFH (Vector Field Histogram) algorithm, the rover can identify clear “valleys” or paths through obstacles in real-time. This system ensures smooth movement and intelligent pathfinding, making it suitable for indoor exploration or delivery tasks where human intervention is limited.",
-    "trl": "6",
-    "mrl": "4",
-    "irl": "5",
+    "trl": "5",
+    "mrl": "3",
+    "irl": "4",
     "sdgs": [
       "9",
       "11"
@@ -194,44 +194,36 @@
     "githubLink": ""
   },
   "ATFE26-HT07": {
-    "id": "ATFE26-HT07",
-    "title": "Smart Traffic Control System",
-    "department": "Department of Computer Science & Engineering",
-    "teamName": "IntelliFlow",
-    "stallNumber": "",
-    "facultyMentor": "Dr. ABC XYZ",
-    "description": "This project proposes an AI-driven smart traffic control system that dynamically adjusts traffic signals based on real-time congestion data using computer vision and IoT sensors to reduce waiting time and emissions.",
-    "trl": "5",
-    "mrl": "3",
-    "irl": "4",
-    "sdgs": [
-      "9",
-      "11"
-    ],
-    "teamMembers": [
-      {
-        "name": "Student 1",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 2",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 3",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 4",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      }
-    ],
-    "githubLink": ""
-  },
+  "id": "ATFE26-HT07",
+  "title": "ULTRA - Ultra Lightweight Training And Research Aircraft",
+  "department": "Department of Aerospace Engineering",
+  "teamName": "ULTRA",
+  "stallNumber": "",
+  "facultyMentor": "",
+  "description": "This concept proposes an ultra-lightweight micro UAV prototype designed for dual development pathways: a mass-producible RC DIY kit for civilian, educational, and hobbyist markets, and a scalable military swarm drone platform. The design supports rapid, cost-effective production of standardized airframes, enabling broad access to hands-on aviation learning. It provides an affordable entry point for studying flight theory, aerodynamics, and unmanned systems, while serving as a practical training platform for drone operation. For military and security applications, the modular architecture allows rapid field assembly, component replacement, and mission-specific reconfiguration, significantly reducing logistical burden and accelerating deployment timelines.",
+  "trl": "5",
+  "mrl": "3",
+  "irl": "4",
+  "sdgs": [
+    "4",
+    "8",
+    "9"
+  ],
+  "teamMembers": [
+    {
+      "name": "Kailash S",
+      "rollNumber": "CB.EN.U4AEE24045",
+      "linkedin": "https://www.linkedin.com/in/kailash-senthil?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
+    {
+      "name": "Sakthe Lingam A S",
+      "rollNumber": "CB.EN.U4AEE24049",
+      "linkedin": "https://www.linkedin.com/in/sakthe-lingam-a-s-141155320?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+    }
+  ],
+  "githubLink": ""
+}
+,
   "ATFE26-HT08": {
     "id": "ATFE26-HT08",
     "title": "AERION",
@@ -266,7 +258,7 @@
     "id": "ATFE26-HT09",
     "title": "Swarm of two ESP32 drones",
     "department": "Department of Aerospace and Engineering",
-    "teamName": "IntelliFlow",
+    "teamName": "Swarm of two ESP32 drones",
     "stallNumber": "",
     "facultyMentor": "NAN",
     "description": "This project demonstrates a decentralized dual-drone system in which two ESP32-based unmanned aerial vehicles communicate directly using the ESP-NOW peer-to-peer protocol, eliminating the need for an external ground station. One drone functions as a leader by receiving remote control inputs, while the follower drone mirrors its behavior based on transmitted flight data. The system integrates an IMU and barometric pressure sensor for stable flight control, along with a wireless server interface for real-time PID parameter tuning. By enabling reliable peer-to-peer coordination and autonomous following behavior, the project highlights a scalable and low-latency architecture suitable for cooperative UAV operations and foundational swarm robotics research.",
@@ -274,9 +266,9 @@
     "mrl": "3",
     "irl": "4",
     "sdgs": [
-      "6",
-      "7",
-      "9"
+      "4",
+      "9",
+      "11"
     ],
     "teamMembers": [
       {
@@ -285,18 +277,8 @@
         "linkedin": ""
       },
       {
-        "name": "Student 2",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 3",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 4",
-        "rollNumber": "Roll No",
+        "name": "Shrivalli K",
+        "rollNumber": "CB.EN.U4AEE24021",
         "linkedin": ""
       }
     ],
@@ -346,9 +328,9 @@
     "id": "ATFE26-HT11",
     "title": "Wearable Epileptic Seizure Prediction Device Using ECG Signals",
     "department": "Department of Electronics and Communication Engineering",
-    "teamName": "IntelliFlow",
+    "teamName": "Prelct Guard",
     "stallNumber": "LS11",
-    "facultyMentor": "NAN",
+    "facultyMentor": "Dr. C Santosh kumar",
     "description": "This project presents a wearable epileptic seizure prediction system based on electrocardiogram (ECG) signals. ECG data are acquired using an AD8232 biopotential sensor interfaced with an ESP32 microcontroller and transmitted to the cloud through the MQTT protocol. A cloud-connected personal computer subscribes to the ECG stream, performs signal preprocessing, and applies a deep learning model to classify normal and pre-ictal states. The prediction results are published back to the cloud, enabling real-time monitoring and access for caregivers, relatives, and medical professionals.",
     "trl": "6",
     "mrl": "3",
@@ -476,44 +458,45 @@
     "githubLink": ""
   },
   "ATFE26-HT15": {
-    "id": "ATFE26-HT15",
-    "title": "Smart Traffic Control System",
-    "department": "Department of Computer Science & Engineering",
-    "teamName": "IntelliFlow",
-    "stallNumber": "S36",
-    "facultyMentor": "Dr. ABC XYZ",
-    "description": "This project proposes an AI-driven smart traffic control system that dynamically adjusts traffic signals based on real-time congestion data using computer vision and IoT sensors to reduce waiting time and emissions.",
-    "trl": "5",
-    "mrl": "3",
-    "irl": "4",
-    "sdgs": [
-      "9",
-      "11"
-    ],
-    "teamMembers": [
-      {
-        "name": "Student 1",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 2",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 3",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 4",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      }
-    ],
-    "githubLink": ""
-  },
+  "id": "ATFE26-HT15",
+  "title": "Low Power Smart Posture Correction System For Sedentary Lifestyle",
+  "department": "Department of Computer Science & Engineering",
+  "teamName": "Buckle Up",
+  "stallNumber": "S36",
+  "facultyMentor": "Dr. ABC XYZ",
+  "description": "The project develops a smart wearable posture monitoring system using dual IMU sensors and an ESP32 to continuously track upper-body posture. A machine learning model (Feedforward Neural Network) classifies correct and incorrect postures in real time on the device. Feedback is provided only when poor posture is sustained, ensuring non-intrusive correction. The system promotes preventive musculoskeletal health through continuous posture awareness.",
+  "trl": "5",
+  "mrl": "3",
+  "irl": "4",
+  "sdgs": [
+    "3",
+    "9"
+  ],
+  "teamMembers": [
+    {
+      "name": "Arnita N",
+      "rollNumber": "CB.AI.U4AIM24007",
+      "linkedin": "https://www.linkedin.com/in/arnita?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+    },
+    {
+      "name": "Raavi Sai Pranavi",
+      "rollNumber": "CB.AI.U4AIM24035",
+      "linkedin": "https://www.linkedin.com/in/raavi-sai-pranavi-b406b3336?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
+    {
+      "name": "Shreenidhi G",
+      "rollNumber": "CB.AI.U4AIM24040",
+      "linkedin": "https://www.linkedin.com/in/shreenidhi-gopalakrishnan-sg990099?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
+    {
+      "name": "K Thanmai Sai",
+      "rollNumber": "CB.AI.U4AIM24021",
+      "linkedin": "https://www.linkedin.com/in/kuna-thanmai-05b952352"
+    }
+  ],
+  "githubLink": "https://github.com/Pranavi-hue/Smart-Posture-Correction/"
+}
+,
   "ATFE26-HT16": {
     "id": "ATFE26-HT16",
     "title": "3-Axis Arm Controller",
@@ -523,9 +506,10 @@
     "facultyMentor": "Dr. ABC XYZ",
     "description": "This intelligent 6-DOF robotic arm utilizes a unique Hybrid Brain architecture combining YOLOv8, ANFIS, and NLP models to enable autonomous manipulation with a standard 2D webcam. By leveraging these neural networks to compensate for mechanical imperfections and depth ambiguity in real time, the system successfully bridges the gap between lightweight, limited-cost components into a capable transforming low-cost components into a capable system.",
     "trl": "5",
-    "mrl": "3",
-    "irl": "4",
+    "mrl": "4",
+    "irl": "6",
     "sdgs": [
+      "4",
       "9",
       "11"
     ],
@@ -711,83 +695,81 @@
     "githubLink": ""
   },
   "ATFE26-HT21": {
-    "id": "ATFE26-HT21",
-    "title": "Prototype of Quadropole Ion Trap",
-    "department": "Department of Physical Science",
-    "teamName": "-",
-    "stallNumber": "LS10",
-    "facultyMentor": "NAN",
-    "description": "Ion traps are devices capable of confining charged particles using electric and/or magnetic fields. They play a crucial role in modern physics, mass spectrometry, quantum computing, and precision measurement. This paper presents the design, construction, and working principle of a prototype AC ion trap operated at approximately 1500 V alternating current (AC). The system uses a variac-controlled AC source connected to a step-up transformer, with the transformer output applied to a three-electrode configuration consisting of two end electrodes and a central ring electrode. The paper explains the physical principles behind ion trapping, construction methodology, electrical configuration, safety considerations, and practical applications",
-    "trl": "6",
-    "mrl": "3",
-    "irl": "4",
-    "sdgs": [
-      "4",
-      "9"
-    ],
-    "teamMembers": [
-      {
-        "name": "N. Purna Siddhardha",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 2",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 3",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 4",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      }
-    ],
-    "githubLink": ""
-  },
+  "id": "ATFE26-HT21",
+  "title": "Prototype of Quadrupole Ion Trap",
+  "department": "Department of Physical Science",
+  "teamName": "ION TRAP",
+  "stallNumber": "LS10",
+  "facultyMentor": "NAN",
+  "description": "Ion traps are devices capable of confining charged particles using electric and/or magnetic fields. They play a crucial role in modern physics, mass spectrometry, quantum computing, and precision measurement. This paper presents the design, construction, and working principle of a prototype AC ion trap operated at approximately 1500 V alternating current (AC). The system uses a variac-controlled AC source connected to a step-up transformer, with the transformer output applied to a three-electrode configuration consisting of two end electrodes and a central ring electrode. The paper explains the physical principles behind ion trapping, construction methodology, electrical configuration, safety considerations, and practical applications.",
+  "trl": "6",
+  "mrl": "3",
+  "irl": "4",
+  "sdgs": [
+    "4",
+    "9"
+  ],
+  "teamMembers": [
+    {
+      "name": "Nerella Purna Siddhardha",
+      "rollNumber": "CB.PS.I5PHY24010",
+      "linkedin": "https://www.linkedin.com/in/purna-siddhardha-nerella-6a492431a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
+    {
+      "name": "Aravind A P",
+      "rollNumber": "CB.PS.I5PHY24022",
+      "linkedin": "https://www.linkedin.com/in/aravind-a-p-b497a1327?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
+    {
+      "name": "Govind S",
+      "rollNumber": "CB.PS.I5PHY24006",
+      "linkedin": ""
+    },
+    {
+      "name": "P. Abhishek Sharma",
+      "rollNumber": "CB.PS.I5CHM24006",
+      "linkedin": ""
+    },
+    {
+      "name": "Akshat Shrivastava",
+      "rollNumber": "CB.PS.I5PHY24021",
+      "linkedin": "https://www.linkedin.com/in/akshat-shrivastava-314609306?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    }
+  ],
+  "githubLink": ""
+}
+,
   "ATFE26-HT22": {
-    "id": "ATFE26-HT22",
-    "title": "Smart Traffic Control System",
-    "department": "Department of Computer Science & Engineering",
-    "teamName": "IntelliFlow",
-    "stallNumber": "LS10",
-    "facultyMentor": "Dr. ABC XYZ",
-    "description": "This project proposes an AI-driven smart traffic control system that dynamically adjusts traffic signals based on real-time congestion data using computer vision and IoT sensors to reduce waiting time and emissions.",
-    "trl": "5",
-    "mrl": "3",
-    "irl": "4",
-    "sdgs": [
-      "9",
-      "11"
-    ],
-    "teamMembers": [
-      {
-        "name": "Student 1",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 2",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 3",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 4",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      }
-    ],
-    "githubLink": ""
-  },
+  "id": "ATFE26-HT22",
+  "title": "Ambient Water–Solid Interaction Based Power Generator",
+  "department": "Department of Physics",
+  "teamName": "-",
+  "stallNumber": "ATFE26-HT22",
+  "facultyMentor": "Sudip K Batabyal (PhD Scholar, Physics Department, Energy Technology Lab)",
+  "description": "An environmentally benign power generator that converts ambient water–solid interfacial interactions into usable electrical energy. By integrating β-MnO₂ with activated carbon (AC) in an optimized tubular architecture, the device achieves a maximum open-circuit voltage (Voc) of 1.12 V and a short-circuit current (Isc) of 0.19 mA, delivering a peak power of 56 μW under ambient conditions without any external energy input.",
+  "trl": "5",
+  "mrl": "3",
+  "irl": "4",
+  "sdgs": [
+    "7",
+    "9",
+    "13"
+  ],
+  "teamMembers": [
+    {
+      "name": "Ranjithkumar A",
+      "rollNumber": "CB.PS.R4PHY25004",
+      "linkedin": ""
+    },
+    {
+      "name": "Sreejith P Madhusudanan",
+      "rollNumber": "",
+      "linkedin": ""
+    }
+  ],
+  "githubLink": ""
+}
+,
   "ATFE26-HT23": {
     "id": "ATFE26-HT23",
     "title": "Solar Panel Maintenance",
@@ -800,7 +782,7 @@
     "mrl": "3",
     "irl": "3",
     "sdgs": [
-      "7",
+      "3",
       "9"
     ],
     "teamMembers": [
@@ -831,7 +813,7 @@
     "id": "ATFE26-HT24",
     "title": "Portable Solar Tracker",
     "department": "Department of Electrical and Electronics Engineering",
-    "teamName": "IntelliFlow",
+    "teamName": "SOLARIS",
     "stallNumber": "LS12",
     "facultyMentor": "NAN",
     "description": "A low-cost, portable dual-axis solar tracking system using an STM32 microcontroller and GPS-synchronized algorithms is designed to accurately orient solar panels in real time. By autonomously optimizing panel angles, the system achieves an increased energy yield compared to fixed installations. The weather-independent and reproducible design makes it more compact, efficient, and a reliable solar power solution.",
@@ -939,16 +921,17 @@
     "id": "ATFE26-HT27",
     "title": "NIVARA Smart Health",
     "department": "Department of Mechanical Engineering",
-    "teamName": "IntelliFlow",
+    "teamName": "NIVARA",
     "stallNumber": "S35",
     "facultyMentor": "Dr. ABC XYZ",
     "description": "This project proposes an AI-driven smart traffic control system that dynamically adjusts traffic signals based on real-time congestion data using computer vision and IoT sensors to reduce waiting time and emissions.",
-    "trl": "5",
-    "mrl": "3",
-    "irl": "4",
+    "trl": "6",
+    "mrl": "6",
+    "irl": "6",
     "sdgs": [
+      "3",
       "9",
-      "11"
+      "12"
     ],
     "teamMembers": [
       {
@@ -1025,29 +1008,14 @@
     "mrl": "3",
     "irl": "4",
     "sdgs": [
-      "9",
-      "11"
+      "3",
+      "9"
     ],
     "teamMembers": [
       {
-        "name": "Student 1",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 2",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 3",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 4",
-        "rollNumber": "Roll No",
-        "linkedin": ""
+        "name": "Teja Prakash K",
+        "rollNumber": "",
+        "linkedin": "CB.AI.U4AIM24136"
       }
     ],
     "githubLink": ""
@@ -1233,8 +1201,7 @@
     "mrl": "3",
     "irl": "4",
     "sdgs": [
-      "6",
-      "7",
+      "3",
       "9"
     ],
     "teamMembers": [
@@ -1593,8 +1560,8 @@
     "facultyMentor": "Dr. Meera Balachandran",
     "description": "This project develops polyethylene furanoate (PEF) as a sustainable alternative to PET using 2,5-furandicarboxylic acid (FDCA) derived from sugarcane bagasse. The approach promotes waste valorization, reduces dependence on fossil resources, and supports low-carbon polymer production, contributing to environmentally responsible materials engineering.",
     "trl": "5",
-    "mrl": "4",
-    "irl": "5",
+    "mrl": "3",
+    "irl": "4",
     "sdgs": [
       "9",
       "11",
@@ -1664,8 +1631,8 @@
     "facultyMentor": "Dr. Meera Balachandran",
     "description": "This project focuses on developing a low-cost and sustainable catalyst derived from agro-waste for the production of 2,5-furandicarboxylic acid (FDCA). Rice husk ash is utilized as a renewable silica source to replace conventional synthetic supports, while earth-abundant metals such as manganese and iron are incorporated to avoid the use of noble metals, promoting greener and more economical catalytic processes.",
     "trl": "4",
-    "mrl": "4",
-    "irl": "5",
+    "mrl": "3",
+    "irl": "4",
     "sdgs": [
       "9",
       "11",
@@ -1821,80 +1788,81 @@
     "githubLink": ""
   },
   "ATFE26-NST09": {
-    "id": "ATFE26-NST09",
-    "title": "Adulterant Detecting Strips",
-    "department": "Department of Food Science and Nutrition (Physical sciences)",
-    "teamName": "-",
-    "stallNumber": "LS02",
-    "facultyMentor": "-",
-    "description": "This project aims to develop a low-cost and eco-friendly prototype to detect common food adulterants using natural indicators and scrap materials. The detection is based on simple visual changes such as color change or sediment formation. The method provides a preliminary, qualitative assessment of food adulteration and helps promote food safety and consumer awareness. <div class=\"section\"> <h2 class=\"section-title\">Team Members</h2> <div class=\"team-members\"> <div class=\"team-member\"> <div> Daya R <span class=\"roll-number\">Roll No</span>",
-    "trl": "1",
-    "mrl": "2",
-    "irl": "4",
-    "sdgs": [
-      "3",
-      "6",
-      "12"
-    ],
-    "teamMembers": [
-      {
-        "name": "Daya R",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 2",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 3",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 4",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      }
-    ],
-    "githubLink": ""
-  },
+  "id": "ATFE26-NST09",
+  "title": "Adulterant Detecting Strips",
+  "department": "Department of Food Science and Nutrition (Physical sciences)",
+  "teamName": "-",
+  "stallNumber": "LS02",
+  "facultyMentor": "-",
+  "description": "This project aims to develop a low-cost and eco-friendly prototype to detect common food adulterants using natural indicators and scrap materials. The detection is based on simple visual changes such as color change or sediment formation. The method provides a preliminary, qualitative assessment of food adulteration and helps promote food safety and consumer awareness.",
+  "trl": "1",
+  "mrl": "2",
+  "irl": "4",
+  "sdgs": [
+    "3",
+    "6",
+    "12"
+  ],
+  "teamMembers": [
+    {
+      "name": "Daya R",
+      "rollNumber": "Roll No",
+      "linkedin": "http://linkedin.com/in/daya-reshmi-205a0131a"
+    },
+    {
+      "name": "Devika Padmakumar",
+      "rollNumber": "Roll No",
+      "linkedin": "https://www.linkedin.com/in/devika-padmakumar-2295442b0"
+    },
+    {
+      "name": "Saniya Lal H",
+      "rollNumber": "Roll No",
+      "linkedin": "https://www.linkedin.com/in/saniya-lal-324b85388?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    },
+    {
+      "name": "Saranya R Warrier",
+      "rollNumber": "Roll No",
+      "linkedin": ""
+    },
+    {
+      "name": "Swetha Sabu",
+      "rollNumber": "Roll No",
+      "linkedin": "https://www.linkedin.com/in/swetha-sabu-079ba4373?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+    }
+  ],
+  "githubLink": ""
+}
+,
   "ATFE26-NST10": {
     "id": "ATFE26-NST10",
     "title": "Bioplastic from Banana Peel",
     "department": "Department of Food Science and Nutrition (Physical sciences)",
-    "teamName": "-",
+    "teamName": "Bioplastic from Banana Peel",
     "stallNumber": "LS02",
     "facultyMentor": "-",
-    "description": "The Aeroponic Tower System is a vertical, soil-less farming method that uses minimal land and up to 95% less water to grow high-quality crops. Plants are suspended in a vertical structure and supplied with nutrient-rich mist, allowing high oxygen exposure to roots and faster growth. This cost-effective and sustainable system is ideal for urban and land-limited areas, offering an efficient alternative to conventional farming. <div class=\"section\"> <h2 class=\"section-title\">Team Members</h2> <div class=\"team-members\"> <div class=\"team-member\"> <div> Mitra Manoj <span class=\"roll-number\">Roll No</span>",
-    "trl": "6",
+    "description": "Plastic pollution and reliance on petroleum-based polymers have intensified the demand for sustainable biodegradable alternatives. This study develops bioplastic films from banana peel, an agro-waste rich in starch, cellulose, and pectin. Extracted starch was blended with glycerol to enhance flexibility, while neem oil provided antimicrobial properties and red cabbage extract served as a natural pH-sensitive indicator. The resulting films showed good biodegradability and potential for food packaging applications. Banana peel–based bioplastics offer a low-cost, eco-friendly alternative to single-use plastics while promoting waste valorization and sustainable material development.",
+    "trl": "9",
     "mrl": "3",
-    "irl": "3",
+    "irl": "4",
     "sdgs": [
-      "6",
+      "9",
       "12",
       "13"
     ],
     "teamMembers": [
       {
         "name": "Mitra Manoj",
-        "rollNumber": "Roll No",
+        "rollNumber": "CB.PS.U4FSN23025",
+        "linkedin": "https://www.linkedin.com/in/mitra-manoj-7562853a5"
+      },
+      {
+        "name": "Parvathi  Sunil",
+        "rollNumber": "CB.PS.U4FSN23013",
         "linkedin": ""
       },
       {
-        "name": "Student 2",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 3",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 4",
-        "rollNumber": "Roll No",
+        "name": "Bhadramohini .K.A",
+        "rollNumber": "CB.PS.U4FSN23022",
         "linkedin": ""
       }
     ],
@@ -1908,9 +1876,9 @@
     "stallNumber": "LS02",
     "facultyMentor": "-",
     "description": "The Aeroponic Tower System is a vertical, soil-less farming method that uses minimal land and up to 95% less water to grow high-quality crops. Plants are suspended in a vertical structure and supplied with nutrient-rich mist, allowing high oxygen exposure to roots and faster growth. This cost-effective and sustainable system is ideal for urban and land-limited areas, offering an efficient alternative to conventional farming. <div class=\"section\"> <h2 class=\"section-title\">Team Members</h2> <div class=\"team-members\"> <div class=\"team-member\"> <div> Spandanam Sharma <span class=\"roll-number\">Roll No</span>",
-    "trl": "6",
-    "mrl": "6",
-    "irl": "3",
+    "trl": "5",
+    "mrl": "3",
+    "irl": "5",
     "sdgs": [
       "6",
       "12",
@@ -1920,21 +1888,26 @@
       {
         "name": "Spandanam Sharma",
         "rollNumber": "Roll No",
+        "linkedin": " https://www.linkedin.com/in/g-spandanam-sharma-718695355"
+      },
+      {
+        "name": " Pavithra Abhilash",
+        "rollNumber": "Roll No",
+        "linkedin": "https://www.linkedin.com/in/pavithra-abhilash-81a2a933b?"
+      },
+      {
+        "name": " Naghul Kumaresh",
+        "rollNumber": "Roll No",
+        "linkedin": " https://www.linkedin.com/in/naghul-kumaresh-9a04833a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      },
+      {
+        "name": "R Hari Chandana",
+        "rollNumber": " https://www.linkedin.com/in/r-hari-chandana-66095338a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         "linkedin": ""
       },
       {
-        "name": "Student 2",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 3",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 4",
-        "rollNumber": "Roll No",
+        "name": "Parvathy Prajith",
+        "rollNumber": " https://www.linkedin.com/in/parvathy-prajith-73a1702b2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         "linkedin": ""
       }
     ],
@@ -1950,7 +1923,7 @@
     "description": "This project develops a quadcopter interceptor combined with dual interception payloads featuring detection and tracking capabilities. A quadcopter configuration was selected through comparative analysis, followed by weight estimation and dual CAD designs using Fusion 360. Simulink simulations achieved a vertical velocity of 37 m/s. Detection objectives were met, though asymmetric design introduced position control challenges, with performance goals nearly achieved.",
     "trl": "5",
     "mrl": "4",
-    "irl": "3",
+    "irl": "4",
     "sdgs": [
       "4",
       "9",
@@ -1958,7 +1931,7 @@
     ],
     "teamMembers": [
       {
-        "name": "Dharamnath Sah",
+        "name": "Dharamnath Sa",
         "rollNumber": "CB.EN.U4AEE22067",
         "linkedin": "https://www.linkedin.com/in/dharamnathsah999/"
       },
@@ -2029,8 +2002,8 @@
     "facultyMentor": "Dr. Jinraj VP",
     "description": "A rotor tilt-free trirotor UAV is presented that achieves propulsion and flight control using three brushless DC motors with fixed-pitch propellers. The project designs a PID-based control strategy to stabilize attitude by manipulating only propeller speeds. Simulation results demonstrate stable hover with acceptable pitch–yaw cross-coupling and reduced system complexity compared to existing configurations.",
     "trl": "4",
-    "mrl": "4",
-    "irl": "3",
+    "mrl": "3",
+    "irl": "4",
     "sdgs": [
       "8",
       "9",
@@ -2140,9 +2113,9 @@
     "stallNumber": "S25",
     "facultyMentor": "Dr. Sakthivel Thangavel",
     "description": "This project investigates energy harvesting from bridge vibrations using a piezoelectric energy harvester integrated with a simplified beam bridge model. The governing equations of the bridge are solved to obtain natural frequencies and mode shapes. The electromechanical behavior of the piezoelectric harvester is coupled with the structural response to evaluate harvested voltage and energy.",
-    "trl": "5",
-    "mrl": "4",
-    "irl": "3",
+    "trl": "4",
+    "mrl": "3",
+    "irl": "4",
     "sdgs": [
       "7",
       "9",
@@ -2270,8 +2243,8 @@
     "facultyMentor": "-",
     "description": "Circuit Crafter is a web-based collaborative platform for exploring standard electronic circuit models, entering design parameters, and instantly generating simulation-ready LTSpice files. Users can publish and share their own circuit models, integrate custom components, and collaborate through an admin-verified community system. The platform also features an AI corner that provides formula suggestions and a guided chatbot to assist users during circuit design and exploration. By reducing manual effort and enabling collaboration, Circuit Crafter enhances learning, prototyping, and productivity for students and electronics enthusiasts.",
     "trl": "7",
-    "mrl": "7",
-    "irl": "6",
+    "mrl": "6",
+    "irl": "7",
     "sdgs": [
       "4",
       "9",
@@ -2372,23 +2345,24 @@
   },
   "ATFE26-ST13": {
     "id": "ATFE26-ST13",
-    "title": "Smart Traffic Control System",
-    "department": "Department of Computer Science & Engineering",
-    "teamName": "IntelliFlow",
+    "title": "Gurusetu",
+    "department": "Department of AI",
+    "teamName": "Tensor Troops",
     "stallNumber": "S13",
-    "facultyMentor": "Dr. ABC XYZ",
-    "description": "This project proposes an AI-driven smart traffic control system that dynamically adjusts traffic signals based on real-time congestion data using computer vision and IoT sensors to reduce waiting time and emissions.",
+    "facultyMentor": "Ramaguru",
+    "description": "Guru Setu is ML-based Graph RAG for Research/Project Recommendations & Mentor-Mentee Connections which builds a knowledge graph linking faculty, students, skills, papers, and projects using sentence-transformer embeddings. Cosine similarity search delivers precise cross-department recommendations instead of random, manual faculty hunting., mentor-mentee pairings, faculty collaboration hubs, and research opportunities.",
     "trl": "5",
-    "mrl": "3",
+    "mrl": "4",
     "irl": "4",
     "sdgs": [
+    "4",
       "9",
-      "11"
+      "17"
     ],
     "teamMembers": [
       {
-        "name": "Student 1",
-        "rollNumber": "Roll No",
+        "name": "Sajeev Senthil",
+        "rollNumber": "CB.SC.U4AIE23272",
         "linkedin": ""
       },
       {
@@ -2530,8 +2504,8 @@
     "facultyMentor": "",
     "description": "QRTunnel is a privacy-first file-sharing system built for simplicity and control. It enables instant, direct transfers— using LAN nearby and secure tunnels remotely —without clouds, external servers, or data logging. With one-command sharing, zero logins, no installation for receivers, anonymous exchange, and full host control, QRTunnel stays lightweight and open-source while prioritizing privacy, reliability, and real-world usability.",
     "trl": "7",
-    "mrl": "6",
-    "irl": "5",
+    "mrl": "5",
+    "irl": "6",
     "sdgs": [
       "9"
     ],
@@ -2840,7 +2814,7 @@
       {
         "name": "Abhijith M I",
         "rollNumber": "CB.SC.U4CSE24102",
-        "linkedin": "https://www.linkedin.com/in/abhijith-m-i-a21042315"
+        "linkedin": "www.linkedin.com/in/abhijith-m-i-a21042315"
       }
     ],
     "githubLink": "https://github.com/Chittesh249/Lost-and-found"
@@ -2897,7 +2871,7 @@
     "mrl": "6",
     "irl": "5",
     "sdgs": [
-      "9"
+      "3","9"
     ],
     "teamMembers": [
       {
@@ -3402,12 +3376,12 @@
       },
       {
         "name": "Nithish Raajan N.K",
-        "rollNumber": "CB.PS.I5DAS23031",
+        "rollNumber": "CB.PS.I5DAS23029",
         "linkedin": "https://www.linkedin.com/in/nithish-raajan-n-k-949a97373"
       },
       {
         "name": "Mohamed Navith H",
-        "rollNumber": "CB.PS.I5DAS23031",
+        "rollNumber": "CB.PS.I5DAS23048",
         "linkedin": "https://www.linkedin.com/in/mohamed-navith-bb20892bb"
       }
     ],
