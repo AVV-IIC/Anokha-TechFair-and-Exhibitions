@@ -3493,38 +3493,29 @@
   },
   "ATFE26-ST46": {
     "id": "ATFE26-ST46",
-    "title": "Smart Traffic Control System",
-    "department": "Department of Computer Science & Engineering",
-    "teamName": "IntelliFlow",
+    "title": "Credora",
+    "department": "IIC",
+    "teamName": "Credora",
     "stallNumber": "S01",
-    "facultyMentor": "Dr. ABC XYZ",
-    "description": "This project proposes an AI-driven smart traffic control system that dynamically adjusts traffic signals based on real-time congestion data using computer vision and IoT sensors to reduce waiting time and emissions.",
-    "trl": "5",
+    "facultyMentor": "Ramaguru Radhakrishnan",
+    "description": "Credora is a web-based platform that enables farmers to calculate carbon credits from agricultural practices and securely monetize them through blockchain technology. The application follows a multi-role workflow where farmer-submitted data is verified by authorized verifiers and finalized by administrators using scientific carbon models. Verified carbon credits are recorded on a blockchain for transparency and immutability, and are tokenized into a digital carbon currency that can be securely owned, tracked, and traded, creating a trustworthy and scalable ecosystem for agricultural sustainability.",
+    "trl": "4",
     "mrl": "3",
     "irl": "4",
     "sdgs": [
+      "8",
       "9",
-      "11"
+      "13"
     ],
     "teamMembers": [
       {
-        "name": "Student 1",
-        "rollNumber": "Roll No",
-        "linkedin": ""
+        "name": "Mithuraa Senthilkumar",
+        "rollNumber": "CB.SC.U4CSE24527",
+        "linkedin": "https://www.linkedin.com/in/mithuraa/"
       },
       {
-        "name": "Student 2",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 3",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 4",
-        "rollNumber": "Roll No",
+        "name": "Sakthivel S",
+        "rollNumber": "CB.EN.U4MEE24043",
         "linkedin": ""
       }
     ],
