@@ -2791,7 +2791,7 @@
     "department": "Department of Computer Science & Engineering",
     "teamName": "Amrita Retriever",
     "stallNumber": "S41",
-    "facultyMentor": "-",
+    "facultyMentor": "None",
     "description": "Amrita Retriever is a real-time, privacy-first Lost & Found application designed for campus environments. Built using Flutter, Supabase, and a Next.js admin dashboard, the platform allows users to post lost and found items, announce rewards, interact via live comments, and receive GPS-based proximity alerts. To prevent false claims and misuse, contact details are revealed only after answering a security question. The system enables efficient recovery through real-time notifications, location intelligence, and controlled communication, creating a trusted digital ecosystem for lost item recovery.",
     "trl": "7",
     "mrl": "6",
