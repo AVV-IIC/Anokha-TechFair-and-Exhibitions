@@ -2282,7 +2282,7 @@
     "teamName": "fINARY AI - SMART FINANCE TRACKER",
     "stallNumber": "S11",
     "facultyMentor": "",
-    "description": "Finary AI is an Autonomous Financial Cockpit that leverages Gemini 2.5 Flash and LangChain SQL Agents to eliminate manual data entry. By integrating Multimodal Ingestion (Vision for receipts and Audio for voice notes), the system maps unstructured real-world data directly to a structured Relational PostgreSQL Schema. A custom "Privacy Handshake" at the API Gateway level ensures that the autonomous agent can only introspect and query data belonging to the authenticated user, providing a secure, conversational interface for personal wealth management.",
+    "description": "Finary AI is an Autonomous Financial Cockpit that leverages Gemini 2.5 Flash and LangChain SQL Agents to eliminate manual data entry. By integrating Multimodal Ingestion (Vision for receipts and Audio for voice notes), the system maps unstructured real-world data directly to a structured Relational PostgreSQL Schema. A custom Privacy Handshake at the API Gateway level ensures that the autonomous agent can only introspect and query data belonging to the authenticated user, providing a secure, conversational interface for personal wealth management.",
     "trl": "5",
     "mrl": "3",
     "irl": "4",
