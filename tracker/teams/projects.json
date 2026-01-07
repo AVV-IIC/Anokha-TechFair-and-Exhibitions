@@ -158,7 +158,7 @@
   "id": "ATFE26-HT06",
   "title": "Gesture Controlled Drone",
   "department": "Department of Engineering",
-  "teamName": "-",
+  "teamName": "GESTURE CONTROL",
   "stallNumber": "HT06",
   "facultyMentor": "",
   "description": "This project presents a gyro-based gesture controlled drone system. The drone is controlled by interpreting wrist motion using gyroscope sensor data, where angular values are converted into corresponding flight control commands. The system enables intuitive human–machine interaction and serves as an effective learning platform for embedded systems, control theory, and UAV operation.",
@@ -457,7 +457,7 @@
   "stallNumber": "S36",
   "facultyMentor": "nan",
   "description": "The project develops a smart wearable posture monitoring system using dual IMU sensors and an ESP32 to continuously track upper-body posture. A machine learning model (Feedforward Neural Network) classifies correct and incorrect postures in real time on the device. Feedback is provided only when poor posture is sustained, ensuring non-intrusive correction. The system promotes preventive musculoskeletal health through continuous posture awareness.",
-  "trl": "5",
+  "trl": "9",
   "mrl": "3",
   "irl": "4",
   "sdgs": [
@@ -507,24 +507,24 @@
     ],
     "teamMembers": [
       {
-        "name": "Student 1",
-        "rollNumber": "Roll No",
-        "linkedin": ""
+        "name": "Rahul K",
+        "rollNumber": "CB.EN.U4ELC23039 ",
+        "linkedin": "https://www.linkedin.com/in/rahulk2005/ "
       },
       {
-        "name": "Student 2",
-        "rollNumber": "Roll No",
-        "linkedin": ""
+        "name": "Rithvik B",
+        "rollNumber": "CB.EN.U4ELC23040",
+        "linkedin": "https://www.linkedin.com/in/rithvik-b-a61018298/"
       },
       {
-        "name": "Student 3",
-        "rollNumber": "Roll No",
-        "linkedin": ""
+        "name": "Indhu Prakash ",
+        "rollNumber": "CB.EN.U4ELC23019 ",
+        "linkedin": "https://www.linkedin.com/in/indhu-prakash-519a49319/"
       },
       {
-        "name": "Student 4",
-        "rollNumber": "Roll No",
-        "linkedin": ""
+        "name": "Suriyaprasath T",
+        "rollNumber": "CB.EN.U4ELC23045",
+        "linkedin": "https://www.linkedin.com/in/suriyaprasath-t-503971327/"
       }
     ],
     "githubLink": ""
@@ -774,7 +774,7 @@
     "mrl": "3",
     "irl": "3",
     "sdgs": [
-      "3",
+      "7",
       "9"
     ],
     "teamMembers": [
@@ -807,7 +807,7 @@
     "department": "Department of Electrical and Electronics Engineering",
     "teamName": "SOLARIS",
     "stallNumber": "LS12",
-    "facultyMentor": "NAN",
+    "facultyMentor": "Dr. Sivraj P",
     "description": "A low-cost, portable dual-axis solar tracking system using an STM32 microcontroller and GPS-synchronized algorithms is designed to accurately orient solar panels in real time. By autonomously optimizing panel angles, the system achieves an increased energy yield compared to fixed installations. The weather-independent and reproducible design makes it more compact, efficient, and a reliable solar power solution.",
     "trl": "5",
     "mrl": "4",
@@ -819,32 +819,34 @@
     ],
     "teamMembers": [
       {
-        "name": "Student 1",
-        "rollNumber": "Roll No",
+        "name": "Devisree Sumesh ",
+        "rollNumber": "CB.EN.U4ELC23016",
         "linkedin": ""
       },
       {
-        "name": "Student 2",
-        "rollNumber": "Roll No",
+        "name": "K L K MPremchand ",
+        "rollNumber": "CB.EN.U4ELC23024",
+        "linkedin": "https://www.linkedin.com/in/l-k-m-prem-chand-korukonda-4a449a29a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+      },
+      {
+        "name": "Patnana Tarun ",
+        "rollNumber": "CB.EN.U4ELC23034 ",
         "linkedin": ""
       },
       {
-        "name": "Student 3",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 4",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      }
-    ],
+        "name": "R Haris ",
+        "rollNumber": " CB.EN.U4ELC23064",
+        "linkedin": "https://www.linkedin.com/in/haris-rajendran-32a70b302///"},
+        {"name": "Sidharth S Nair ",
+        "rollNumber": "CB.EN.U4ELC23043",
+        "linkedin": "https://www.linkedin.com/in/sidharth-s-nair-4222b3300?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" }
+  ],
     "githubLink": ""
   },
   "ATFE26-HT25": {
   "id": "ATFE26-HT25",
   "title": "Design and Development of Stewart Platform",
-  "department": "Department of Aerospace Engineering",
+  "department": "Department of Automation and Robotics",
   "teamName": "STEWART PLATFORM",
   "stallNumber": "LS09",
   "facultyMentor": "Dr. Rammohan S",
@@ -896,7 +898,7 @@
       {
         "name": "SAI SUNANDHA JK",
         "rollNumber": "CB.EN.U4ARE23043",
-        "linkedin": ""
+        "linkedin": "https://www.linkedin.com/in/sai-sunandha-jk?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
       }
     ],
     "githubLink": ""
@@ -908,7 +910,7 @@
     "teamName": "NIVARA",
     "stallNumber": "S35",
     "facultyMentor": "Dr. ABC XYZ",
-    "description": "This project proposes an AI-driven smart traffic control system that dynamically adjusts traffic signals based on real-time congestion data using computer vision and IoT sensors to reduce waiting time and emissions.",
+    "description": "Cisco ThingQBator startup focused on ensuring quality healthcare for the elderly at a cost affordable price becomes the new standard in an era of increasing life expectancy through autonomous drone based medicine delivery and universal electronic health record systems",
     "trl": "6",
     "mrl": "6",
     "irl": "6",
@@ -919,23 +921,23 @@
     ],
     "teamMembers": [
       {
-        "name": "Student 1",
-        "rollNumber": "Roll No",
+        "name": "Anish Visakan",
+        "rollNumber": "CB.EN.U4ARE23007",
         "linkedin": ""
       },
       {
-        "name": "Student 2",
-        "rollNumber": "Roll No",
+        "name": "Sanjay T",
+        "rollNumber": "CB.EN.U4ARE23049",
         "linkedin": ""
       },
       {
-        "name": "Student 3",
-        "rollNumber": "Roll No",
+        "name": "Sarup Arumugam Kumar ",
+        "rollNumber": "CB.EN.U4ARE23050",
         "linkedin": ""
       },
       {
-        "name": "Student 4",
-        "rollNumber": "Roll No",
+        "name": "Tarun Narasimhan",
+        "rollNumber": "CB.EN.U4ARE23055",
         "linkedin": ""
       }
     ],
@@ -984,10 +986,10 @@
     "id": "ATFE26-HT29",
     "title": "Prosthetic Hand with Real-time Feedback using EMG Sensor",
     "department": "School of AI",
-    "teamName": "IntelliFlow",
+    "teamName": "ONEST",
     "stallNumber": "LS14",
     "facultyMentor": "NAN",
-    "description": "This project proposes an AI-driven smart traffic control system that dynamically adjusts traffic signals based on real-time congestion data using computer vision and IoT sensors to reduce waiting time and emissions.",
+    "description": " Smart prosthetic hand with real time feedback using EMG sensor and computer vision and also real hand like simulation which can assist people who loose their limb" ,
     "trl": "5",
     "mrl": "3",
     "irl": "4",
@@ -998,8 +1000,8 @@
     "teamMembers": [
       {
         "name": "Teja Prakash K",
-        "rollNumber": "",
-        "linkedin": "CB.AI.U4AIM24136"
+        "rollNumber": "CB.AI.U4AIM24136",
+        "linkedin": "https://www.linkedin.com/in/pagadala-teja-prakash-royal-a765a832b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
       }
     ],
     "githubLink": ""
@@ -1356,7 +1358,10 @@
         "name": "Vaishak T",
         "rollNumber": "CB.EN.U4CCE24156",
         "linkedin": "https://www.linkedin.com/in/vaishak-t-96b93930a"
-      }
+      },
+      {"name": "Keerthi Vasan A",
+        "rollNumber": "CB.SC.U4CSE24124",
+        "linkedin": "https://www.linkedin.com/in/keerthi-vasan-a-1480862aa?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"}
     ],
     "githubLink": "https://github.com/Parthivsurya/Sparkd-Crowd"
   },
@@ -1585,8 +1590,8 @@
     "facultyMentor": "Dr. Meera Balachandran",
     "description": "This project presents a multiscale reinforcement strategy for PAEK–carbon fiber composites using graphene and multi-walled carbon nanotubes (MWCNTs) for UAV and aerospace applications. Graphene and CNTs are incorporated at the matrix and interface levels to enhance crack resistance and load transfer. Fracture mechanisms such as CNT pull-out, CNT fracture, and graphene-induced crack deflection are analyzed. Finite Element Analysis under bending loads demonstrates reduced von Mises stress concentration near crack tips in reinforced composites, highlighting the effectiveness of multiscale nano-reinforcement for lightweight, damage-tolerant aerospace structures.",
     "trl": "4",
-    "mrl": "4",
-    "irl": "3-4",
+    "mrl": "3",
+    "irl": "4",
     "sdgs": [
       "9",
       "12",
@@ -1720,13 +1725,13 @@
     "stallNumber": "LS04",
     "facultyMentor": "-",
     "description": "This project focuses on developing biodegradable cutlery from tea nerves, a waste generated during tea processing. Natural binders and eco-friendly molding techniques are used to produce plastic-free and compostable utensils. The cutlery is designed to be food-safe and mechanically strong for single-use applications. This approach helps reduce agro-waste and plastic pollution. It also supports low-cost production and rural employment opportunities.",
-    "trl": "6",
-    "mrl": "3",
-    "irl": "4",
+    "trl": "3",
+    "mrl": "0",
+    "irl": "2",
     "sdgs": [
-      "9",
-      "11",
-      "13"
+      "6",
+      "12",
+      "9"
     ],
     "teamMembers": [
       {
@@ -2277,7 +2282,7 @@
     "teamName": "fINARY AI - SMART FINANCE TRACKER",
     "stallNumber": "S11",
     "facultyMentor": "",
-    "description": "This project proposes an AI-driven smart traffic control system that dynamically adjusts traffic signals based on real-time congestion data using computer vision and IoT sensors to reduce waiting time and emissions.",
+    "description": "Finary AI is an Autonomous Financial Cockpit that leverages Gemini 2.5 Flash and LangChain SQL Agents to eliminate manual data entry. By integrating Multimodal Ingestion (Vision for receipts and Audio for voice notes), the system maps unstructured real-world data directly to a structured Relational PostgreSQL Schema. A custom "Privacy Handshake" at the API Gateway level ensures that the autonomous agent can only introspect and query data belonging to the authenticated user, providing a secure, conversational interface for personal wealth management.",
     "trl": "5",
     "mrl": "3",
     "irl": "4",
@@ -2287,27 +2292,17 @@
     ],
     "teamMembers": [
       {
-        "name": "Student 1",
-        "rollNumber": "Roll No",
-        "linkedin": ""
+        "name": "Mahakisore M",
+        "rollNumber": "CB.SC.U4AIE24333",
+        "linkedin": "https://www.linkedin.com/in/mahakisore-m-830863280/"
       },
       {
-        "name": "Student 2",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 3",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 4",
-        "rollNumber": "Roll No",
-        "linkedin": ""
+        "name": "Ramkumar",
+        "rollNumber": "CB.SC.U4AIE24042",
+        "linkedin": "https://www.linkedin.com/in/im-rk/"
       }
     ],
-    "githubLink": ""
+    "githubLink": "https://github.com/Mahakisore7/Finary"
   },
   "ATFE26-ST12": {
   "id": "ATFE26-ST12",
@@ -2364,22 +2359,35 @@
       {
         "name": "Sajeev Senthil",
         "rollNumber": "CB.SC.U4AIE23272",
-        "linkedin": ""
+        "linkedin": "www.linkedin.com/in/sajeev-senthil-35814a2b8"
       },
       {
-        "name": "Student 2",
-        "rollNumber": "Roll No",
-        "linkedin": ""
+        "name": "Jaswanth Saravanan",
+        "rollNumber": "CB.SC.U4AIE24324 ",
+        "linkedin": "https://www.linkedin.com/in/jaswanth-saravanan-162343321/"
       },
       {
-        "name": "Student 3",
-        "rollNumber": "Roll No",
-        "linkedin": ""
+        "name": "Ramkumar K R |",
+        "rollNumber": "CB.SC.U4AIE24042",
+        "linkedin": "https://www.linkedin.com/in/im-rk/"
       },
       {
-        "name": "Student 4",
-        "rollNumber": "Roll No",
-        "linkedin": ""
+        "name": "Suganth K",
+        "rollNumber": "CB.SC.U4AIE23340",
+        "linkedin": "https://www.linkedin.com/in/suganthk07"
+      },{
+        "name": "krishna",
+        "rollNumber": "CB.SC.U4AIE23048",
+        "linkedin": "https://www.linkedin.com/in/sri-krishna-vundavalli/"
+      },{
+        "name": "AB Jashwanth ",
+        "rollNumber": "CB.SC.U4CSE23058",
+        "linkedin": "https://www.linkedin.com/in/ajeyabhargava-jashwanth-reddy-aa1a57270"
+      },
+      {
+        "name": "Chanjhana  ",
+        "rollNumber": "CB.SC.U4CSE23160",
+        "linkedin": "https://www.linkedin.com/in/chanjhana/"
       }
     ],
     "githubLink": ""
@@ -2730,8 +2738,8 @@
     "facultyMentor": "Dr. Sandhya S Pai",
     "description": "This real-time web application simulates high-stakes auctions to combat unfair bidding practices. Built using Vanilla JavaScript, Tailwind CSS, and Firebase, it supports single-player AI challenges and low-latency multiplayer auctions. Key innovations include an Anti-Sniping Protocol that extends timers for fair price discovery and a Fairness Engine that validates bids, promoting transparency and integrity in digital auction systems.",
     "trl": "7",
-    "mrl": "4",
-    "irl": "5",
+    "mrl": "5",
+    "irl": "4",
     "sdgs": [
       "4",
       "9",
@@ -2782,6 +2790,10 @@
         "name": "Vedant Maheshwari ",
         "rollNumber": " CB.SC.U4AIE23346",
         "linkedin": "https://www.linkedin.com/in/vedant-maheshwari-328a652a9/"
+      },
+      { "name": "Akash bardia ",
+        "rollNumber": " CB.SC.U4AIE23102",
+        "linkedin": "https://www.linkedin.com/in/akash-bardia?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
       }
     ],
     "githubLink": "https://github.com/vedant-maheshwari/health_connect"
@@ -3159,14 +3171,14 @@
     "facultyMentor": "Dr. Vishnuvarthan R",
     "description": "Presense360 is a mobile, edge-based facial attendance system that replaces manual registers and centralized biometric terminals. It uses smartphone-based, on-device facial recognition with geolocation verification to ensure physical presence, eliminating centralized biometric storage while enabling faster, scalable, and energy-efficient attendance.",
     "trl": "6",
-    "mrl": "4",
-    "irl": "7",
+    "mrl": "7",
+    "irl": "4",
     "sdgs": [
       "3",
       "9",
       "13",
       "16"
-    ],
+    ], 
     "teamMembers": [
       {
         "name": "S Ajeth",
@@ -3415,7 +3427,7 @@
 }
 ,
   "ATFE26-ST45": {
-  "id": "ATFE26-ST45",
+  "id": "ATFE26-ST52",
   "title": "ORION - Offline Retrieval and Intelligence Network",
   "department": "Department of Artificial Intelligence Engineering",
   "teamName": "VanGuards",
