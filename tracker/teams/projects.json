@@ -47,9 +47,15 @@
     "teamMembers": [
       {
         "name": "KANEESH RAVI",
-        "rollNumber": "Roll No",
-        "linkedin": ""
+        "rollNumber": "CB.EN.U4AEE23038",
+        "linkedin": "https://shorturl.at/e8ieZ"
+      },
+      {
+        "name": "Divakar Rajendran ",
+        "rollNumber": "CB.EN.U4EE24014",
+        "linkedin": "https://shorturl.at/H71wm"
       }
+      
     ],
     "githubLink": ""
   },
@@ -59,7 +65,7 @@
     "department": "Department of Aerospace Engineering",
     "teamName": "LAIKA",
     "stallNumber": "",
-    "facultyMentor": "NAN",
+    "facultyMentor": "-",
     "description": "This project focuses on the design and fabrication of a fixed-wing RC aircraft optimized for maximum payload delivery under strict weight and thrust constraints. Aerodynamic analysis, airfoil selection, and simulations were performed using XFLR5, and the final design was modeled in Fusion 360. A simple servo-actuated payload release mechanism ensures controlled and reliable payload deployment. The aircraft has been designed to achieve a high payload-to-weight ratio and demonstrates stable flight characteristics suitable for logistics and emergency delivery applications.",
     "trl": "5",
     "mrl": "3",
@@ -419,7 +425,7 @@
     "id": "ATFE26-HT14",
     "title": "FieldBeacon",
     "department": "Department of Electronics and Communication Engineering",
-    "teamName": "IntelliFlow",
+    "teamName": "FieldBeacon",
     "stallNumber": "LS11",
     "facultyMentor": "Dr. Harshavardhan Singh (Department of Electronics and Communication Engineering)",
     "description": "The Field Beacon project introduces a novel, cost-effective solution to protect crops and lives from animal intrusion using a real-time beam-tracking system. Using phased-array technology in the 2.45 GHz ISM band, the system continuously monitors and detects animals such as elephants and wild boars and activates deterrence measures while notifying farmers of the intrusion. The system uses two 2 \u00d7 4 microstrip patch antenna array for transmission and reception with beam steering capability of  and maximum gain 14.95dB. Moreover, the array also reflects an efficiently reduced Side Lobe Level (SLL) of - 13.77dB. Additionally, the ADALM-Pluto SDR and Raspberry Pi modules are used for signal processing, and computational tasks, respectively. Designed for scalability, simplicity, and educational value, Field Beacon emphasizes robust, real-time operation, making it accessible to both farmers and non-engineers.",
@@ -493,9 +499,9 @@
     "id": "ATFE26-HT16",
     "title": "3-Axis Arm Controller",
     "department": "Department of Electrical and Electronics Engineering",
-    "teamName": "IntelliFlow",
+    "teamName": "3-Axis Arm Controller",
     "stallNumber": "LS12",
-    "facultyMentor": "Dr. ABC XYZ",
+    "facultyMentor": "-",
     "description": "This intelligent 6-DOF robotic arm utilizes a unique Hybrid Brain architecture combining YOLOv8, ANFIS, and NLP models to enable autonomous manipulation with a standard 2D webcam. By leveraging these neural networks to compensate for mechanical imperfections and depth ambiguity in real time, the system successfully bridges the gap between lightweight, limited-cost components into a capable transforming low-cost components into a capable system.",
     "trl": "5",
     "mrl": "4",
@@ -1799,7 +1805,7 @@
   "ATFE26-NST09": {
   "id": "ATFE26-NST09",
   "title": "Adulterant Detecting Strips",
-  "department": "Department of Food Science and Nutrition (Physical sciences)",
+  "department": "Department of Food Science and Nutrition(Physical sciences)",
   "teamName": "-",
   "stallNumber": "LS02",
   "facultyMentor": "-",
@@ -1815,27 +1821,27 @@
   "teamMembers": [
     {
       "name": "Daya R",
-      "rollNumber": "Roll No",
+      "rollNumber": "",
       "linkedin": "http://linkedin.com/in/daya-reshmi-205a0131a"
     },
     {
       "name": "Devika Padmakumar",
-      "rollNumber": "Roll No",
+      "rollNumber": "",
       "linkedin": "https://www.linkedin.com/in/devika-padmakumar-2295442b0"
     },
     {
       "name": "Saniya Lal H",
-      "rollNumber": "Roll No",
+      "rollNumber": "",
       "linkedin": "https://www.linkedin.com/in/saniya-lal-324b85388?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     },
     {
       "name": "Saranya R Warrier",
-      "rollNumber": "Roll No",
+      "rollNumber": "",
       "linkedin": ""
     },
     {
       "name": "Swetha Sabu",
-      "rollNumber": "Roll No",
+      "rollNumber": "",
       "linkedin": "https://www.linkedin.com/in/swetha-sabu-079ba4373?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
     }
   ],
@@ -1881,7 +1887,7 @@
     "id": "ATFE26-NST11",
     "title": "Aeroponic tower system",
     "department": "Department of Food Science and Nutrition (Physical sciences)",
-    "teamName": "-",
+    "teamName": "Aeroponic tower system",
     "stallNumber": "LS02",
     "facultyMentor": "-",
     "description": "The Aeroponic Tower System is a vertical, soil-less farming method that uses minimal land and up to 95% less water to grow high-quality crops. Plants are suspended in a vertical structure and supplied with nutrient-rich mist, allowing high oxygen exposure to roots and faster growth. This cost-effective and sustainable system is ideal for urban and land-limited areas, offering an efficient alternative to conventional farming. <div class=\"section\"> <h2 class=\"section-title\">Team Members</h2> <div class=\"team-members\"> <div class=\"team-member\"> <div> Spandanam Sharma <span class=\"roll-number\">Roll No</span>",
@@ -2575,8 +2581,8 @@
     "facultyMentor": "Ramaguru Radhakrishnan",
     "description": "DELOS is a minimal compiler built entirely from scratch that translates a custom programming language into native x86-64 assembly for Linux. Despite minimal optimizations, it significantly outperforms Python and Java and achieves performance within 2× of GCC, demonstrating the efficiency of low-level compilation techniques.",
     "trl": "6",
-    "mrl": "4",
-    "irl": "3",
+    "mrl": "3",
+    "irl": "4",
     "sdgs": [
       "4",
       "9",
