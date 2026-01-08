@@ -3061,42 +3061,33 @@
   },
   "ATFE26-ST34": {
     "id": "ATFE26-ST34",
-    "title": "Smart Traffic Control System",
-    "department": "Department of Computer Science & Engineering",
-    "teamName": "IntelliFlow",
+    "title": "MisSpoke",
+    "department": "School of AI",
+    "teamName": "MisSpoke",
     "stallNumber": "S47",
-    "facultyMentor": "Dr. ABC XYZ",
-    "description": "This project proposes an AI-driven smart traffic control system that dynamically adjusts traffic signals based on real-time congestion data using computer vision and IoT sensors to reduce waiting time and emissions.",
-    "trl": "5",
-    "mrl": "3",
+    "facultyMentor": "",
+    "description": "MisSpoke enables spoken language learning through real-time conversations and personalized, performance based feedback",
+    "trl": "7",
+    "mrl": "5",
     "irl": "4",
     "sdgs": [
       "9",
-      "11"
+      "4","8"
     ],
     "teamMembers": [
       {
-        "name": "Student 1",
-        "rollNumber": "Roll No",
+        "name": "P. Sai Mrudulla",
+        "rollNumber": "CB.SC.U4AIE24340",
         "linkedin": ""
       },
       {
-        "name": "Student 2",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 3",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 4",
-        "rollNumber": "Roll No",
+        "name": "K. Meghana",
+        "rollNumber": "CB.SC.U4AIE24232",
         "linkedin": ""
       }
+    
     ],
-    "githubLink": ""
+    "githubLink": "https://github.com/Mrudula-itsjuzme/Speak"
   },
   "ATFE26-ST35": {
     "id": "ATFE26-ST35",
