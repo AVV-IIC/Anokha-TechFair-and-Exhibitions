@@ -1701,23 +1701,18 @@
     ],
     "teamMembers": [
       {
-        "name": "Avantika.S.V",
-        "rollNumber": "Roll No",
+        "name": "Nikithaa S",
+        "rollNumber": "CB.PS. U4FSN23030",
         "linkedin": ""
       },
       {
-        "name": "Student 2",
-        "rollNumber": "Roll No",
+        "name": "Mohanambiga V",
+        "rollNumber": "CB.PS.U4FSN23012",
         "linkedin": ""
       },
       {
-        "name": "Student 3",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 4",
-        "rollNumber": "Roll No",
+        "name": "Aruthra K",
+        "rollNumber": "CB. PS.U4FSN23007",
         "linkedin": ""
       }
     ],
@@ -1740,27 +1735,47 @@
       "9"
     ],
     "teamMembers": [
-      {
-        "name": "Maha shwetha .A",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 2",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 3",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 4",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      }
-    ],
+          {
+            "name": "A. Mahaswetha",
+            "rollNumber": "CB.PS.U4FSN23031",
+            "linkedin": ""
+          },
+          {
+            "name": "Jaya Abirami R",
+            "rollNumber": "CB.PS.U4FSN24011",
+            "linkedin": ""
+          },
+          {
+            "name": "Vijayalakshmi S",
+            "rollNumber": "CB.PS.U4FSN24028",
+            "linkedin": ""
+          },
+          {
+            "name": "M.K. Rithikaa Shreyaa",
+            "rollNumber": "CB.PS.U4FSN24014",
+            "linkedin": ""
+          },
+          {
+            "name": "Dhayarthi Shree S",
+            "rollNumber": "CB.PS.U4FSN24008",
+            "linkedin": ""
+          },
+          {
+            "name": "Shamini S",
+            "rollNumber": "CB.PS.U4FSN24024",
+            "linkedin": ""
+          },
+          {
+            "name": "Dhaniksha V D",
+            "rollNumber": "CB.PS.U4FSN24032",
+            "linkedin": ""
+          },
+          {
+            "name": "Rakshana S",
+            "rollNumber": "CB.PS.U4FSN24020",
+            "linkedin": ""
+          }
+        ],
     "githubLink": ""
   },
   "ATFE26-NST08": {
@@ -1779,26 +1794,21 @@
       "11"
     ],
     "teamMembers": [
-      {
-        "name": "Vidhyaa Lakshmi Viswanathan",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 2",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 3",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      },
-      {
-        "name": "Student 4",
-        "rollNumber": "Roll No",
-        "linkedin": ""
-      }
+        {
+          "name": "Anagha Sanjay K P",
+          "rollNumber": "CB.PS.U4FSN23024",
+          "linkedin": ""
+        },
+        {
+          "name": "R. Sreevidya",
+          "rollNumber": "CB.PS.U4FSN23011",
+          "linkedin": ""
+        },
+        {
+          "name": "Nandana Kishor",
+          "rollNumber": "CB.PS.U423021",
+          "linkedin": ""
+        }
     ],
     "githubLink": ""
   },
