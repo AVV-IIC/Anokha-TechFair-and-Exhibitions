@@ -1896,23 +1896,23 @@
     "teamMembers": [
       {
         "name": "Spandanam Sharma",
-        "rollNumber": "Roll No",
+        "rollNumber": "CB.PS.U4FSN23029",
         "linkedin": " https://www.linkedin.com/in/g-spandanam-sharma-718695355"
       },
       {
         "name": " Pavithra Abhilash",
-        "rollNumber": "Roll No",
+        "rollNumber": "CB.PS.U4FSN23004",
         "linkedin": "https://www.linkedin.com/in/pavithra-abhilash-81a2a933b?"
       },
       {
         "name": " Naghul Kumaresh",
-        "rollNumber": "Roll No",
+        "rollNumber": "CB.PS.U4FSN23003",
         "linkedin": " https://www.linkedin.com/in/naghul-kumaresh-9a04833a3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
       },
       {
         "name": "R Hari Chandana",
         "rollNumber": " https://www.linkedin.com/in/r-hari-chandana-66095338a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        "linkedin": ""
+        "linkedin": "CB.PS.U4FSN23008"
       },
       {
         "name": "Parvathy Prajith",
@@ -2955,9 +2955,9 @@
     "stallNumber": "S09",
     "facultyMentor": "",
     "description": "This submission comprises two AI-driven initiatives. Project 1 presents a GNN-based sensory substitution framework enabling bidirectional translation between visual art and music, preserving relational, structural, and emotional semantics to improve accessibility for the visually and hearing impaired. Project 2, Ekalavya, is a phygital employability operating system inspired by the Gurukul model, replacing static textbooks with AI-generated project architectures, gated learning via an AI mentor, and offline-first capabilities to bridge the digital divide for rural and low-connectivity regions.",
-    "trl": "Project 1: 6, Project 2: 4",
-    "mrl": "Project 1: 6, Project 2: 5",
-    "irl": "Project 1: 7, Project 2: 4",
+    "trl": "4",
+    "mrl": "4",
+    "irl": "5",
     "sdgs": [
       "3",
       "6",
