@@ -194,6 +194,119 @@
             color: #777;
         }
 
+        /* Top Contributors Panel */
+        .top-contributors-wrapper {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 24px;
+        }
+
+        .top-contributors {
+            background: white;
+            padding: 24px;
+            border-radius: 12px;
+            box-shadow: var(--card-shadow);
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .top-contributors-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--primary-blue);
+            margin-bottom: 20px;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .trophy-icon {
+            color: #f39c12;
+            font-size: 1.5rem;
+        }
+
+        .contributors-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .contributor-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 16px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            transition: var(--transition);
+        }
+
+        .contributor-item:hover {
+            background: #e9ecef;
+        }
+
+        .contributor-rank {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .rank-badge {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.9rem;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .rank-badge.rank-1 {
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+            color: white;
+        }
+
+        .rank-badge.rank-2 {
+            background: linear-gradient(135deg, #C0C0C0, #A8A8A8);
+            color: white;
+        }
+
+        .rank-badge.rank-3 {
+            background: linear-gradient(135deg, #CD7F32, #B8733B);
+            color: white;
+        }
+
+        .rank-badge.rank-other {
+            background: var(--accent-blue);
+            color: white;
+        }
+
+        .contributor-email {
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+
+        .contributor-count {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            color: var(--accent-blue);
+            background: #eef2ff;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .no-contributors {
+            text-align: center;
+            color: #888;
+            padding: 20px;
+            font-style: italic;
+        }
+
         .table-container {
             background: white;
             border-radius: 12px;
@@ -367,6 +480,12 @@
             .view-btn {
                 padding: 6px 10px;
             }
+
+            .contributor-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
         }
     </style>
 </head>
@@ -411,6 +530,19 @@
             <div class="stat-card">
                 <div class="stat-value" id="totalFeedback">0</div>
                 <div class="stat-label">Total Feedback Received</div>
+            </div>
+        </div>
+
+        <!-- Top Contributors Panel -->
+        <div class="top-contributors-wrapper">
+            <div class="top-contributors">
+                <div class="top-contributors-title">
+                    
+                    Top 5 Feedback Contributors
+                </div>
+                <div class="contributors-list" id="contributorsList">
+                    <div class="no-contributors">Loading contributors...</div>
+                </div>
             </div>
         </div>
 
@@ -477,6 +609,7 @@
         const modalTeamTitle = document.getElementById('modalTeamTitle');
         const totalTeamsEl = document.getElementById('totalTeams');
         const totalFeedbackEl = document.getElementById('totalFeedback');
+        const contributorsList = document.getElementById('contributorsList');
 
         let allFeedbackData = [];
         const teamIds = [];
@@ -493,6 +626,48 @@
           <td><button class="view-btn" onclick="openFeedbackModal('${id}')">View Feedback</button></td>
         `;
             tableBody.appendChild(row);
+        }
+
+        // Update Top Contributors
+        function updateTopContributors(feedbackData) {
+            const emailCounts = {};
+            
+            feedbackData.forEach(item => {
+                const email = item.email || 'Anonymous';
+                if (email !== 'Anonymous') {
+                    emailCounts[email] = (emailCounts[email] || 0) + 1;
+                }
+            });
+
+            const sortedContributors = Object.entries(emailCounts)
+                .sort((a, b) => b[1] - a[1])
+                .slice(0, 5);
+
+            contributorsList.innerHTML = '';
+
+            if (sortedContributors.length === 0) {
+                contributorsList.innerHTML = '<div class="no-contributors">No feedback contributors yet.</div>';
+                return;
+            }
+
+            sortedContributors.forEach(([email, count], index) => {
+                const rank = index + 1;
+                const rankClass = rank <= 3 ? `rank-${rank}` : 'rank-other';
+                
+                const item = document.createElement('div');
+                item.className = 'contributor-item';
+                item.innerHTML = `
+                    <div class="contributor-rank">
+                        <div class="rank-badge ${rankClass}">${rank}</div>
+                        <div class="contributor-email">${email}</div>
+                    </div>
+                    <div class="contributor-count">
+                        <span>${count}</span>
+                        <span>feedback${count > 1 ? 's' : ''}</span>
+                    </div>
+                `;
+                contributorsList.appendChild(item);
+            });
         }
 
         // Expose modal function globally
@@ -532,9 +707,6 @@
         function setupRealtimeListener() {
             if (unsubscribeSnapshot) return;
 
-            // Note: Removed orderBy('timestamp', 'desc') temporarily. 
-            // Collection Group queries with orderBy require a Firestore Index.
-            // If you re-enable it, check the browser console for a link to create the index.
             const q = query(collectionGroup(db, 'feedback'));
 
             unsubscribeSnapshot = onSnapshot(q, (snapshot) => {
@@ -558,6 +730,9 @@
                 totalFeedbackEl.textContent = allFeedbackData.length;
                 totalTeamsEl.textContent = uniqueTeamIds.size;
 
+                // Update top contributors
+                updateTopContributors(allFeedbackData);
+
                 // Clear table and rebuild
                 tableBody.innerHTML = '';
 
@@ -574,7 +749,6 @@
                 });
             }, (error) => {
                 console.error("Error fetching feedback:", error);
-                // Display error to user
                 const errDiv = document.createElement('div');
                 errDiv.style.color = 'red';
                 errDiv.style.padding = '20px';
@@ -622,9 +796,6 @@
         window.onclick = (e) => {
             if (e.target === modal) modal.style.display = 'none';
         };
-
-        // Init
-        // logic moved to onSnapshot listener
 
     </script>
 </body>
