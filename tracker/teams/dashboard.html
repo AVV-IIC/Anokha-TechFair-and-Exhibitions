@@ -659,7 +659,20 @@
           <td><span class="team-name">${id}</span></td>
           <td><span class="live-count ${activeClass}" id="count-${id}">${count}</span></td>
           <td><span style="font-weight:600; color:#f39c12;" id="rating-${id}">${avgRating}</span></td>
-          <td><button class="view-btn" onclick="openFeedbackModal('${id}')">View Feedback</button></td>
+         <td style="white-space: nowrap;">
+  <button class="view-btn"
+          style="display:inline-block;"
+          onclick="openFeedbackModal('${id}')">
+    View Feedback
+  </button>
+  <button class="view-btn"
+          style="display:inline-block; margin-left:6px; background: var(--success-green);"
+          onclick="exportStallFeedback('${id}')">
+    Export
+  </button>
+</td>
+
+          
         `;
             tableBody.appendChild(row);
         }
@@ -951,6 +964,85 @@
         closeModalBtn.onclick = () => modal.style.display = 'none';
         window.onclick = (e) => {
             if (e.target === modal) modal.style.display = 'none';
+        };
+        window.exportStallFeedback = (teamId) => {
+            const feedbacks = allFeedbackData.filter(f => f.pageId === teamId);
+
+            if (feedbacks.length === 0) {
+                alert("No feedback available for this stall.");
+                return;
+            }
+
+            // VERY WIDE HEADERS → Excel opens wide columns
+            let csv =
+                "TEAM NAME                    ,REVIEWER EMAIL                                ,RATING ,FEEDBACK (FULL TEXT)                                                                                                                                          ,TIMESTAMP\n";
+
+            feedbacks.forEach(f => {
+                const date = f.timestamp
+                    ? new Date(f.timestamp.seconds * 1000).toLocaleString()
+                    : "N/A";
+
+                const team = teamId.padEnd(28, " ");
+                const email = (f.email || "Anonymous").padEnd(40, " ");
+
+                const feedback = (f.feedback || "No comment provided")
+                    .replace(/"/g, '""')
+                    .replace(/\n|\r/g, ' ')
+                    .padEnd(150, " ");   // ← THIS makes Excel show long text
+
+                csv += `"${team}","${email}",${f.rating || ""},"${feedback}","${date}"\n`;
+            });
+
+            const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
+            const url = URL.createObjectURL(blob);
+
+            const a = document.createElement("a");
+            a.href = url;
+            a.download = `${teamId}_feedback.csv`;
+            document.body.appendChild(a);
+            a.click();
+
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        };
+        window.exportStallFeedback = async (teamId) => {
+            const feedbacks = allFeedbackData.filter(f => f.pageId === teamId);
+
+            if (feedbacks.length === 0) {
+                alert("No feedback available for this stall.");
+                return;
+            }
+
+            // Load SheetJS dynamically
+            if (!window.XLSX) {
+                await import('https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js');
+            }
+
+            const rows = feedbacks.map(f => ({
+                "Team Name": teamId,
+                "Reviewer Email": f.email || "Anonymous",
+                "Rating": f.rating || "",
+                "Feedback": f.feedback || "No comment provided",
+                "Timestamp": f.timestamp
+                    ? new Date(f.timestamp.seconds * 1000).toLocaleString()
+                    : "N/A"
+            }));
+
+            const worksheet = XLSX.utils.json_to_sheet(rows);
+
+            // Auto column width
+            worksheet["!cols"] = [
+                { wch: 20 },  // Team
+                { wch: 35 },  // Email
+                { wch: 10 },  // Rating
+                { wch: 80 },  // Feedback (BIG)
+                { wch: 22 }   // Timestamp
+            ];
+
+            const workbook = XLSX.utils.book_new();
+            XLSX.utils.book_append_sheet(workbook, worksheet, "Feedback");
+
+            XLSX.writeFile(workbook, `${teamId}_feedback.xlsx`);
         };
 
     </script>
